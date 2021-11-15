@@ -53,10 +53,10 @@ Your data visualisation could:
 <iframe src="https://trinket.io/embed/python/822033c5b6?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
-**World happiness index:** [See inside](https://trinket.io/python/XXXXXXXXXX){:target="_blank"}
+**World happiness index:** [See inside](https://trinket.io/python/0507433548){:target="_blank"}
 
 <div class="trinket">
-<iframe src="https://trinket.io/embed/python/XXXXXXXXXX?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.io/embed/python/0507433548?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
 **2020 Pirate attacks:** [See inside](https://trinket.io/python/2164174e96){:target="_blank"}
