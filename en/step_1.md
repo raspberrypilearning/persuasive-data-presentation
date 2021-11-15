@@ -9,9 +9,9 @@ A <span style="color: #0faeb0">data visualisation</span> is an interesting way t
 </p>
 
 You will:
-+ Load data from a text file
-+ Use lists and dictionaries to store the data
-+ Visualise the data through a chart or drawing
++ Load data from a **text file**
++ Use **lists** and **dictionaries** to store the data
++ **Visualise** the data through a **chart** or **drawing**
 
 --- task ---
 
@@ -32,26 +32,20 @@ You will:
 Brief explanation of aims of project. 
 
 Your data visualisation should:
-+ Load data from a text file
-+ Use lists and dictionaries to store the data
-+ Visualise the data through a chart or drawing
++ Load data from a **text file**
++ Use **lists** and **dictionaries** to store the data
++ **Visualise** the data through a **chart** or **drawing**
 
 Your data visualisation could:
-+ Use unique shapes to display the data points on a map
-+ Analyse the data using mathematical formulas before displaying it in a chart or drawing
-+ Allow the user to input different options for what they would like to see
++ Use **unique** shapes to display the data points on a map
++ **Analyse** the data using mathematical formulas before displaying it in a chart or drawing
++ Allow the user to **input** different options for what they would like to see
 
 </div>
 
 ### Get inspiration
 
 --- task ---
-
-**2020 Pirate attacks:** [See inside](https://trinket.io/python/2164174e96){:target="_blank"}
-
-<div class="trinket">
-<iframe src="https://trinket.io/embed/python/2164174e96?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-</div>
 
 **ISS crew expeditions:** [See inside](https://trinket.io/python/822033c5b6){:target="_blank"}
 
@@ -63,6 +57,12 @@ Your data visualisation could:
 
 <div class="trinket">
 <iframe src="https://trinket.io/embed/python/XXXXXXXXXX?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+
+**2020 Pirate attacks:** [See inside](https://trinket.io/python/2164174e96){:target="_blank"}
+
+<div class="trinket">
+<iframe src="https://trinket.io/embed/python/2164174e96?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
 --- /task ---
