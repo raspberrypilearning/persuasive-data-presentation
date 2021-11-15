@@ -1,42 +1,30 @@
 ## Introduction
 
-You are going to create ... Your ... will need to meet the **project brief**.
+Create a data visualisation for a topic that you are passionate about. 
 
-<mark>this particular boxout optional: maybe a good idea if first path</mark>
+Your visualisation will need to meet the **project brief**.
+
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-A <span style="color: #0faeb0">project brief</span> describes what a project must do. It's a bit like being given a mission to complete.
+A <span style="color: #0faeb0">data visualisation</span> is an interesting way to display data. It could be in the form of a graph, diagram, chart or drawing.
 </p>
 
 You will:
-+ 
-+ 
-+ 
++ Load data from a text file
++ Use lists and dictionaries to store the data
++ Visualise the data through a chart or drawing
 
 --- no-print ---
 
 --- task ---
 
-<div style="display: flex; flex-wrap: wrap">
-<div style="flex-basis: 200px; flex-grow: 1">
+**UFO tracker:** [See inside](https://trinket.io/python/cb376de667){:target="_blank"}
 
-### Try it
-
-Description of what to do or think about when looking at the example.
-
-</div>
-<div>
-
-**Light the way home**: [See inside](https://scratch.mit.edu/projects/499860786/editor){:target="_blank"}
-<div class="scratch-preview" style="margin-left: 15px;">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/499860786/?autostart=false" frameborder="0"></iframe>
-</div>
-
-</div>
+<div class="trinket">
+<iframe src="https://trinket.io/embed/python/cb376de667?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
 --- /task ---
 
---- /no-print ---
 
 <div style="border-top: 15px solid #f3524f; background-color: whitesmoke; margin-bottom: 20px; padding: 10px;">
 
@@ -45,13 +33,16 @@ Description of what to do or think about when looking at the example.
 
 Brief explanation of aims of project. 
 
-Your ... should:
-+ ...
-+ ...
+Your data visualisation should:
++ Load data from a text file
++ Use lists and dictionaries to store the data
++ Visualise the data through a chart or drawing
 
-Your ... could:
-+ ...
-+ ...
+Your data visualisation could:
++ Use unique shapes to display the data points on a map
++ Analyse the data using mathematical formulas before displaying it in a chart or drawing
++ Allow the user to input different options for what they would like to see
+
 </div>
 
 --- no-print ---
@@ -60,32 +51,26 @@ Your ... could:
 
 --- task ---
 
-Think about ... as you investigate these example projects to get more ideas:
+**2020 Pirate attacks:** [See inside](https://trinket.io/python/2164174e96){:target="_blank"}
 
-**Tickle monster**: [See inside](https://scratch.mit.edu/projects/500189097/editor){:target="_blank"}
-<div class="scratch-preview" style="margin-left: 15px;">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/500189097/?autostart=false" frameborder="0"></iframe>
+<div class="trinket">
+<iframe src="https://trinket.io/embed/python/2164174e96?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
-**Scratch blends in**: [See inside](https://scratch.mit.edu/projects/498968472/editor){:target="_blank"}
-<div class="scratch-preview" style="margin-left: 15px;">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/498968472/?autostart=false" frameborder="0"></iframe>
+**ISS crew expeditions:** [See inside](https://trinket.io/python/822033c5b6){:target="_blank"}
+
+<div class="trinket">
+<iframe src="https://trinket.io/embed/python/822033c5b6?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
-**A debugging story**: [See inside](https://scratch.mit.edu/projects/498960446/editor){:target="_blank"}
-Click on the character and object to choose the ones you want in the story, then click on the Stage to turn the page.
-<div class="scratch-preview" style="margin-left: 15px;">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/498960446/?autostart=false" frameborder="0"></iframe>
+**World happiness index:** [See inside](https://trinket.io/python/XXXXXXXXXX){:target="_blank"}
+
+<div class="trinket">
+<iframe src="https://trinket.io/embed/python/XXXXXXXXXX?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
 --- /task ---
 
---- /no-print ---
 
---- print-only ---
-
-![Complete project](images/showcase_static.png)
-
---- /print-only ---
 
 
