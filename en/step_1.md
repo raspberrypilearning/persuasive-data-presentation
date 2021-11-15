@@ -13,8 +13,6 @@ You will:
 + Use lists and dictionaries to store the data
 + Visualise the data through a chart or drawing
 
---- no-print ---
-
 --- task ---
 
 **UFO tracker:** [See inside](https://trinket.io/python/cb376de667){:target="_blank"}
@@ -28,7 +26,7 @@ You will:
 
 <div style="border-top: 15px solid #f3524f; background-color: whitesmoke; margin-bottom: 20px; padding: 10px;">
 
-### PROJECT BRIEF: Project title
+### PROJECT BRIEF: Persuasive data presentation
 <hr style="border-top: 2px solid black;">
 
 Brief explanation of aims of project. 
@@ -44,8 +42,6 @@ Your data visualisation could:
 + Allow the user to input different options for what they would like to see
 
 </div>
-
---- no-print ---
 
 ### Get inspiration
 
