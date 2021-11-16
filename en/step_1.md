@@ -59,7 +59,7 @@ Your data visualisation could:
 <iframe src="https://trinket.io/embed/python/0507433548?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
-**2020 Pirate attacks:** [See inside](https://trinket.io/python/2164174e96){:target="_blank"}
+**2020 Maritime piracy locations:** [See inside](https://trinket.io/python/2164174e96){:target="_blank"}
 
 <div class="trinket">
 <iframe src="https://trinket.io/embed/python/2164174e96?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
