@@ -27,5 +27,36 @@ Think about the steps that you will need to take in order to be successful in yo
 
 ![A screenshot of the maritime piracy project. A map shows the locations of piracy events that have taken place in 2020, each is represented by a blue dot.](images/piracy-map.PNG)
 
+--- task ---
+
+You have built up some really useful skills. Here is a reminder to help you make your data visualisation:
+
+### Shapes and images
+
+[[[processing-python-ellipse]]]
+
+[[[processing-python-rect]]]
+
+[[[processing-python-triangle]]]
+
+[[[processing-add-image]]]
+
+### Colours and effects
+
+[[[generic-theory-simple-colours]]]
+
+[[[processing-opacity]]]
+
+[[[processing-stroke]]]
+
+[[[processing-tint]]]
+
+### Loading data from text files
+
+
+
+--- /task ---
+
+
 
 --- save ---
