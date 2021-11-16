@@ -58,7 +58,26 @@ You have built up some really useful skills. Here is a reminder to help you make
 title: Load data into a variable
 ---
 
+To write the **entire contents** of a text file into a **variable**, you can use the following code:
 
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: false
+line_number_start: 
+line_highlights: 
+---
+my_text_file = ''
+
+with open('filename.csv') as f:
+  for line in f:
+      my_text_file += line
+
+print(my_text_file)
+--- /code ---
+
+This can be a useful code snippet if you are working with very small text files and you don't intend to perform many actions on the loaded data. For example, you might want to just display the contents of the text file. 
 
 --- /collapse ---
 
