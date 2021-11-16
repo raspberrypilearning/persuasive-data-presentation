@@ -10,7 +10,7 @@ A <span style="color: #0faeb0">data visualisation</span> is an interesting way t
 
 You will:
 + Load data from a **text file**
-+ Use **lists** and **dictionaries** to store the data
++ Use **lists** and/or **dictionaries** to store the data
 + **Visualise** the data through a **chart** or **drawing**
 
 --- task ---
@@ -33,7 +33,7 @@ Brief explanation of aims of project.
 
 Your data visualisation should:
 + Load data from a **text file**
-+ Use **lists** and **dictionaries** to store the data
++ Use **lists** and/or **dictionaries** to store the data
 + **Visualise** the data through a **chart** or **drawing**
 
 Your data visualisation could:
