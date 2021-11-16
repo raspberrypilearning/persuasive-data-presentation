@@ -4,9 +4,9 @@ Now it's time to make your data visualisation project.
 
 ![A screenshot of the ISS expedition project. There is an illustration of the ISS with three flags on top. One flag is Russian, one is for the United States of America and the other is for the United Kingdom.](images/iss-project.PNG)
 
-In order to be successful with a programming project, you need to use **decomposition** skills to break the problem down into smaller, more manageable parts. This means you should take each part at a time, get it working and then move on to the next part. 
+In order to be successful with a programming project, you need to use **decomposition** skills to break the problem down into smaller, more manageable parts. This means you should take each part at a time and get it working before moving on to the next part. 
 
-**Tip:** Test your code after each new bit of code to make it easier to spot new errors. 
+**Tip:** Test your code after each new section to make it easier to find and fix new errors. 
 
 --- collapse ---
 ---
