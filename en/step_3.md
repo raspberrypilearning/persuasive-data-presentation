@@ -126,7 +126,7 @@ my_text_file = []
 
 with open('filename.csv') as f:
   for line in f:
-      info = line.split(',')
+      info = line.split(',') # Split each item separated by a comma into a list
 
 print(info)
 
@@ -155,11 +155,13 @@ my_text_file = []
 with open('filename.csv') as f:
   for line in f:
       info = line.split(',')
-      my_text_file.append(info)
+      my_text_file.append(info) # Add the info list to the my_text_file list
 
 print(my_text_file)
 
 --- /code ---
+
+2D lists are really useful for storing and iterating through large amounts of data. However, you need to be very aware of **what** is being stored and **where** it is being stored. 
 
 --- /collapse ---
 
