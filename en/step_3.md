@@ -173,7 +173,7 @@ Each line (row) from a CSV file can be stored in a **dictionary**. The CSV file 
 
 ![A screenshot of a text file. The text file contains maritime piracy data. Each row of data has a date, the longitude, the latitude and the location of the piracy event.](images/text-file.PNG)
 
-If this data was stored in a 2D list then you would need to know the `index` values for the data in order to access it. With a **dictionary**, you just need to know the `key`. This is the keyword used to represent the data held for each event. 
+If this data was stored in a 2D list then you would need to know the `index` values for the data in order to access it. With a **dictionary**, you just need to know the `key`. This is the keyword used to represent the data held for each event. In this example, the keys are `date`, `longitude`, `latitude` and `location`.
 
 The code below shows a **list of dictionaries** being created for the contents of a CSV file:
 
@@ -204,7 +204,7 @@ line_highlights:
 
 --- collapse ---
 ---
-title: How remove the `\n` 
+title: How remove the \n
 ---
 
 
