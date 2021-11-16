@@ -13,7 +13,7 @@ In order to be successful with a programming project, you need to use **decompos
 title: Example decomposition
 ---
 
-Does your idea require a drawing to appear on the screen based on data in a text file? If so, you can break this problem down into the following parts:
+Does your idea require a drawing to appear on the screen based on data in a text file? If so, you can break this problem down in the following way:
 
 1. Write the code for drawing a shape or loading an image
 2. Make the image appear in the centre of the screen to test it
@@ -23,7 +23,9 @@ Does your idea require a drawing to appear on the screen based on data in a text
 
 --- /collapse ---
 
+Think about the steps that you will need to take in order to be successful in your project. Will you need to display a chart or an image? What skills will you need to make that happen?
 
+![A screenshot of the maritime piracy project. A map shows the locations of piracy events that have taken place in 2020, each is represented by a blue dot.](images/piracy-map.PNG)
 
 
 --- save ---
