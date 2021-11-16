@@ -290,7 +290,52 @@ ufo_dict['date']
 title: Access data from a list of dictionaries
 ---
 
+When you create a list of dictionaries you can loop through the list to find and use the data that you need.
 
+### Example one - ISS expeditions
+
+Here is some example code that was used to find the date of an expedition to the ISS:
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 1
+line_highlights: 
+---
+for expedition in expeditions: # Loop through all of the expedition dictionaries in the expeditions list
+
+  if expedition['expedition number'] == 3: # Check if the expedition number is equal to 3
+    date = expedition['mission launch date'] # If true, store the matching mission launch date
+  
+--- /code ---
+
+Notice how the code `expedition['expedition number']` was used to access the data in the dictionary. 
+
+`expedition` is used as a temporary placeholder to loop through the list. At each iteration, `expedition` holds the **current** expedition dictionary. The **key** is then named in the square brackets to access the data. 
+
+### Example two - UFO sightings
+
+Here is another example that was used to find the latitude and longitude values for UFO sightings. 
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 1
+line_highlights: 
+---
+for sighting in ufo_sightings: # Loop through all of the sighting dictionaries in the ufo_sightings list
+
+    longitude = float(sighting['longitude']) # Store the longitude data
+    latitude = float(sighting['latitude']) # Store the latitude data
+--- /code ---
+
+You can see the same pattern occurring with this example as you saw with example one. The loop iterates through the list of dictionaries. For each loop, `sighting` is used as a temporary placeholder for the dictionary. The **key** is then used to access the required latitude and longitude data. 
+
+In this case, `float()` was also used because the data needed to be stored as a decimal number. 
 
 --- /collapse ---
 
