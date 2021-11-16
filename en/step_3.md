@@ -204,9 +204,30 @@ line_highlights:
 
 --- collapse ---
 ---
-title: How remove the \n
+title: Removing the \n
 ---
+When you look at a text file in its raw form, there is no `\n` at the end of each line. However, when you load each line from a text file you will see that a `\n` appears. This is because `\n` means **add a new line**. Without this, all of the lines of text would be on one, very long line. 
 
+This isn't helpful when you want to use the data in your program. 
+
+To remove the `\n` you can use the `strip()` method. This strips whatever you write in the brackets from the data. 
+
+You can see an example of this being used on **line 3** below:
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 1
+line_highlights: 3
+---
+  with open(file_name) as f:
+    for line in f: # For each line in the text file
+      info = line.strip('\n') # Strip away the \n
+      info = info.split(',')
+
+--- /code ---
 
 
 --- /collapse ---
