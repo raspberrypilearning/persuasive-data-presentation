@@ -233,7 +233,7 @@ line_highlights: 3
 --- /collapse ---
 
 
-### Accessing data from list and dictionaries
+### Accessing data from lists and dictionaries
 
 [[[generic-python-list-index]]]
 
@@ -242,7 +242,46 @@ line_highlights: 3
 title: Access data from a dictionary
 ---
 
+A dictionary has been created to store a ufo sighting:
 
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 
+line_highlights: 
+---
+ufo_dict = {
+  'date': '12-1-2020',
+  'time': '13:55',
+  'state': 'TX',
+  'country': 'United States of America'
+  }
+
+--- /code ---
+
+Data is stored in a dictionary using a **key**, which is the label or keyword for the data. 
+
+The **keys** in this dictionary are:
++ date
++ time
++ state
++ country
+
+If you wanted to find out the **date** for the UFO sighting then you would use this snippet of code:
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: false
+line_number_start: 
+line_highlights: 
+---
+ufo_dict['date']
+
+--- /code ---
 
 --- /collapse ---
 
