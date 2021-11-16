@@ -132,7 +132,7 @@ print(info)
 
 --- /code ---
 
-If you run the code above then it will output **the last line** of the CSV file as a list. This is because, for each line, the `info` list has been recreated. 
+If you run the code above then it will output **the last line** of the CSV file as a list. This is because, for each line, the `info` list has been recreated. It hasn't been added to.
 
 ```
 ['29/12/2020', '6.4', '2.733333333', 'Around 94nm South of Brass\n']
@@ -140,7 +140,7 @@ If you run the code above then it will output **the last line** of the CSV file 
 
 In order to store **all** of the data, you can create a **list of lists**!
 
-The code below uses the same code as above but now it **appends** the `info` list to the `my_text_file` list. This means that you can now store all of the data in the CSV file. 
+The code below uses the same code as above but now it **appends** the `info` list to the `my_text_file` list on **line 6**. This means that you can now store all of the data from the CSV file. 
 
 --- code ---
 ---
