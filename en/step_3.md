@@ -169,8 +169,36 @@ print(my_text_file)
 ---
 title: Load data into a list of dictionaries
 ---
+Each line (row) from a CSV file can be stored in a **dictionary**. The CSV file below contains data on maritime piracy events that occurred in 2020. Each line is a new event. Each event has the date, longitude, latitude and location information. 
 
+![A screenshot of a text file. The text file contains maritime piracy data. Each row of data has a date, the longitude, the latitude and the location of the piracy event.](images/text-file.PNG)
 
+If this data was stored in a 2D list then you would need to know the `index` values for the data in order to access it. With a **dictionary**, you just need to know the `key`. This is the keyword used to represent the data held for each event. 
+
+The code below shows a **list of dictionaries** being created for the contents of a CSV file:
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 1
+line_highlights: 
+---
+  piracy_events = [] # Initialise the list to store the piracy events
+  
+  with open(file_name) as f:
+    for line in f:
+      info = line.split(',') # Split the line into a list
+      piracy_dict = { # Create a dictionary for the event
+        'date': info[0],
+        'longitude': info[1],
+        'latitude': info[2],
+        'location': info[3]
+      }
+      piracy_events.append(piracy_dict) # Store dictionary in a list
+
+--- /code ---
 
 --- /collapse ---
 
