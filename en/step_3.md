@@ -53,7 +53,80 @@ You have built up some really useful skills. Here is a reminder to help you make
 
 ### Loading data from text files
 
+--- collapse ---
+---
+title: Load data into a variable
+---
 
+
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: Load data into a list
+---
+
+
+
+--- /collapse --- 
+
+--- collapse ---
+---
+title: Load data into a list of dictionaries
+---
+
+
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: Load data into a list of lists
+---
+
+
+
+--- /collapse ---
+
+
+### Accessing data from list and dictionaries
+
+--- collapse ---
+---
+title: Access data from a list
+---
+
+
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: Access data from a 2D list
+---
+
+
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: Access data from a dictionary
+---
+
+
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: Access data from a list of dictionaries
+---
+
+
+
+--- /collapse ---
 
 --- /task ---
 
