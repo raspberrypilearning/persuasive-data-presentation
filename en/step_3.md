@@ -235,23 +235,7 @@ line_highlights: 3
 
 ### Accessing data from list and dictionaries
 
---- collapse ---
----
-title: Access data from a list
----
-
-
-
---- /collapse ---
-
---- collapse ---
----
-title: Access data from a 2D list
----
-
-
-
---- /collapse ---
+[[[generic-python-list-index]]]
 
 --- collapse ---
 ---
