@@ -1,9 +1,73 @@
-## What next?
+## Reflect
 
-You have reached the end of the [name of path](https://projects.raspberrypi.org/en/pathways/name-of-path) path!
+Did you meet the **project brief**? Think about your project and go through the checklist below and check off the ones that apply to your project.
 
-Now you can bring all your ideas to life in Scratch. Try using Scratch to make more cool stuff. If you need a reminder of what you have learned, you can go to the [Scratch guide](https://projects.raspberrypi.org/en/projects/getting-started-scratch).
+Does your ... have:
 
-[[[scratch-coolest-projects]]]
+--- task ---
 
-Or, you can explore our [other Scratch projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=scratch&curriculum%5B%5D=%201) and try them out.
+something
+
+--- /task ---
+
+--- task ---
+
+something
+
+--- /task ---
+
+
+Your ... could also have:
+
+--- task ---
+
+something
+
+--- /task ---
+
+--- task ---
+
+something
+
+--- /task ---
+
+
+Reflecting about how you made your ... will help you in your future projects.
+
+Answer the questions below by drawing, writing, typing in a document, talking to someone, or in your own creative way that works best for you.
+
+--- task ---
+
+How did you get your ideas? 
+
+--- /task ---
+
+--- task ---
+
+What cool new thing(s) did you learn?
+
+--- /task ---
+
+--- task ---
+
+<mark> some ideas, delete as needed </mark> Mistakes are the "portals of discovery" (James Joyce, Ulysses). 
+The Nobel Prize-winning physicist Niels Bohr said, “An expert is a person who has made all the mistakes that can be made”.
+Mistakes are powerful.
+Mistakes are empowering. 
+
+What mistakes did you make and how did they help you create your ... ?
+
+--- /task ---
+
+### Now you are (the author of a digital book)!
+
+Take a moment to celebrate what you have made.
+
+--- task ---
+
+Where will you take your new powers? What will you make next?
+
+--- /task ---
+
+![scratch cat in at party hat](images/reflect.png)
+
