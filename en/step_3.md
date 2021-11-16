@@ -339,6 +339,10 @@ In this case, `float()` was also used because the data needed to be stored as a 
 
 --- /collapse ---
 
+### Displaying charts
+
+[[[pygal-library]]]
+
 --- /task ---
 
 
