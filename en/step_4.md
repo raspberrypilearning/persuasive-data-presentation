@@ -121,11 +121,17 @@ def main():
 
 --- /task ---
 
+--- task ---
 
+**Test:**
 
-mouse pressed options
+--- /task ---
 
-user input options
+--- task ---
+
+**Debug:**
+
+--- /task ---
 
 
 
