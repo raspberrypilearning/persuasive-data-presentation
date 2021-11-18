@@ -1,23 +1,19 @@
 ## Share
 
-<mark> This is for Scratch </mark>
+If you are in a club, why not **share** your project with friends?
 
-Now is the time to share your book with your audience.
+You could also show your family how your project works by sending them a **link**.
 
-If you have a Scratch account, you can share your project through Scratch. Check with an adult first. You can send a link to people you know, and the whole Scratch community will be able to find your project and try it out.
+To get a link go to the **Share** menu button in the upper-right of your **Trinket’s** edit page and select Link.
 
-[[[share-scratch]]]
+![The 'Share' menu button extended, with 'Link' highlighted.](images/share-button.png)
 
-Why not invite your friends to create a project? Let them know how you had fun.
-
-If you have a Scratch account, and have shared your book project, keep an eye out for comments that others may make about your creation. Feedback is a great way to reflect on your work. Report and ignore any comments that are unhelpful or irrelevant.
-
-[[[comments-feedback-scratch]]]
+**Tip:** You can share a link to your project even if you don’t have a Trinket account; however, without an account, the link to your project will change each time you update it. If you have shared the link with someone, you will need to send a new link for them to see the changes.
 
 --- task ---
 
-Inspire others with your project by submitting it to our Scratch studio! 
+Inspire the Raspberry Pi Foundation community with your project!
 
-To share your book with others who make the 'I made a book' project, please complete [this form.](https://form.raspberrypi.org/f/community-project-submissions){:target="_blank"}
+THIS NEEDS SORTING
 
 --- /task ---
