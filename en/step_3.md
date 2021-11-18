@@ -368,6 +368,60 @@ If your list is linked to a text file:
 
 --- /collapse ---
 
+--- collapse ---
+---
+title: The data isn't plotting on my map as expected
+---
+
+A file has been created to support you with this called `xy.py`. It is an additional file within the starter projects where **latitude** and **longitude** data was included in the CSV file. 
+
+The code for this file can be seen below:
+
+--- code ---
+---
+language: python
+filename: xy.py
+line_numbers: true
+line_number_start: 1
+line_highlights: 
+---
+from math import radians, pi, log, tan
+
+def convert_lat_long(latitude, longitude, map_width, map_height):
+  
+  false_easting = 180
+  radius = map_width / (2 * pi)
+  latitude = radians(latitude)
+  longitude = radians(longitude + false_easting)
+  
+  x_coord = longitude * radius
+  
+  y_dist_from_equator = radius * log(tan(pi / 4 + latitude / 2))
+  y_coord = map_height / 2 - y_dist_from_equator
+  
+  coords = {'x': x_coord, 'y': y_coord}
+  
+  return coords
+
+
+def get_xy_coords(longitude, latitude, map_width=991, map_height=768):
+  
+  coords = None
+  
+  coords = convert_lat_long(latitude, longitude, map_width, map_height)
+  return coords
+
+--- /code ---
+
+This code takes **longitude** and **latitude** data, performs some tasks and then returns the X and Y coordinates for placing the drawing in the correct location. 
+
+If you are using this file:
++ check that you have imported it at the top of your main program. It should say `from xy import get_xy_coords`
++ check that you are passing the **longitude** and **latitude** data in the correct order. Your function call should be similar to this: `get_xy_coords(longitude, latitude)`
++ check that the variables holding the longitude and latitude data is converted to the **float** data type. Your code should look similar to this: `longitude = float(sighting['longitude'])`
+
+--- /collapse ---
+
 You might find a bug not listed here. Can you figure out how to fix it?
 
 We love hearing about your bugs and how you fixed them. Use the feedback button at the bottom of this page if you found a different bug in your project.
