@@ -347,7 +347,10 @@ In this case, `float()` was also used because the data needed to be stored as a 
 
 --- task ---
 
-**Test:** Show someone else your project and get their feedback. If you are creating charts, are you happy with the type of chart that you have displayed and the data that you have used? If you are adding drawings on a map, are you happy with the shapes that you have chosen? If you were creating another type of visualisation, could it be improved in any way?
+**Test:** Show someone else your project and get their feedback. 
++ If you are creating charts, are you happy with the type of chart that you have displayed and the data that you have used? 
++ If you are adding drawings on a map, are you happy with the shapes that you have chosen? 
++ If you were creating another type of visualisation, could it be improved in any way?
 
 --- /task ---
 
@@ -418,11 +421,55 @@ This code takes **longitude** and **latitude** data, performs some tasks and the
 If you are using this file:
 + check that you have imported it at the top of your main program. It should say `from xy import get_xy_coords`
 + check that you are passing the **longitude** and **latitude** data in the correct order. Your function call should be similar to this: `get_xy_coords(longitude, latitude)`
-+ check that the variables holding the longitude and latitude data is converted to the **float** data type. Your code should look similar to this: `longitude = float(sighting['longitude'])`
++ check that the longitude and latitude data has been converted to the **float** data type. Your code should look similar to this: `longitude = float(sighting['longitude'])`
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: Something is 'not defined'
+---
+
+This is a common error. It usually means that a variable, dictionary or list is trying to be accessed or modified before it has been defined. 
+
+For example, you might use this code to append an item to a list:
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 1
+line_highlights: 
+---
+state = 'TX'
+
+ufo_data.append(state)
+--- /code ---
+
+This line of code will cause an error message because the list `ufo_data` has not yet been defined. To fix this error you would add in a line of code that defines the list. 
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 1
+line_highlights: 1
+---
+ufo_data = []
+
+state = 'TX'
+
+ufo_data.append(state)
+
+--- /code ---
 
 --- /collapse ---
 
 You might find a bug not listed here. Can you figure out how to fix it?
+
+**Tip:** Find the example project that is most similar to yours and carefully study the code that has been used to make it work. Trace it through carefully, following the sequence that will take place when the code is run. This can help you spot things that you might have missed in your own program. 
 
 We love hearing about your bugs and how you fixed them. Use the feedback button at the bottom of this page if you found a different bug in your project.
 
