@@ -491,7 +491,7 @@ chart.render()
 
 You might find a bug not listed here. Can you figure out how to fix it?
 
-**Tip:** Find the example project that is most similar to yours and carefully study the code that has been used to make it work. Trace it through carefully, following the sequence that will take place when the code is run. This can help you spot things that you might have missed in your own program. 
+**Tip:** Find the example project that is most similar to yours and carefully study the code that has been used to make it work. This can help you spot things that you might have missed in your own program. 
 
 We love hearing about your bugs and how you fixed them. Use the feedback button at the bottom of this page if you found a different bug in your project.
 
