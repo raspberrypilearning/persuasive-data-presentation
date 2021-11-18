@@ -104,7 +104,7 @@ Once you are satisfied that your data is looking good, it is time to upload it. 
 
 If you wish to change it to `.csv` then you can click the settings icon to the right of the file name and chose the edit button. 
 
-![A screenshot of the settings icon in Trinket.](images/settings-icon.PNG)
+![A screenshot of the settings icon in Trinket.](images/settings-icon.png)
 
 --- /collapse ---
 
