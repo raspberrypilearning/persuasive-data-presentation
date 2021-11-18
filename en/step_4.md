@@ -154,12 +154,46 @@ The `input()` function is designed to take whatever a user types and return it a
 ```
 if choice == 1:
 ```
-This is checking for the **integer** value: 1 and not the **string** value: 1. To fix this, you can add apostrophise `'` to either side of your number. 
+This is checking for the **integer** value: 1 and not the **string** value: 1. To fix this, you can add apostrophes `'` to either side of your number. 
 
 ```
 if choice == '1':
 ```
 
+--- /collapse ---
+
+--- collapse ---
+---
+title: It is not displaying the correct data when I click the mouse
+---
+
+The `mouse_pressed()` function that you have created is designed to check the **pixel colour** that has been clicked on the screen. If you have two or more objects that are the same colour then your program will display the data for the first condition in the sequence that is true. 
+
+If you would like your program to display different data for each item that the user clicks then they must all be a **different colour**. You can see an example of how to code this for all of your data points here:
+
+--- code ---
+---
+language: python
+filename: main.py - draw_data()
+line_numbers: true
+line_number_start: 1
+line_highlights: 11
+---
+def draw_data():
+  red_value = 255
+
+  for region in region_list:
+    region_name = region['name']
+    region_coords = get_region_coords(region_name)
+    region_x = region_coords['x']
+    region_y = region_coords['y']
+    region_colour = color(red_value, 0, 0)
+    draw_pin(region_x, region_y, region_colour)
+    red_value -= 1
+
+--- /code ---
+
+**Notice** that the colour is originally set to `red_value = 255` this is the most amount of red that you can use. After each data point is draw, the value of `red_value` is reduced by `1`. This ensures that each data point is a different colour. 
 
 --- /collapse ---
 
