@@ -83,7 +83,7 @@ You should then **open** the file and check it for missing or unusual data.
 
 **Tip 2:** Look carefully at the data in your CSV file. Can you see any unusual symbols where text should be? If so, you might want to also delete these rows. Another option is to delete the symbols as long as that doesn't change the meaning of the data. 
 
-**Tip 3:** If your data has lots of extra columns that you aren't going to use for your visualisation the it is a good idea to delete them. This will make it easier to navigate and access your data from your code. 
+**Tip 3:** If your data has lots of extra columns that you aren't going to use for your visualisation then it is a good idea to delete them. This will make it easier to navigate and access your data from your code. 
 
 Once you are satisfied that your data is looking good, it is time to upload it. Here is how:
 
