@@ -467,6 +467,28 @@ ufo_data.append(state)
 
 --- /collapse ---
 
+--- collapse ---
+---
+title: My chart isn't displaying
+---
+
+Check that you have included the code to display the chart on the screen:
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 1
+line_highlights: 
+---
+chart.render()
+
+--- /code ---
+
+
+--- /collapse ---
+
 You might find a bug not listed here. Can you figure out how to fix it?
 
 **Tip:** Find the example project that is most similar to yours and carefully study the code that has been used to make it work. Trace it through carefully, following the sequence that will take place when the code is run. This can help you spot things that you might have missed in your own program. 
