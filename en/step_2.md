@@ -48,7 +48,7 @@ Sharing your data visualisation is a great way to express something about yourse
 
 --- task ---
 
-Select the correct **starter project** for your chosen data visualisation. 
+Select the correct **starter project** for your chosen data visualisation. Trinket will open in a new window. Select **remix** to create your own copy of the project.
 
 The ISS expedition [starter project](https://trinket.io/python/21eb7fb833){:target="_blank"}.
 
@@ -75,7 +75,36 @@ If you are using your own data set then you will need to use the blank [starter 
 title: Adding your own data set
 ---
 
+Once you have found your own data set you will need to **download** it as a CSV file. 
 
+You should then **open** the file and check it for missing or unusual data.
+
+**Tip 1:** It is a good idea to delete a **whole row** of data if it has sections that are blank. This will help to prevent problems with your code later on. 
+
+**Tip 2:** Look carefully at the data in your CSV file. Can you see any unusual symbols where text should be? If so, you might want to also delete these rows. Another option is to delete the symbols as long as that doesn't change the meaning of the data. 
+
+**Tip 3:** If your data has lots of extra columns that you aren't going to use for your visualisation the it is a good idea to delete them. This will make it easier to navigate and access your data from your code. 
+
+Once you are satisfied that your data is looking good, it is time to upload it. Here is how:
+
+1. Make sure that you have saved your CSV file as a CSV file. If you have been editing it in spreadsheet software then you might have to change the file type to CSV **before** pressing save.
+2. Find the location of your CSV file. It will most likely be in your downloads folder if you downloaded it from a site like Kaggle.
+3. Open the file with notepad (Right-click on the file and choose Open with > Notepad).
+4. Delete the header (top) row of data as you will not need this for your program.
+5. Scroll to the bottom of your file and check that there isn't a blank space at the bottom. If there is, delete it.
+6. Go to File > Save As and save the file as `your-file-name.txt`. You **must** put `.txt` at the end of the file name. 
+7. Go to your starter project in Trinket.
+8. Click on the icon next to the image upload icon, it has a little up arrow on it.
+
+![A screenshot of three icons in Trinket. The left icon is used to add a blank file, the middle icon is used to upload a file and the right icon is used to upload an image.](images/upload.PNG)
+
+9. Find your text file, select it and click on Open. 
+
+**Note:** Your file has the extension `txt`. You can keep it as `txt` and it will work in exactly the same way as the other CSV files that you have used. 
+
+If you wish to change it to `.csv` then you can click the settings icon to the right of the file name and chose the edit button. 
+
+![A screenshot of the settings icon in Trinket.](images/settings-icon.PNG)
 
 --- /collapse ---
 
