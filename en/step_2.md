@@ -2,7 +2,7 @@
 
 Use this step to plan your data visualisation. You can plan by just thinking, tinkering, drawing or writing, or however you like!
 
-![Three screenshots of example projects. The first is showing the ISS with 3 flags attached. The second image shows a chart of data from the Happiness Index project. The third shows data points on the UK showing UFO sightings. ](images/project-examples.PNG)
+![Three screenshots of example projects. The first is showing the ISS with 3 flags attached. The second image shows a chart of data from the Happiness Index project. The third shows data points on the UK showing UFO sightings. ](images/project-examples.png)
 
 ### Why are you making your data visualisation?
 
