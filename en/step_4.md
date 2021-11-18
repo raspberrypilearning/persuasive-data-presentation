@@ -123,13 +123,45 @@ def main():
 
 --- task ---
 
-**Test:**
+**Test:** Run your code and make sure that it does what you expect when the user enters their choice. If your program has multiple options then make sure that you test that **each** option works as expected. 
+
+Finally, ask another person to take a look at your program and provide any feedback on the user interaction element. 
 
 --- /task ---
 
 --- task ---
 
-**Debug:**
+**Debug:** Below are some potential bugs that might occur when working with user interaction:
+
+--- collapse ---
+---
+title: The question doesn't appear when the program runs
+---
+Check that your question and `input()` function have been placed in the correct part of your program. This is typically:
++ in the main part of your code (not inside a function)
++ in a `main()` function
++ in the `setup()` function (if using p5)
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: Nothing happens when the user enters a number
+---
+
+The `input()` function is designed to take whatever a user types and return it as **string**. This means that in your **conditions**, you need to also use string values. You might have a condition that looks like this:
+
+```
+if choice == 1:
+```
+This is checking for the **integer** value: 1 and not the **string** value: 1. To fix this, you can add apostrophise `'` to either side of your number. 
+
+```
+if choice == '1':
+```
+
+
+--- /collapse ---
 
 --- /task ---
 
