@@ -1,4 +1,4 @@
-## Build and test
+## Build and test - Draw or chart
 
 Now it's time to make your data visualisation project.
 
@@ -345,6 +345,34 @@ In this case, `float()` was also used because the data needed to be stored as a 
 
 --- /task ---
 
+--- task ---
+
+**Test:** Show someone else your project and get their feedback. If you are creating charts, are you happy with the type of chart that you have displayed and the data that you have used? If you are adding drawings on a map, are you happy with the shapes that you have chosen? If you were creating another type of visualisation, could it be improved in any way?
+
+--- /task ---
+
+--- task ---
+
+**Debug:** You might find some bugs in your project that you need to fix. Here are some common bugs.
+
+--- collapse ---
+---
+title: It keeps saying 'index out of range'
+---
+
+The `index out of range` error message typically refers to your code trying to access an **item** in a **list** that doesn't exist. 
+
+If your list is linked to a text file:
++ check that your text file doesn't have a blank line at the bottom of it
++ check that the rows in your text file all have the same amount of items (this isn't always needed but in this case, it might be causing a problem)
+
+--- /collapse ---
+
+You might find a bug not listed here. Can you figure out how to fix it?
+
+We love hearing about your bugs and how you fixed them. Use the feedback button at the bottom of this page if you found a different bug in your project.
+
+--- /task ---
 
 
 --- save ---
