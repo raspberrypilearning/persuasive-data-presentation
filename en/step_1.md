@@ -29,7 +29,7 @@ You will:
 ### PROJECT BRIEF: Persuasive data presentation
 <hr style="border-top: 2px solid black;">
 
-Brief explanation of aims of project. 
+Brief explanation of aims of the project. 
 
 Your data visualisation should:
 + Load data from a **text file/CSV**
