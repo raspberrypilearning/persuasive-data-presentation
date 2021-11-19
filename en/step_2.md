@@ -204,7 +204,7 @@ def setup():
 
 --- /code ---
 
-This is the setup code for the drawing and will run only once. This is where you decide the size of your canvas and load any images that you need. This is also where you will load the data from your CSV file. 
+This is the setup code for the drawing and will run only once. This is where you decide the size of your canvas and load any images that you need, including a background image (if required). This is also where you will load the data from your CSV file. 
 
 **Function two**
 
@@ -230,5 +230,14 @@ This should be the last line of code in your program. This starts the drawing pr
 
 --- /task ---
 
+--- task ---
+
+**Test:** Here are some things that you should check before moving on to the next step:
+
++ If your project has a background image, does it load?
++ Does your CSV file contain any blanks, errors or extra line spaces at the bottom?
++ When you run your code, are you getting any errors?
+
+--- /task ---
 
 --- save ---
