@@ -2,8 +2,8 @@
 
 You have reached the end of the [name of path](https://projects.raspberrypi.org/en/pathways/name-of-path) path!
 
-Now you can bring all your ideas to life in Scratch. Try using Scratch to make more cool stuff. If you need a reminder of what you have learned, you can go to the [Scratch guide](https://projects.raspberrypi.org/en/projects/getting-started-scratch).
+Now you can bring all your ideas to life in Python. Try using Python to make more cool stuff. 
 
-[[[scratch-coolest-projects]]]
+[[[python-coolest-projects]]]
 
-Or, you can explore our [other Scratch projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=scratch&curriculum%5B%5D=%201) and try them out.
+Or, you can explore our [other Python projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=python&curriculum%5B%5D=%201) and try them out.
