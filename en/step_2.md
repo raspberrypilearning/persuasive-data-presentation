@@ -188,8 +188,27 @@ from pygal import *
 ---
 title: Setup code for drawing with p5
 ---
-g
+If you are going to be drawing using p5 then you will need to create two functions and to include the `run()` function call. 
 
+**Function one**
+
+```
+def setup():
+```
+
+This is the setup code for the drawing and will run only once. This is where you decide the size of your canvas and load any images that you need. This is also where you will load the data from your CSV file. 
+
+**Function two**
+
+```
+def draw():
+```
+
+This is the code for the drawing and will run repeatedly. This is where you build the image that will appear on the screen. It could be to place images of astronauts onto a background or to place data points on a map. 
+
+**The `run()` function call**
+
+This should be the last line of code in your program. This starts the drawing process. It first calls the `setup()` function, then it repeatedly runs the `draw()` function. 
 
 --- /collapse ---
 
