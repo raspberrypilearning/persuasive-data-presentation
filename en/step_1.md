@@ -9,7 +9,7 @@ A <span style="color: #0faeb0">data visualisation</span> is an interesting way t
 </p>
 
 You will:
-+ Load data from a **text file**
++ Load data from a **text/CSV file**
 + Use **lists** and/or **dictionaries** to store the data
 + **Visualise** the data through a **chart** or **drawing**
 
@@ -32,7 +32,7 @@ You will:
 Brief explanation of aims of project. 
 
 Your data visualisation should:
-+ Load data from a **text file**
++ Load data from a **text file/CSV**
 + Use **lists** and/or **dictionaries** to store the data
 + **Visualise** the data through a **chart** or **drawing**
 

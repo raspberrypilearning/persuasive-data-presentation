@@ -2,37 +2,55 @@
 
 Did you meet the **project brief**? Think about your project and go through the checklist below and check off the ones that apply to your project.
 
-Does your ... have:
+Does your data visualisation:
 
 --- task ---
 
-something
+Load data from a text/CSV file?
 
 --- /task ---
 
 --- task ---
 
-something
-
---- /task ---
-
-
-Your ... could also have:
-
---- task ---
-
-something
+Use **lists** and/or **dictionaries** to store the data?
 
 --- /task ---
 
 --- task ---
 
-something
+**Visualise** the data through a **chart** or **drawing**
 
 --- /task ---
 
+Your data visualisation project could also:
 
-Reflecting about how you made your ... will help you in your future projects.
+--- task ---
+
+Use **unique** shapes to display the data points on a map
+
+--- /task ---
+
+--- task ---
+
+**Analyse** the data using mathematical formulas before displaying it in a chart or drawing
+
+--- /task ---
+
+--- task ---
+
+Allow the user to **input** different options for what they would like to see
+
+--- /task ---
+
+## Sharing your work
+
+--- task ---
+
+Did you share your work with others in an online gallery?
+
+--- /task ---
+
+Reflecting about how you made your data visualisation project will help you in your future projects.
 
 Answer the questions below by drawing, writing, typing in a document, talking to someone, or in your own creative way that works best for you.
 
@@ -50,16 +68,13 @@ What cool new thing(s) did you learn?
 
 --- task ---
 
-<mark> some ideas, delete as needed </mark> Mistakes are the "portals of discovery" (James Joyce, Ulysses). 
-The Nobel Prize-winning physicist Niels Bohr said, “An expert is a person who has made all the mistakes that can be made”.
-Mistakes are powerful.
-Mistakes are empowering. 
+Mistakes are the "portals of discovery" (James Joyce, Ulysses). 
 
-What mistakes did you make and how did they help you create your ... ?
+What mistakes did you make and how did they help you create your data visualisation project?
 
 --- /task ---
 
-### Now you are (the author of a digital book)!
+### Now you know how to create your own data visualisation!
 
 Take a moment to celebrate what you have made.
 
@@ -68,6 +83,4 @@ Take a moment to celebrate what you have made.
 Where will you take your new powers? What will you make next?
 
 --- /task ---
-
-![scratch cat in at party hat](images/reflect.png)
 
