@@ -50,25 +50,25 @@ Sharing your data visualisation is a great way to express something about yourse
 
 Select the correct **starter project** for your chosen data visualisation. Trinket will open in a new window. Select **remix** to create your own copy of the project.
 
-The ISS expedition [starter project](https://trinket.io/python/21eb7fb833){:target="_blank"}.
+The **ISS expedition** [starter project](https://trinket.io/python/21eb7fb833){:target="_blank"}.
 
-The Maritime Piracy [starter project](https://trinket.io/python/62af00db94){:target="_blank"}.
+The **Maritime Piracy** [starter project](https://trinket.io/python/62af00db94){:target="_blank"}.
 
-The UFO tracker [starter project](https://trinket.io/python/3ea4e1440c){:target="_blank"}.
+The **UFO tracker** [starter project](https://trinket.io/python/3ea4e1440c){:target="_blank"}.
 
-The World happiness index [starter project](https://trinket.io/python/d9f19977c1){:target="_blank"}.
+The **World happiness index** [starter project](https://trinket.io/python/d9f19977c1){:target="_blank"}.
 
-The Dog breed characteristics [starter project](https://trinket.io/python/e0b08a10f4){:target="_blank"}.
+The **Dog breed characteristics** [starter project](https://trinket.io/python/e0b08a10f4){:target="_blank"}.
 
-The Shark attack incidents [starter project](https://trinket.io/python/0f11ace963){:target="_blank"}.
+The **Shark attack incidents** [starter project](https://trinket.io/python/0f11ace963){:target="_blank"}.
 
-The Bechdel Test Scores [starter project](https://trinket.io/python/2affa12e55){:target="_blank"}.
+The **Bechdel Test Scores** [starter project](https://trinket.io/python/2affa12e55){:target="_blank"}.
 
-The Pokemon card data [starter project](https://trinket.io/python/002f48dc17){:target="_blank"}.
+The **Pokemon card data** [starter project](https://trinket.io/python/002f48dc17){:target="_blank"}.
 
 **Using your own data set**
 
-If you are using your own data set then you will need to use the blank [starter project](https://trinket.io/python/6d2dd368b5){:target="_blank"}. You will need to add in your own data set. 
+If you are using your own data set then you will need to use the blank [starter project](https://trinket.io/python/6d2dd368b5){:target="_blank"}. You will also need to **add** in your own data set. 
 
 --- collapse ---
 ---
@@ -105,6 +105,41 @@ Once you are satisfied that your data is looking good, it is time to upload it. 
 If you wish to change it to `.csv` then you can click the settings icon to the right of the file name and chose the edit button. 
 
 ![A screenshot of the settings icon in Trinket.](images/settings-icon.png)
+
+--- /collapse ---
+
+--- /task ---
+
+### Set up your project
+
+--- task ---
+
+Add in the **import** statements that you will need for your project.
+
+--- collapse ---
+---
+title: Using p5 to draw shapes
+---
+
+
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: Converting longitude and latitude data to XY coordinates
+---
+
+
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: Using pygal to create charts
+---
+
+
 
 --- /collapse ---
 
