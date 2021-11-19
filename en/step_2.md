@@ -34,11 +34,11 @@ The **purpose** of your data visualisation could be to:
 
 --- task ---
 
-Think about who you will make your data visualisation for (your audience).
+Think about who you will make your data visualisation for (your **audience**).
 
-What is the significance of your visualisation? Does it highlight something specific about the world around us?
+What is the **significance** of your visualisation? Does it highlight something specific about the world around us?
 
-Will the colours, shapes, images or charts mean something special to you or your audience?
+Will the colours, shapes, images or charts mean **something special** to you or your audience?
 
 Sharing your data visualisation is a great way to express something about yourself, your interests or your culture.
 
@@ -121,7 +121,21 @@ Add in the **import** statements that you will need for your project.
 title: Using p5 to draw shapes
 ---
 
+If you are going to be drawing shapes using p5 then you will need to include the import statement at the top of your code:
 
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 1
+line_highlights: 
+---
+from p5 import *
+
+--- /code ---
+
+The import statement imports **all** of the code from the `p5.py` file that is also in your Trinket window.
 
 --- /collapse ---
 
@@ -130,7 +144,21 @@ title: Using p5 to draw shapes
 title: Converting longitude and latitude data to XY coordinates
 ---
 
+If your CSV file includes longitude and latitude data then you can use this to place objects on a world map. The file `xy.py` has been created to allow you to convert the latitude and longitude data to XY coordinates that can be used in your program. 
 
+To use the `xy.py` file, you will need the following import statement at the top of your code:
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 1
+line_highlights: 
+---
+from xy import get_xy_coords
+
+--- /code ---
 
 --- /collapse ---
 
@@ -139,7 +167,18 @@ title: Converting longitude and latitude data to XY coordinates
 title: Using pygal to create charts
 ---
 
+If you project requires you to create graphs and charts then you will need to use **pygal**. The following line of code imports **pygal** into your program:
 
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 1
+line_highlights: 
+---
+from pygal import *
+--- /code ---
 
 --- /collapse ---
 
