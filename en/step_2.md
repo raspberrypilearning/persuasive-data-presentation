@@ -68,7 +68,7 @@ The **Pokemon card data** [starter project](https://trinket.io/python/002f48dc17
 
 **Using your own data set**
 
-If you are using your own data set then you will need to use the blank [starter project](https://trinket.io/python/6d2dd368b5){:target="_blank"}. You will also need to **add** in your own data set. 
+If you are using your own data set then you will need to use the blank [starter project](https://trinket.io/python/9834b55047){:target="_blank"}. You will also need to **add** in your own data set. 
 
 --- collapse ---
 ---
@@ -114,7 +114,7 @@ If you wish to change it to `.csv` then you can click the settings icon to the r
 
 --- task ---
 
-Add in the **import** statements that you will need for your project.
+### Add in your import statements
 
 --- collapse ---
 ---
@@ -167,7 +167,7 @@ from xy import get_xy_coords
 title: Using pygal to create charts
 ---
 
-If you project requires you to create graphs and charts then you will need to use **pygal**. The following line of code imports **pygal** into your program:
+If your project requires you to create graphs and charts then you will need to use **pygal**. The following line of code imports **pygal** into your program:
 
 --- code ---
 ---
@@ -179,6 +179,17 @@ line_highlights:
 ---
 from pygal import *
 --- /code ---
+
+--- /collapse ---
+
+### Additional setup code
+
+--- collapse ---
+---
+title: Setup code for drawing with p5
+---
+
+
 
 --- /collapse ---
 
