@@ -192,17 +192,33 @@ If you are going to be drawing using p5 then you will need to create two functio
 
 **Function one**
 
-```
+--- code ---
+---
+language: python
+filename: main.py - setup()
+line_numbers: true
+line_number_start: 
+line_highlights: 
+---
 def setup():
-```
+
+--- /code ---
 
 This is the setup code for the drawing and will run only once. This is where you decide the size of your canvas and load any images that you need. This is also where you will load the data from your CSV file. 
 
 **Function two**
 
-```
+--- code ---
+---
+language: python
+filename: main.py - draw()
+line_numbers: true
+line_number_start: 
+line_highlights: 
+---
 def draw():
-```
+
+--- /code ---
 
 This is the code for the drawing and will run repeatedly. This is where you build the image that will appear on the screen. It could be to place images of astronauts onto a background or to place data points on a map. 
 
