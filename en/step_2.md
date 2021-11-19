@@ -235,8 +235,7 @@ This should be the last line of code in your program. This starts the drawing pr
 **Test:** Here are some things that you should check before moving on to the next step:
 
 + If your project has a background image, does it load?
-+ Does your CSV file contain any blanks, errors or extra line spaces at the bottom?
-+ When you run your code, are you getting any errors?
++ Does your CSV file contain any blanks, errors or extra line spaces at the bottom? If so, you will need to remove them.
 
 --- /task ---
 
