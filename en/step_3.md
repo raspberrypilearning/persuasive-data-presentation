@@ -486,6 +486,7 @@ chart.render()
 
 --- /code ---
 
+You may also need to check that you are converting numerical values to `float()` for decimal numbers or `int()` for whole numbers in your code.  
 
 --- /collapse ---
 

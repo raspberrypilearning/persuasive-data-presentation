@@ -14,6 +14,6 @@ To get a link go to the **Share** menu button in the upper-right of your **Trink
 
 Inspire the Raspberry Pi Foundation community with your project!
 
-THIS NEEDS SORTING
+To submit your project to our ['Persuasive Data Presentation - Community'](https://wke.lt/w/s/Pmjl0o){:target="_blank"} studio, please complete [this form](https://form.raspberrypi.org/f/community-project-submissions){:target="_blank"}.
 
 --- /task ---

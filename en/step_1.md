@@ -35,11 +35,12 @@ Your data visualisation should:
 + Load data from a **text file/CSV**
 + Use **lists** and/or **dictionaries** to store the data
 + **Visualise** the data through a **chart** or **drawing**
++ Allow the user to **input** different options for what they would like to see
 
 Your data visualisation could:
 + Use **unique** shapes to display the data points on a map
 + **Analyse** the data using mathematical formulas before displaying it in a chart or drawing
-+ Allow the user to **input** different options for what they would like to see
+
 
 </div>
 
