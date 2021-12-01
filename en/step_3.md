@@ -25,7 +25,7 @@ Does your idea require a drawing to appear on the screen based on data in a text
 
 Think about the steps that you will need to take in order to be successful in your project. Will you need to display a chart or an image? What skills will you need to make that happen?
 
-![A screenshot of the maritime piracy project. A map shows the locations of piracy events that have taken place in 2020, each is represented by a blue dot.](images/piracy-map.PNG)
+![A screenshot of the volcano erruptions project. A map shows the locations of volcano erruptions that have taken place since 2010, each is represented by a red dot.](images/volcano-map.PNG)
 
 --- task ---
 
@@ -110,7 +110,7 @@ title: Load data into a list of lists (a 2D list)
 ---
 A list of lists is often called a 2D list. When data is stored in a CSV file, each item in a line (row) is separated by a comma `,`. 
 
-![A screenshot of a text file. The text file contains maritime piracy data. Each row of data has a date, the longitude, the latitude and the location of the piracy event.](images/text-file.PNG)
+![A screenshot of a text file. The text file contains volcano eruption data. Each row of data has a date, the longitude, the latitude and the location of the volcano eruption.](images/text-file.PNG)
 
 You can use this comma to create a list of the items for each line. A code snippet for this can be seen below at **line 5**:
 
@@ -169,9 +169,9 @@ print(my_text_file)
 ---
 title: Load data into a list of dictionaries
 ---
-Each line (row) from a CSV file can be stored in a **dictionary**. The CSV file below contains data on maritime piracy events that occurred in 2020. Each line is a new event. Each event has the date, longitude, latitude and location information. 
+Each line (row) from a CSV file can be stored in a **dictionary**. The CSV file below contains data on volcano eruptions that have taken place since 2010. Each line is a new eruption. Each eruption has the date, longitude, latitude and location information, as well as other things. 
 
-![A screenshot of a text file. The text file contains maritime piracy data. Each row of data has a date, the longitude, the latitude and the location of the piracy event.](images/text-file.PNG)
+![A screenshot of a text file. The text file contains volcano eruption data. Each row of data has a date, the longitude, the latitude and the location of the volcano eruption.](images/text-file.PNG)
 
 If this data was stored in a 2D list then you would need to know the `index` values for the data in order to access it. With a **dictionary**, you just need to know the `key`. This is the keyword used to represent the data held for each event. In this example, the keys are `date`, `longitude`, `latitude` and `location`.
 
@@ -185,18 +185,18 @@ line_numbers: true
 line_number_start: 1
 line_highlights: 
 ---
-  piracy_events = [] # Initialise the list to store the piracy events
+  volcano_eruptions = [] # Initialise the list to store the eruptions
   
   with open(file_name) as f:
     for line in f:
       info = line.split(',') # Split the line into a list
-      piracy_dict = { # Create a dictionary for the event
+      volcano_dict = { # Create a dictionary for the event
         'date': info[0],
         'longitude': info[1],
         'latitude': info[2],
         'location': info[3]
       }
-      piracy_events.append(piracy_dict) # Store dictionary in a list
+      volcano_eruptions.append(volcano_dict) # Store dictionary in a list
 
 --- /code ---
 

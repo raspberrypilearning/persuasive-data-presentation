@@ -23,16 +23,17 @@ You will:
 
 --- /task ---
 
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+<span style="color: #0faeb0">UFO</span> stands for Unidentified Flying Object. It could be any object in the sky that seems out of place and cannot be identified. It doesn't mean that it is proof of aliens, though some people believe this to be true. 
+</p>
 
 <div style="border-top: 15px solid #f3524f; background-color: whitesmoke; margin-bottom: 20px; padding: 10px;">
 
 ### PROJECT BRIEF: Persuasive data presentation
-<hr style="border-top: 2px solid black;">
-
-Brief explanation of aims of the project. 
+<hr style="border-top: 2px solid black;"> 
 
 Your data visualisation should:
-+ Load data from a **text file/CSV**
++ Load data from a **text file/CSV** 
 + Use **lists** and/or **dictionaries** to store the data
 + **Visualise** the data through a **chart** or **drawing**
 + Allow the user to **input** different options for what they would like to see
@@ -60,7 +61,7 @@ Your data visualisation could:
 <iframe src="https://trinket.io/embed/python/0507433548?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
-**2020 Maritime piracy locations:** [See inside](https://trinket.io/python/2164174e96){:target="_blank"}
+**Volcano eruptions:** [See inside](https://trinket.io/python/2164174e96){:target="_blank"}
 
 <div class="trinket">
 <iframe src="https://trinket.io/embed/python/2164174e96?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
