@@ -25,7 +25,7 @@ Does your idea require a drawing to appear on the screen based on data in a text
 
 Think about the steps that you will need to take in order to be successful in your project. Will you need to display a chart or an image? What skills will you need to make that happen?
 
-![A screenshot of the volcano erruptions project. A map shows the locations of volcano erruptions that have taken place since 2010, each is represented by a red dot.](images/volcano-map.PNG)
+![A screenshot of the volcano eruptions project. A map shows the locations of volcano eruptions that have taken place since 2010, each is represented by a red dot.](images/volcano-map.PNG)
 
 --- task ---
 
