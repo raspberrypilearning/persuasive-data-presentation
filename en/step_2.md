@@ -17,7 +17,7 @@ The **purpose** of your data visualisation could be to:
 + show the different **expeditions** that have taken place on the **ISS**.
 + demonstrate the **most intelligent dog** breeds. 
 + classify the different types of **UFO sightings** and where they are mostly located.
-+ show areas around the world that experience **maritime piracy events**.
++ show areas around the world that have experienced **volcano eruptions**.
 + discover the areas around the world that are the **best places to live** (according to the happiness index)
 + show the most powerful **pokemon** characters.
 + analyse locations that experience the highest levels of **shark attacks**. 
@@ -52,7 +52,7 @@ Select the correct **starter project** for your chosen data visualisation. Trink
 
 The **ISS expedition** [starter project](https://trinket.io/python/21eb7fb833){:target="_blank"}.
 
-The **Maritime Piracy** [starter project](https://trinket.io/python/62af00db94){:target="_blank"}.
+The **Volcano Eruptions** [starter project](https://trinket.io/python/62af00db94){:target="_blank"}.
 
 The **UFO tracker** [starter project](https://trinket.io/python/3ea4e1440c){:target="_blank"}.
 
