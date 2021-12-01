@@ -23,13 +23,14 @@ You will:
 
 --- /task ---
 
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+<span style="color: #0faeb0">UFO</span> stands for Unidentified Flying Object. It could be any object in the sky that seems out of place and cannot be identified. It doesn't necessarily mean that aliens are real!
+</p>
 
 <div style="border-top: 15px solid #f3524f; background-color: whitesmoke; margin-bottom: 20px; padding: 10px;">
 
 ### PROJECT BRIEF: Persuasive data presentation
-<hr style="border-top: 2px solid black;">
-
-Brief explanation of aims of the project. 
+<hr style="border-top: 2px solid black;"> 
 
 Your data visualisation should:
 + Load data from a **text file/CSV** 
