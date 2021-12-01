@@ -32,7 +32,7 @@ You will:
 Brief explanation of aims of the project. 
 
 Your data visualisation should:
-+ Load data from a **text file/CSV**
++ Load data from a **text file/CSV** 
 + Use **lists** and/or **dictionaries** to store the data
 + **Visualise** the data through a **chart** or **drawing**
 + Allow the user to **input** different options for what they would like to see
