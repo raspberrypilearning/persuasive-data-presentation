@@ -22,6 +22,12 @@ Use **lists** and/or **dictionaries** to store the data?
 
 --- /task ---
 
+--- task ---
+
+Allow the user to **input** different options for what they would like to see
+
+--- /task ---
+
 Your data visualisation project could also:
 
 --- task ---
@@ -33,12 +39,6 @@ Use **unique** shapes to display the data points on a map
 --- task ---
 
 **Analyse** the data using mathematical formulas before displaying it in a chart or drawing
-
---- /task ---
-
---- task ---
-
-Allow the user to **input** different options for what they would like to see
 
 --- /task ---
 

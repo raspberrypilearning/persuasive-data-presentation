@@ -119,6 +119,37 @@ def main():
 
 --- /collapse ---
 
+--- collapse ---
+---
+title: Using a while loop to repeat questions
+---
+
+You can use a **while loop** to run a piece of code **while** a **condition** is **True**. In the example below, as long as the user **does not** choose `c` or `f`, the loop will continue to run. You might find this helpful to use in your own project.
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: false
+line_number_start:
+line_highlights:
+---
+def menu():
+  choice = '' # Start with a wrong answer for choice.
+  
+  while choice != '1' and choice != '2': # Keep asking the user for the right answer
+    choice = input('Please enter 1 to encode/decode text, or 2 to perform frequency analysis:' )
+
+    if choice == '1':
+      do_something()
+
+    elif  choice == '2':
+      do_something_else()
+     
+--- /code ---
+
+--- /collapse ---
+
 --- /task ---
 
 --- task ---
