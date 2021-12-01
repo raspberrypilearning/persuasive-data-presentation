@@ -20,7 +20,7 @@ The **purpose** of your data visualisation could be to:
 + show areas around the world that have experienced **volcano eruptions**.
 + discover the areas around the world that are the **best places to live** (according to the happiness index)
 + show the most powerful **pokemon** characters.
-+ analyse locations that experience the highest levels of **shark attacks**. 
++ analyse the **caffeine** levels in popular drinks. 
 + find out the **movies** that have the best **Bechdel Test scores** (this is a data set that looks into how women are represented in movies)  
 + highlight a topic or hobby that is **important** to you.
 
@@ -60,7 +60,7 @@ The **World happiness index** [starter project](https://trinket.io/python/d9f199
 
 The **Dog breed characteristics** [starter project](https://trinket.io/python/e0b08a10f4){:target="_blank"}.
 
-The **Shark attack incidents** [starter project](https://trinket.io/python/0f11ace963){:target="_blank"}.
+The **Caffeinated drinks** [starter project](https://trinket.io/python/0f11ace963){:target="_blank"}.
 
 The **Bechdel Test Scores** [starter project](https://trinket.io/python/2affa12e55){:target="_blank"}.
 
