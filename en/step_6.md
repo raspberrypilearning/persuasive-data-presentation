@@ -7,7 +7,7 @@ You could:
 - Think of other ways to present your data. Could you have different shapes? Could you use an image?
 - Add other images to your background to give it more detail
 
-Each example project in the [Introduction](.) has a ‘See Inside’ link for you to open the project in Trinket and look at the code to get ideas and see how they work.
+Each example project in the [Introduction](https://projects.raspberrypi.org/en/projects/persuasive-data-presentation/0) has a ‘See Inside’ link for you to open the project in Trinket and look at the code to get ideas and see how they work.
 
 ### Get inspiration
 
