@@ -37,7 +37,7 @@ The **purpose** of your data visualisation could be to:
 ![A snippet of John Snow's cholera map showing infections in red.](images/john-snow-map.png){:width="200px"}
 </div>
 </div>
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;"></p>
+
 
 ### Who is it for?
 
