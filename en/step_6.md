@@ -9,9 +9,9 @@ You could:
 
 Each example project in the [Introduction](.) has a ‘See Inside’ link for you to open the project in Trinket and look at the code to get ideas and see how they work.
 
-**This needs to be setup**
+### Get inspiration
 
-Take a look at some of the data visualisations created by community members in the Raspberry Pi Foundation’s studio [Persuasive Data Presentation Projects]().
+Take a look at some of the data visualisations created by community members in the Raspberry Pi Foundation’s studio [Persuasive Data Presentation Projects](https://wke.lt/w/s/Pmjl0o){:target="_blank"}.
 
 --- save ---
 
