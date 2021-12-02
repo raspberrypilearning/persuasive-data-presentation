@@ -30,9 +30,7 @@ The **purpose** of your data visualisation could be to:
 
 --- /task ---
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-In <span style="color: #0faeb0">1854</span> a Doctor called John Snow created a data visualisation of <span style="color: #0faeb0">cholera outbreaks</span>. This enabled him to determined that the disease was spreading from a local water pump. His findings saved the lives of people living in the area that frequently used the pump for drinking water.
-</p>
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">In <span style="color: #0faeb0">1854</span>, the physician John Snow believed that the the outbreak of <span style="color: #0faeb0">cholera</span> in the Soho area of London was being caused by a contaminated water supply — contrary to the commonly held belief that cholera was caused by 'bad air' in the area. To help prove his theory, Snow mapped the deaths from cholera in the area. The map clearly showed the deaths were centred around Broad Street and residents there were getting their water from the pump on this street. By visualising the data in this way, he was able to convince the local council to disable the water pump. It was widely recognised that this visualisation helped to save many lives.</p>
 
 ### Who is it for?
 
