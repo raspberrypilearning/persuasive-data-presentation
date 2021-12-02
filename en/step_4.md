@@ -13,9 +13,17 @@ Look at the [**ISS expedition project**](https://trinket.io/python/822033c5b6){:
 
 Could your project do something similar?
 
+--- /task ---
+
+--- task ---
+
 Look at the [**UFO tracker**](https://trinket.io/python/cb376de667){:target="_blank"} project. This project allows the user to click on the different shapes that are displayed on the map. When the user clicks on an object, a message is shown to say the **type** of UFO that was spotted in that location. 
 
 Could you use this idea to help you add user interaction to your project?
+
+--- /task ---
+
+--- task ---
 
 Explore the [**World Happiness Index**](https://trinket.io/python/0507433548){:target="_blank"} project. This asks the user to choose what type of data is displayed to them in a graph.
 
