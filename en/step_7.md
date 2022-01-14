@@ -18,13 +18,13 @@ Use **lists** and/or **dictionaries** to store the data?
 
 --- task ---
 
-**Visualise** the data through a **chart** or **drawing**
+**Visualise** the data through a **chart** or **drawing**?
 
 --- /task ---
 
 --- task ---
 
-Allow the user to **input** different options for what they would like to see
+Allow the user to **input** different options for what they would like to see?
 
 --- /task ---
 
