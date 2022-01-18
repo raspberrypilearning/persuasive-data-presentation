@@ -17,7 +17,7 @@ The **purpose** of your data visualisation could be to:
 + Show the different **expeditions** that have taken place on the **ISS**
 + Demonstrate the **most intelligent dog** breeds 
 + Classify the different types of **UFO sightings** and where they are mostly located
-+ Show areas around the world that have experienced **volcano eruptions**
++ Show areas around the world that have experienced **volcanic eruptions**
 + Discover the areas around the world that are the **best places to live** (according to the happiness index)
 + Show the most powerful **pokemon** characters
 + Analyse the **caffeine** levels in popular drinks 
@@ -61,7 +61,7 @@ Select the correct **starter project** for your chosen data visualisation. Trink
 
 The **ISS expedition** [starter project](https://trinket.io/python/21eb7fb833){:target="_blank"}.
 
-The **Volcano Eruptions** [starter project](https://trinket.io/python/62af00db94){:target="_blank"}.
+The **Volcanic eruptions** [starter project](https://trinket.io/python/62af00db94){:target="_blank"}.
 
 The **UFO tracker** [starter project](https://trinket.io/python/3ea4e1440c){:target="_blank"}.
 
@@ -71,7 +71,7 @@ The **Dog breed characteristics** [starter project](https://trinket.io/python/e0
 
 The **Caffeinated drinks** [starter project](https://trinket.io/python/0f11ace963){:target="_blank"}.
 
-The **Bechdel Test Scores** [starter project](https://trinket.io/python/2affa12e55){:target="_blank"}.
+The **Bechdel Test scores** [starter project](https://trinket.io/python/2affa12e55){:target="_blank"}.
 
 The **Pokemon card data** [starter project](https://trinket.io/python/002f48dc17){:target="_blank"}.
 
