@@ -83,8 +83,8 @@ def mouse_pressed():
     print('A triangle-shaped UFO was spotted here!')
   elif pixel_colour == light:
     print('A UFO made of light was spotted here!')
-  elif pixel_colour == disk:
-    print('A disk-shaped UFO was spotted here!')
+  elif pixel_colour == disc:
+    print('A disc-shaped UFO was spotted here!')
   elif pixel_colour == misc:
     print('A random-shaped UFO was spotted here!')
   elif pixel_colour == cylinder:
