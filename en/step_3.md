@@ -167,7 +167,7 @@ print(my_text_file)
 ---
 title: Load data into a list of dictionaries
 ---
-Each line (row) from a CSV file can be stored in a **dictionary**. The CSV file below contains data on volcano eruptions that have taken place since 2010. Each line is a new eruption. Each eruption has the date, longitude, latitude, and location information, as well as other things. 
+Each line (row) from a CSV file can be stored in a **dictionary**. The CSV file below contains data on volcanic eruptions that have taken place since 2010. Each line is a new eruption. Each eruption has the date, longitude, latitude, and location information, as well as other things. 
 
 ![A screenshot of a text file. The text file contains volcano eruption data. Each row of data has a date, the longitude, the latitude, and the location of the volcano eruption.](images/text-file.PNG)
 
@@ -202,7 +202,7 @@ line_highlights:
 
 --- collapse ---
 ---
-title: Removing the \n
+title: Remove the \n
 ---
 When you look at a text file in its raw form, there is no `\n` at the end of each line. However, when you load each line from a text file you will see that a `\n` appears. This is because `\n` means **add a new line**. Without this, all of the lines of text would be on one, very long line. 
 
@@ -348,7 +348,7 @@ In this case, `float()` was also used because the data needed to be stored as a 
 **Test:** Show someone else your project and get their feedback. 
 + If you are creating charts, are you happy with the type of chart that you have displayed and the data that you have used? 
 + If you are adding drawings on a map, are you happy with the shapes that you have chosen? 
-+ If you were creating another type of visualisation, could it be improved in any way?
++ If you are creating another type of visualisation, could it be improved in any way?
 
 --- /task ---
 
