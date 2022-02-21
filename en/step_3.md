@@ -253,7 +253,7 @@ language: python
 filename: 
 line_numbers: false
 line_number_start: 
-line_highlights: 1, 3
+line_highlights: 1, 3, 17-19
 ---
 from random import randint
 
