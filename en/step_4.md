@@ -25,11 +25,13 @@ Could you use this idea to help you add user interaction to your project?
 
 --- task ---
 
+<mark>change text here if we change graph project</mark>
+
 Explore the [**World happiness index**](https://trinket.io/python/0507433548){:target="_blank"} project. This asks the user to choose what type of data is displayed to them in a graph.
 
 Could you give your user options about the type of data they want to see?
 
-Think about your own project and the data that you want your users to be able to explore. Draw inspiration from the example projects and **think about how your user could interact with the project**. 
+Think about your own project and the data that you want your users to be able to explore. Draw inspiration from the example projects and think about how your user could interact with the project. 
 
 --- /task ---
 
@@ -39,7 +41,7 @@ Add user interaction to your project. Here's a reminder of some of the skills th
 
 --- collapse ---
 ---
-title: Interaction with the mouse
+title: Choose what happens when a specific colour is clicked
 ---
 
 You can create a `mouse_pressed()` function to work with the `p5` library. This allows a task to be carried out when the mouse is pressed. 
@@ -50,7 +52,7 @@ The code below detects the colour of the pixel that has been clicked with the mo
 ---
 language: python
 filename: main.py
-line_numbers: true
+line_numbers: false
 line_number_start: 1
 line_highlights: 
 ---
@@ -65,9 +67,9 @@ An example of this happening can be seen in the **UFO sightings** project:
 --- code ---
 ---
 language: python
-filename: main.py
-line_numbers: true
-line_number_start: 101
+filename: main.py - mouse_pressed()
+line_numbers: false
+line_number_start: 
 line_highlights: 
 ---
 def mouse_pressed():
@@ -96,6 +98,20 @@ def mouse_pressed():
 
 --- /collapse ---
 
+<mark>Add a collapse explaining how to look up a colour in a dictionary from a colour:data key pair, when the mouse is clicked, as in the mapping data project
+
+e.g.
+
+def mouse_pressed():
+# Put code to run when the mouse is pressed here
+  pixel_colour = color(get(mouse_x, mouse_y))
+  if pixel_colour in colours:
+    facts = colours[pixel_colour]
+    print(facts['name'])
+    print(facts['happiness rank'])
+  else:
+    print('Region not detected')</mark>
+
 --- collapse ---
 ---
 title: Interaction based on user input
@@ -114,14 +130,21 @@ Here is the code to ask a question; this was used in the **Happiness index proje
 ---
 language: python
 filename: main.py - main()
-line_numbers: true
-line_number_start: 15
-line_highlights: 4-6
+line_numbers: false
+line_number_start: 1
+line_highlights:
 ---
 def main():
   print('World Happiness Index Data 2019')
   
-  choice = input('What would you like to see? \n1. How happy are countries overall? \n2. How much does national wealth matter? \n3. How well does your country look after the disadvantaged? \n4.How generous are people? \n5. How fair and honest are people? \n6. How much freedom do you have? \nChoice:')
+  choice = input('''What would you like to see?
+  1. How happy are countries overall?
+  2. How much does national wealth matter?
+  3. How well does your country look after the disadvantaged?
+  4. How generous are people?
+  5. How fair and honest are people?
+  6. How much freedom do you have?
+  Choice: ''')
   
 --- /code ---
 
@@ -206,7 +229,7 @@ if choice == '1':
 title: It is not displaying the correct data when I click the mouse
 ---
 
-The `mouse_pressed()` function that you have created is designed to check the **pixel colour** that has been clicked on the screen. If you have two or more objects that are the same colour, then your program will display the data for the first condition in the sequence that is true. 
+The `mouse_pressed()` function that you have created is designed to check the **pixel colour** that has been clicked on the screen. If you have two or more objects that are the same colour, then your program will display the data for the first condition in the sequence that is false. 
 
 If you would like your program to display different data for each item that the user clicks, then they must all be a **different colour**. You can see an example of how to code this for all of your data points here:
 
@@ -214,7 +237,7 @@ If you would like your program to display different data for each item that the 
 ---
 language: python
 filename: main.py - draw_data()
-line_numbers: true
+line_numbers: false
 line_number_start: 1
 line_highlights: 11
 ---

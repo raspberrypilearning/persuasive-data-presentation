@@ -10,7 +10,21 @@ Use this step to plan your data visualisation. You can plan by just thinking, ti
 
 Think about the **purpose** of the data visualisation you are creating. There are **eight** datasets to choose from as starter projects **or** you can find your own data set on a topic that you would like to highlight to others. 
 
-A good place to explore other data sets is [Kaggle](https://www.kaggle.com/datasets){:target="_blank"}. 
+Use a dataset that is important to you. The datasets in the starter projects are:
++ ISS expeditions 
++ Volcanic eruptions
++ UFO tracker
++ World happiness index
++ Dog breed characteristics
++ Caffeinated drinks
++ Bechdel Test scores
++ Pokemon card data
+
+--- collapse ---
+
+---
+title: Ideas for your data visualisation
+---
 
 The **purpose** of your data visualisation could be to:
 
@@ -21,12 +35,13 @@ The **purpose** of your data visualisation could be to:
 + Discover the areas around the world that are the **best places to live** (according to the happiness index)
 + Show the most powerful **pokemon** characters
 + Analyse the **caffeine** levels in popular drinks 
-+ Find out the **movies** that have the best **Bechdel Test scores** (this is a data set that looks into how women are represented in movies)  
-+ Highlight a topic or hobby that is **important** to you
++ Find out the **movies** that have the best **Bechdel Test scores** (this is a data set that looks into how women are represented in movies)
 
-**Tip:** Data visualisations are used quite regularly in news articles as an accessible way to show readers the relevant data related to the article. For example, there might be a map that shows traffic hotspots in your area or the local weather for certain locations. You could spend some time looking at news websites to see if you can get some inspiration there. 
+--- /collapse ---
 
-**Another tip:** If you are going to use your own data set and want to place shapes on a world map then you will need to have data that contains the **longitude** and **latitude** locations for the items that you wish to display. 
+Or you can choose your own, a good place to explore other data sets is [Kaggle](https://www.kaggle.com/datasets){:target="_blank"}. 
+
+**Tip:** If you are going to use your own data set and want to place shapes on a world map then you will need to have data that contains the **longitude** and **latitude** locations for the items that you wish to display. 
 
 --- /task ---
 
@@ -123,34 +138,45 @@ If you wish to change it to `.csv` then you can click the settings icon to the r
 
 --- task ---
 
-### Add in your import statements
+### Add in your import statements and starter code
 
 --- collapse ---
 ---
-title: Using p5 to draw shapes
+title: Use p5 to draw shapes, maps, and images
 ---
 
-If you are going to be drawing shapes using `p5` then you will need to include the import statement at the top of your code:
+If you are going to be drawing shapes using `p5` then you will need to include the import statement at the top of your code. 
+
+The import statement imports **all** of the code from the `p5.py` file that is also in your Trinket window.
+
+To use p5, you will also need to create two functions and to include the `run()` function call. 
+
+**Function one**
 
 --- code ---
 ---
 language: python
 filename: main.py
-line_numbers: true
+line_numbers: false
 line_number_start: 1
-line_highlights: 
+line_highlights: 1-7
 ---
 from p5 import *
 
---- /code ---
+def setup(): # Runs once at the start 
+    size(400, 400) # Choose the size of your canvas
 
-The import statement imports **all** of the code from the `p5.py` file that is also in your Trinket window.
+def draw(): # Runs every frame
+
+run()
+
+--- /code ---
 
 --- /collapse ---
 
 --- collapse ---
 ---
-title: Convert longitude and latitude data to xy coordinates
+title: Use xy to place data on a map
 ---
 
 If your CSV file includes longitude and latitude data, then you can use this to place objects on a world map. The file `xy.py` has been created to allow you to convert the latitude and longitude data to xy coordinates that can be used in your program. 
@@ -161,7 +187,7 @@ To use the `xy.py` file, you will need the following import statement at the top
 ---
 language: python
 filename: main.py
-line_numbers: true
+line_numbers: false
 line_number_start: 1
 line_highlights: 
 ---
@@ -173,7 +199,7 @@ from xy import get_xy_coords
 
 --- collapse ---
 ---
-title: Using pygal to create charts
+title: Use pygal to create charts
 ---
 
 If your project requires you to create graphs and charts then you will need to use **pygal**. The following line of code imports **pygal** into your program:
@@ -182,69 +208,16 @@ If your project requires you to create graphs and charts then you will need to u
 ---
 language: python
 filename: main.py
-line_numbers: true
+line_numbers: false
 line_number_start: 1
 line_highlights: 
 ---
 from pygal import *
 --- /code ---
 
---- /collapse ---
-
-### Additional setup code
-
---- collapse ---
----
-title: Setup code for drawing with p5
----
-If you are going to be drawing using `p5` then you will need to create two functions and to include the `run()` function call. 
-
-**Function one**
-
---- code ---
----
-language: python
-filename: main.py - setup()
-line_numbers: true
-line_number_start: 
-line_highlights: 
----
-def setup():
-
---- /code ---
-
-This is the setup code for the drawing and will run only once. This is where you decide the size of your canvas and load any images that you need, including a background image (if required). This is also where you will load the data from your CSV file. 
-
-**Function two**
-
---- code ---
----
-language: python
-filename: main.py - draw()
-line_numbers: true
-line_number_start: 
-line_highlights: 
----
-def draw():
-
---- /code ---
-
-This is the code for the drawing and will run repeatedly. This is where you build the image that will appear on the screen. It could place images of astronauts onto a background or place data points on a map. 
-
-**The `run()` function call**
-
-This should be the last line of code in your program. This starts the drawing process. It first calls the `setup()` function, then it repeatedly runs the `draw()` function. 
+The import statement imports **all** of the code from the `p5.py` file that is also in your Trinket window.
 
 --- /collapse ---
-
---- /task ---
-
---- task ---
-
-**Test:** Here are some things that you should check before moving on to the next step:
-
-+ If your project has a background image, does it load?
-+ Does your CSV file contain any blanks, errors, or extra line spaces at the bottom? If so, you will need to remove them.
 
 --- /task ---
 

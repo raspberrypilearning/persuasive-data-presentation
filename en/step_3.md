@@ -31,23 +31,173 @@ You have built up some really useful skills. Here is a reminder to help you make
 
 ### Shapes and images
 
+[[[p5-coordinates]]]
+
+[[[processing-add-image]]]
+
 [[[processing-python-ellipse]]]
 
 [[[processing-python-rect]]]
 
 [[[processing-python-triangle]]]
 
-[[[processing-add-image]]]
+[[[processing-python-quad]]]
+
+--- collapse ---
+
+---
+title: Use emoji characters
+---
+
+You can use emoji characters in the p5 text() function to use an emoji to represent your player.
+
+Here’s an example:
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: 
+line_number_start: 
+line_highlights: 
+---
+def setup():
+  size(400, 400)
+  text_align(CENTER, TOP) #Position around the centre
+
+def draw_emoji(emoji, size): #snake
+  text_size(size) #Controls the size of the emoji
+  text(emoji, 200, 200)
+  
+--- /code ---
+
+--- /collapse ---
+
+[[[processing-translation]]]
+
+[[[processing-rotation]]]
+
+<mark> Add a collapse here for using the xy file to convert lat and lon to x and y. Called Placing an shape according to latitude and longitude.</mark>
 
 ### Colours and effects
 
 [[[generic-theory-simple-colours]]]
+
+--- collapse ---
+
+---
+title: Colour in p5
+---
+
+The p5 color() function expects three numbers: one each for red, green, and blue.
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: false
+line_number_start: 1
+line_highlights: 1
+---
+blue = color(50, 70, 206) #Red = 50, Green = 70, Blue = 206
+
+--- /code ---
+
+--- /collapse ---
 
 [[[processing-opacity]]]
 
 [[[processing-stroke]]]
 
 [[[processing-tint]]]
+
+<mark> Add a collapse here for using random and seed to generate different colours for the pins. The colours need storing in a dictionary as keys, mapped to the data to be retrieved, as in mapping-data</mark>
+
+--- collapse ---
+---
+title: Set the background colours when your program starts
+---
+
+Define a new function called `draw_background()` and create a call to it in `draw():`, after a call to `no_stroke()`. 
+
+--- code ---
+---
+language: python
+filename: main.py - draw_background()
+line_numbers: false
+line_number_start: 1
+line_highlights: 1-4
+---
+def draw_background(colour):
+  # Background colour
+  fill(colour)
+  rect(0, 0, 400, 400)
+
+--- /code ---
+
+Then create a call to it in `draw()`:
+
+--- code ---
+---
+language: python
+filename: main.py - draw()
+line_numbers: false
+line_number_start: 1
+line_highlights: 8
+---
+def draw():
+
+  red = color(255,0,0)
+  green = color(0,255,0)
+  blue = color(0,0,255)
+
+  no_stroke()
+  draw_background(red)
+
+--- /code ---
+
+If you want your background to include more colours, you will need to add more parameters.
+
+--- code ---
+---
+language: python
+filename: main.py - draw_background()
+line_numbers: false
+line_number_start: 1
+line_highlights: 1, 6-7
+---
+def draw_background(green, blue):
+  
+  # Background colour
+  fill(blue)
+  rect(0, 0, 400, 200)
+  fill(green)
+  rect(0, 200, 400, 200)
+
+--- /code ---
+
+Then create a call to it in `draw()`:
+
+--- code ---
+---
+language: python
+filename: main.py - draw()
+line_numbers: false
+line_number_start: 1
+line_highlights: 7-8
+---
+def draw():
+
+  red = color(255, 0, 0)
+  green = color(0, 255, 0)
+  blue = color(0, 0, 255)
+
+  no_stroke()
+  draw_background(green, blue)
+
+--- /code ---
+
+--- /collapse ---
 
 ### Load data from text files
 
@@ -179,7 +329,7 @@ The code below shows a **list of dictionaries** being created for the contents o
 ---
 language: python
 filename: main.py
-line_numbers: true
+line_numbers: false
 line_number_start: 1
 line_highlights: 
 ---
