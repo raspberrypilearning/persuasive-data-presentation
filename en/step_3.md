@@ -149,6 +149,66 @@ blue = color(50, 70, 206) #Red = 50, Green = 70, Blue = 206
 
 [[[processing-tint]]]
 
+--- collapse ---
+---
+title: Change the value of one map pin colour
+---
+This example changes the value for red each time the code places a pin:
+
+**Remember** to also define a `colours` dictionary in the main part of your code, typically near the top. 
+
+--- code ---
+---
+language: python
+filename: 
+line_numbers: false
+line_number_start: 
+line_highlights: 1, 9, 17-20
+---
+colours = {}
+
+def draw_data():
+  
+  no_stroke()
+  
+  # Use the lat and long data to calculate the x y coords for the shape
+  
+  red = 255
+  
+  for eruption in volcano_eruptions:
+    longitude = float(eruption['longitude'])
+    latitude = float(eruption['latitude'])
+    region_coords = get_xy_coords(longitude, latitude)
+    region_x = region_coords['x']
+    region_y = region_coords['y']
+    colour = color(red, 255, 255)
+    colours[colour] = eruption
+    draw_volcano(colour, region_x, region_y)
+    red -= 2
+--- /code ---
+
+
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: Change the value of multiple map pin colours
+---
+
+
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: Choose random colours for your map pins
+---
+
+
+
+--- /collapse ---
+
 <mark> Add a collapse here for using random and seed to generate different colours for the pins. The colours need storing in a dictionary as keys, mapped to the data to be retrieved, as in mapping-data</mark>
 
 --- collapse ---
