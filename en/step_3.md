@@ -1,8 +1,8 @@
-## Build and test - Draw or chart
+## Build and test – Draw or chart
 
 Now it's time to make your data visualisation project.
 
-![A screenshot of the ISS expedition project. There is an illustration of the ISS with three flags on top. One flag is Russian, one is for the United States of America and the other is for the United Kingdom.](images/iss-project.PNG)
+![A screenshot of the ISS expedition project. There is an illustration of the ISS with three flags on top. One flag is Russian, one is for the United States of America, and the other is for the United Kingdom.](images/iss-project.PNG)
 
 In order to be successful with a programming project, you need to use **decomposition** skills to break the problem down into smaller, more manageable parts. This means you should take each part at a time and get it working before moving on to the next part. 
 
@@ -31,17 +31,79 @@ You have built up some really useful skills. Here is a reminder to help you make
 
 ### Shapes and images
 
+[[[p5-coordinates]]]
+
+[[[processing-add-image]]]
+
 [[[processing-python-ellipse]]]
 
 [[[processing-python-rect]]]
 
 [[[processing-python-triangle]]]
 
-[[[processing-add-image]]]
+[[[processing-python-quad]]]
+
+--- collapse ---
+
+---
+title: Use emoji characters
+---
+
+You can use emoji characters in the p5 text() function to use an emoji to represent your player.
+
+Here’s an example:
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: 
+line_number_start: 
+line_highlights: 
+---
+def setup():
+  size(400, 400)
+  text_align(CENTER, TOP) #Position around the centre
+
+def draw_emoji(emoji, size): #snake
+  text_size(size) #Controls the size of the emoji
+  text(emoji, 200, 200)
+  
+--- /code ---
+
+--- /collapse ---
+
+[[[processing-translation]]]
+
+[[[processing-rotation]]]
+
+<mark> Add a collapse here for using the xy file to convert lat and lon to x and y. Called Placing an shape according to latitude and longitude.</mark>
 
 ### Colours and effects
 
 [[[generic-theory-simple-colours]]]
+
+--- collapse ---
+
+---
+title: Colour in p5
+---
+
+The p5 color() function expects three numbers: one each for red, green, and blue.
+
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: false
+line_number_start: 1
+line_highlights: 1
+---
+blue = color(50, 70, 206) #Red = 50, Green = 70, Blue = 206
+
+--- /code ---
+
+--- /collapse ---
 
 [[[processing-opacity]]]
 
@@ -49,7 +111,95 @@ You have built up some really useful skills. Here is a reminder to help you make
 
 [[[processing-tint]]]
 
-### Loading data from text files
+<mark> Add a collapse here for using random and seed to generate different colours for the pins. The colours need storing in a dictionary as keys, mapped to the data to be retrieved, as in mapping-data</mark>
+
+--- collapse ---
+---
+title: Set the background colours when your program starts
+---
+
+Define a new function called `draw_background()` and create a call to it in `draw():`, after a call to `no_stroke()`. 
+
+--- code ---
+---
+language: python
+filename: main.py - draw_background()
+line_numbers: false
+line_number_start: 1
+line_highlights: 1-4
+---
+def draw_background(colour):
+  # Background colour
+  fill(colour)
+  rect(0, 0, 400, 400)
+
+--- /code ---
+
+Then create a call to it in `draw()`:
+
+--- code ---
+---
+language: python
+filename: main.py - draw()
+line_numbers: false
+line_number_start: 1
+line_highlights: 8
+---
+def draw():
+
+  red = color(255,0,0)
+  green = color(0,255,0)
+  blue = color(0,0,255)
+
+  no_stroke()
+  draw_background(red)
+
+--- /code ---
+
+If you want your background to include more colours, you will need to add more parameters.
+
+--- code ---
+---
+language: python
+filename: main.py - draw_background()
+line_numbers: false
+line_number_start: 1
+line_highlights: 1, 6-7
+---
+def draw_background(green, blue):
+  
+  # Background colour
+  fill(blue)
+  rect(0, 0, 400, 200)
+  fill(green)
+  rect(0, 200, 400, 200)
+
+--- /code ---
+
+Then create a call to it in `draw()`:
+
+--- code ---
+---
+language: python
+filename: main.py - draw()
+line_numbers: false
+line_number_start: 1
+line_highlights: 7-8
+---
+def draw():
+
+  red = color(255, 0, 0)
+  green = color(0, 255, 0)
+  blue = color(0, 0, 255)
+
+  no_stroke()
+  draw_background(green, blue)
+
+--- /code ---
+
+--- /collapse ---
+
+### Load data from text files
 
 --- collapse ---
 ---
@@ -108,7 +258,7 @@ title: Load data into a list of lists (a 2D list)
 ---
 A list of lists is often called a 2D list. When data is stored in a CSV file, each item in a line (row) is separated by a comma `,`. 
 
-![A screenshot of a text file. The text file contains volcano eruption data. Each row of data has a date, the longitude, the latitude and the location of the volcano eruption.](images/text-file.PNG)
+![A screenshot of a text file. The text file contains volcano eruption data. Each row of data has a date, the longitude, the latitude, and the location of the volcano eruption.](images/text-file.PNG)
 
 You can use this comma to create a list of the items for each line. A code snippet for this can be seen below at **line 5**:
 
@@ -136,7 +286,7 @@ If you run the code above then it will output **the last line** of the CSV file 
 ['29/12/2020', '6.4', '2.733333333', 'Around 94nm South of Brass\n']
 ```
 
-In order to store **all** of the data, you can create a **list of lists**!
+To store **all** of the data, you can create a **list of lists**!
 
 The code below uses the same code as above but now it **appends** the `info` list to the `my_text_file` list on **line 6**. This means that you can now store all of the data from the CSV file. 
 
@@ -167,11 +317,11 @@ print(my_text_file)
 ---
 title: Load data into a list of dictionaries
 ---
-Each line (row) from a CSV file can be stored in a **dictionary**. The CSV file below contains data on volcano eruptions that have taken place since 2010. Each line is a new eruption. Each eruption has the date, longitude, latitude and location information, as well as other things. 
+Each line (row) from a CSV file can be stored in a **dictionary**. The CSV file below contains data on volcanic eruptions that have taken place since 2010. Each line is a new eruption. Each eruption has the date, longitude, latitude, and location information, as well as other things. 
 
-![A screenshot of a text file. The text file contains volcano eruption data. Each row of data has a date, the longitude, the latitude and the location of the volcano eruption.](images/text-file.PNG)
+![A screenshot of a text file. The text file contains volcano eruption data. Each row of data has a date, the longitude, the latitude, and the location of the volcano eruption.](images/text-file.PNG)
 
-If this data was stored in a 2D list then you would need to know the `index` values for the data in order to access it. With a **dictionary**, you just need to know the `key`. This is the keyword used to represent the data held for each event. In this example, the keys are `date`, `longitude`, `latitude` and `location`.
+If this data was stored in a 2D list, then you would need to know the `index` values for the data in order to access it. With a **dictionary**, you just need to know the `key`. This is the keyword used to represent the data held for each event. In this example, the keys are `date`, `longitude`, `latitude`, and `location`.
 
 The code below shows a **list of dictionaries** being created for the contents of a CSV file:
 
@@ -179,7 +329,7 @@ The code below shows a **list of dictionaries** being created for the contents o
 ---
 language: python
 filename: main.py
-line_numbers: true
+line_numbers: false
 line_number_start: 1
 line_highlights: 
 ---
@@ -202,7 +352,7 @@ line_highlights:
 
 --- collapse ---
 ---
-title: Removing the \n
+title: Remove the \n
 ---
 When you look at a text file in its raw form, there is no `\n` at the end of each line. However, when you load each line from a text file you will see that a `\n` appears. This is because `\n` means **add a new line**. Without this, all of the lines of text would be on one, very long line. 
 
@@ -231,7 +381,7 @@ line_highlights: 3
 --- /collapse ---
 
 
-### Accessing data from lists and dictionaries
+### Access data from lists and dictionaries
 
 [[[generic-python-list-index]]]
 
@@ -240,7 +390,7 @@ line_highlights: 3
 title: Access data from a dictionary
 ---
 
-A dictionary has been created to store a ufo sighting:
+A dictionary has been created to store UFO sightings:
 
 --- code ---
 ---
@@ -262,10 +412,10 @@ ufo_dict = {
 Data is stored in a dictionary using a **key**, which is the label or keyword for the data. 
 
 The **keys** in this dictionary are:
-+ date
-+ time
-+ state
-+ country
++ Date
++ Time
++ State
++ Country
 
 If you wanted to find out the **date** for the UFO sighting then you would use this snippet of code:
 
@@ -288,9 +438,9 @@ ufo_dict['date']
 title: Access data from a list of dictionaries
 ---
 
-When you create a list of dictionaries you can loop through the list to find and use the data that you need.
+When you create a list of dictionaries, you can loop through the list to find and use the data that you need.
 
-### Example one - ISS expeditions
+### Example one – ISS expeditions
 
 Here is some example code that was used to find the date of an expedition to the ISS:
 
@@ -313,7 +463,7 @@ Notice how the code `expedition['expedition number']` was used to access the dat
 
 `expedition` is used as a temporary placeholder to loop through the list. At each iteration, `expedition` holds the **current** expedition dictionary. The **key** is then named in the square brackets to access the data. 
 
-### Example two - UFO sightings
+### Example two – UFO sightings
 
 Here is another example that was used to find the latitude and longitude values for UFO sightings. 
 
@@ -348,7 +498,7 @@ In this case, `float()` was also used because the data needed to be stored as a 
 **Test:** Show someone else your project and get their feedback. 
 + If you are creating charts, are you happy with the type of chart that you have displayed and the data that you have used? 
 + If you are adding drawings on a map, are you happy with the shapes that you have chosen? 
-+ If you were creating another type of visualisation, could it be improved in any way?
++ If you are creating another type of visualisation, could it be improved in any way?
 
 --- /task ---
 
@@ -364,8 +514,8 @@ title: It keeps saying 'index out of range'
 The `index out of range` error message typically refers to your code trying to access an **item** in a **list** that doesn't exist. 
 
 If your list is linked to a text file:
-+ check that your text file doesn't have a blank line at the bottom of it
-+ check that the rows in your text file all have the same amount of items (this isn't always needed but in this case, it might be causing a problem)
++ Check that your text file doesn't have a blank line at the bottom of it
++ Check that the rows in your text file all have the same amount of items (this isn't always needed but in this case, it might be causing a problem)
 
 --- /collapse ---
 
@@ -374,7 +524,7 @@ If your list is linked to a text file:
 title: The data isn't plotting on my map as expected
 ---
 
-A file has been created to support you with this called `xy.py`. It is an additional file within the starter projects where **latitude** and **longitude** data was included in the CSV file. 
+A file has been created to support you with this called `xy.py`. It is an additional file within the starter projects where **latitude** and **longitude** data has been included in the CSV file. 
 
 The code for this file can be seen below:
 
@@ -414,12 +564,12 @@ def get_xy_coords(longitude, latitude, map_width=991, map_height=768):
 
 --- /code ---
 
-This code takes **longitude** and **latitude** data, performs some tasks and then returns the X and Y coordinates for placing the drawing in the correct location. 
+This code takes **longitude** and **latitude** data, performs some tasks and then returns the x and y coordinates to place the drawing in the correct location. 
 
 If you are using this file:
-+ check that you have imported it at the top of your main program. It should say `from xy import get_xy_coords`
-+ check that you are passing the **longitude** and **latitude** data in the correct order. Your function call should be similar to this: `get_xy_coords(longitude, latitude)`
-+ check that the longitude and latitude data has been converted to the **float** data type. Your code should look similar to this: `longitude = float(sighting['longitude'])`
++ Check that you have imported it at the top of your main program. It should say `from xy import get_xy_coords`.
++ Check that you are passing the **longitude** and **latitude** data in the correct order. Your function call should be similar to this: `get_xy_coords(longitude, latitude)`.
++ Check that the longitude and latitude data has been converted to the **float** data type. Your code should look similar to this: `longitude = float(sighting['longitude'])`.
 
 --- /collapse ---
 
@@ -428,7 +578,7 @@ If you are using this file:
 title: Something is 'not defined'
 ---
 
-This is a common error. It usually means that a variable, dictionary or list is trying to be accessed or modified before it has been defined. 
+This is a common error. It usually means that a variable, dictionary, or list is trying to be accessed or modified before it has been defined. 
 
 For example, you might use this code to append an item to a list:
 
@@ -445,7 +595,7 @@ state = 'TX'
 ufo_data.append(state)
 --- /code ---
 
-This line of code will cause an error message because the list `ufo_data` has not yet been defined. To fix this error you would add in a line of code that defines the list. 
+This line of code will cause an error message because the list `ufo_data` has not yet been defined. To fix this error, you would add in a line of code that defines the list. 
 
 --- code ---
 ---

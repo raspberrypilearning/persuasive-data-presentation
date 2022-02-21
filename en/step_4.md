@@ -1,15 +1,15 @@
-## Expand and test - User interaction
+## Expand and test – User interaction
 
-Now its time to add some user interaction to your data visualisation!
+Now it's time to add some user interaction to your data visualisation!
 
 ![A screenshot of the ISS expedition project. The user is asked to input which crew expedition number they would like to explore.](images/user-interaction.PNG)
 
 --- task ---
 
 Look at the [**ISS expedition project**](https://trinket.io/python/822033c5b6){:target="_blank"} project. It asks the user to choose an ISS expedition to explore. The user enters a number and then this number is used to:
-+ access the relevant data for that expedition
-+ draw flags on the ISS based on the data
-+ display the relevant expedition data as output for the user
++ Access the relevant data for that expedition
++ Draw flags on the ISS based on the data
++ Display the relevant expedition data as output for the user
 
 Could your project do something similar?
 
@@ -25,32 +25,34 @@ Could you use this idea to help you add user interaction to your project?
 
 --- task ---
 
-Explore the [**World Happiness Index**](https://trinket.io/python/0507433548){:target="_blank"} project. This asks the user to choose what type of data is displayed to them in a graph.
+<mark>change text here if we change graph project</mark>
+
+Explore the [**World happiness index**](https://trinket.io/python/0507433548){:target="_blank"} project. This asks the user to choose what type of data is displayed to them in a graph.
 
 Could you give your user options about the type of data they want to see?
 
-Think about your own project and the data that you want your users to be able to explore. Draw inspiration from the example projects and **think about how your project could interact with the user**. 
+Think about your own project and the data that you want your users to be able to explore. Draw inspiration from the example projects and think about how your user could interact with the project. 
 
 --- /task ---
 
 --- task ---
 
-Add user interaction to your project. Here is a reminder of some of the skills that you might need to do this:
+Add user interaction to your project. Here's a reminder of some of the skills that you might need to do this:
 
 --- collapse ---
 ---
-title: Interaction with the mouse
+title: Choose what happens when a specific colour is clicked
 ---
 
-You can create a `mouse_pressed()` function to work with the **p5** library. It allows a task to be carried out when the mouse is pressed. 
+You can create a `mouse_pressed()` function to work with the `p5` library. This allows a task to be carried out when the mouse is pressed. 
 
-The code below detect the colour of the pixel that has been clicked by the mouse:
+The code below detects the colour of the pixel that has been clicked with the mouse:
 
 --- code ---
 ---
 language: python
 filename: main.py
-line_numbers: true
+line_numbers: false
 line_number_start: 1
 line_highlights: 
 ---
@@ -65,9 +67,9 @@ An example of this happening can be seen in the **UFO sightings** project:
 --- code ---
 ---
 language: python
-filename: main.py
-line_numbers: true
-line_number_start: 101
+filename: main.py - mouse_pressed()
+line_numbers: false
+line_number_start: 
 line_highlights: 
 ---
 def mouse_pressed():
@@ -78,17 +80,17 @@ def mouse_pressed():
   if pixel_colour == fireball:
     print('A fireball UFO was spotted here!')
   elif pixel_colour == circle:
-    print('A circle shaped UFO was spotted here!')
+    print('A circle-shaped UFO was spotted here!')
   elif pixel_colour == tri:
-    print('A triangle shaped UFO was spotted here!')
+    print('A triangle-shaped UFO was spotted here!')
   elif pixel_colour == light:
     print('A UFO made of light was spotted here!')
-  elif pixel_colour == disk:
-    print('A disk shaped UFO was spotted here!')
+  elif pixel_colour == disc:
+    print('A disc-shaped UFO was spotted here!')
   elif pixel_colour == misc:
-    print('A random shaped UFO was spotted here!')
+    print('A random-shaped UFO was spotted here!')
   elif pixel_colour == cylinder:
-    print('A cylinder shaped UFO was spotted here!')
+    print('A cylinder-shaped UFO was spotted here!')
   else:
     print('There were no UFO sightings in this area!')
 
@@ -96,32 +98,53 @@ def mouse_pressed():
 
 --- /collapse ---
 
+<mark>Add a collapse explaining how to look up a colour in a dictionary from a colour:data key pair, when the mouse is clicked, as in the mapping data project
+
+e.g.
+
+def mouse_pressed():
+# Put code to run when the mouse is pressed here
+  pixel_colour = color(get(mouse_x, mouse_y))
+  if pixel_colour in colours:
+    facts = colours[pixel_colour]
+    print(facts['name'])
+    print(facts['happiness rank'])
+  else:
+    print('Region not detected')</mark>
+
 --- collapse ---
 ---
 title: Interaction based on user input
 ---
 
-A good way to interact with your user is to ask them a question. Their response can then be held in a variable and used to display the requested data. If you want your question to happen before a map, chart or drawing is displayed then you need to make sure that this is one of the first piece of code that runs. 
+A good way to interact with your user is to ask them a question. Their response can then be held in a variable and used to display the requested data. If you want your question to happen before a map, chart, or drawing is displayed, then you need to make sure that this is one of the first pieces of code that runs. 
 
 Common places to ask a user question:
-+ in the main part of your code (not inside a function)
-+ in a `main()` function
-+ in the `setup()` function (if using p5)
++ In the main part of your code (not inside a function)
++ In a `main()` function
++ In the `setup()` function (if using `p5`)
 
-Here is the code for asking a question that was used in the **Happiness index project**:
+Here is the code to ask a question; this was used in the **Happiness index project**:
 
 --- code ---
 ---
 language: python
 filename: main.py - main()
-line_numbers: true
-line_number_start: 15
-line_highlights: 4-6
+line_numbers: false
+line_number_start: 1
+line_highlights:
 ---
 def main():
   print('World Happiness Index Data 2019')
   
-  choice = input('What would you like to see? \n1. How happy are countries overall? \n2. How much does national wealth matter? \n3. How well does your country look after the disadvantaged? \n4.How generous are people? \n5. How fair and honest are people? \n6. How much freedom do you have? \nChoice:')
+  choice = input('''What would you like to see?
+  1. How happy are countries overall?
+  2. How much does national wealth matter?
+  3. How well does your country look after the disadvantaged?
+  4. How generous are people?
+  5. How fair and honest are people?
+  6. How much freedom do you have?
+  Choice: ''')
   
 --- /code ---
 
@@ -143,10 +166,10 @@ line_number_start:
 line_highlights:
 ---
 def menu():
-  choice = '' # Start with a wrong answer for choice.
+  choice = '' # Start with a wrong answer for choice
   
   while choice != '1' and choice != '2': # Keep asking the user for the right answer
-    choice = input('Please enter 1 to encode/decode text, or 2 to perform frequency analysis:' )
+    choice = input('Please enter 1 to encode/decode text, or 2 to perform frequency analysis: ')
 
     if choice == '1':
       do_something()
@@ -162,7 +185,7 @@ def menu():
 
 --- task ---
 
-**Test:** Run your code and make sure that it does what you expect when the user enters their choice. If your program has multiple options then make sure that you test that **each** option works as expected. 
+**Test:** Run your code and make sure that it does what you expect when the user enters their choice. If your program has multiple options, then make sure that you test that **each** option works as expected. 
 
 Finally, ask another person to take a look at your program and provide any feedback on the user interaction element. 
 
@@ -177,9 +200,9 @@ Finally, ask another person to take a look at your program and provide any feedb
 title: The question doesn't appear when the program runs
 ---
 Check that your question and `input()` function have been placed in the correct part of your program. This is typically:
-+ in the main part of your code (not inside a function)
-+ in a `main()` function
-+ in the `setup()` function (if using p5)
++ In the main part of your code (not inside a function)
++ In a `main()` function
++ In the `setup()` function (if using `p5`)
 
 --- /collapse ---
 
@@ -206,15 +229,15 @@ if choice == '1':
 title: It is not displaying the correct data when I click the mouse
 ---
 
-The `mouse_pressed()` function that you have created is designed to check the **pixel colour** that has been clicked on the screen. If you have two or more objects that are the same colour then your program will display the data for the first condition in the sequence that is true. 
+The `mouse_pressed()` function that you have created is designed to check the **pixel colour** that has been clicked on the screen. If you have two or more objects that are the same colour, then your program will display the data for the first condition in the sequence that is false. 
 
-If you would like your program to display different data for each item that the user clicks then they must all be a **different colour**. You can see an example of how to code this for all of your data points here:
+If you would like your program to display different data for each item that the user clicks, then they must all be a **different colour**. You can see an example of how to code this for all of your data points here:
 
 --- code ---
 ---
 language: python
 filename: main.py - draw_data()
-line_numbers: true
+line_numbers: false
 line_number_start: 1
 line_highlights: 11
 ---
@@ -232,7 +255,7 @@ def draw_data():
 
 --- /code ---
 
-**Notice** that the colour is originally set to `red_value = 255` this is the most amount of red that you can use. After each data point is draw, the value of `red_value` is reduced by `1`. This ensures that each data point is a different colour. 
+**Notice** that the colour is originally set to `red_value = 255`; this is the most amount of red that you can use. After each data point is drawn, the value of `red_value` is reduced by `1`. This ensures that each data point is a different colour. 
 
 --- /collapse ---
 
