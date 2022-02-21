@@ -77,7 +77,45 @@ def draw_emoji(emoji, size): #snake
 
 [[[processing-rotation]]]
 
-<mark> Add a collapse here for using the xy file to convert lat and lon to x and y. Called Placing an shape according to latitude and longitude.</mark>
+
+--- collapse ---
+---
+title: Placing a shape according to latitude and longitude
+---
+
+The `xy.py` file is available in all of the starter projects. This file will take the **longitude** and **latitude** data from your **CSV** file and return the coordinates for a shape to be placed on an image. 
+
+The example code below shows the `longitude` and `latitude` data being accessed from the dictionary. It then passes this data as arguments into the `get_xy_coords` function which then returns the coordinates.  
+
+--- code ---
+---
+language: python
+filename: 
+line_numbers: false
+line_number_start: 1
+line_highlights: 10-12
+---
+def draw_data():
+  
+  no_stroke()
+  
+  # Use the lat and long data to calculate the x y coords for the shape
+  
+  i = 255
+  
+  for eruption in volcano_eruptions:
+    longitude = float(eruption['longitude'])
+    latitude = float(eruption['latitude'])
+    region_coords = get_xy_coords(longitude, latitude) # return coordinates to place map pin
+    region_x = region_coords['x']
+    region_y = region_coords['y']
+    colour = color(i, 255, 255)
+    colours[colour] = eruption
+    draw_volcano(colour, region_x, region_y)
+    i -= 2
+--- /code ---
+
+--- /collapse ---
 
 ### Colours and effects
 
