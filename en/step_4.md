@@ -98,19 +98,34 @@ def mouse_pressed():
 
 --- /collapse ---
 
-<mark>Add a collapse explaining how to look up a colour in a dictionary from a colour:data key pair, when the mouse is clicked, as in the mapping data project
+--- collapse ---
+---
+title: Choose what happens when a specific region is clicked
+---
+For this to work correctly, you need to make sure that each pin is a different colour. You also need to make sure that the colour has been matched to a region using a dictionary. You should have already populated your `colours` dictionary using code in the previous step.
 
-e.g.
+The example below shows the `colours` dictionary being accessed to display facts about region that was clicked on by the mouse. 
 
+--- code ---
+---
+language: python
+filename: 
+line_numbers: false
+line_number_start: 1
+line_highlights: 
+---
 def mouse_pressed():
 # Put code to run when the mouse is pressed here
   pixel_colour = color(get(mouse_x, mouse_y))
   if pixel_colour in colours:
     facts = colours[pixel_colour]
-    print(facts['name'])
-    print(facts['happiness rank'])
+    print('A volcano erupted in ' + facts['region'] + ' in ' + facts['year'])
   else:
-    print('Region not detected')</mark>
+    print('Region not detected')
+--- /code ---
+
+--- /collapse ---
+
 
 --- collapse ---
 ---
@@ -233,25 +248,36 @@ The `mouse_pressed()` function that you have created is designed to check the **
 
 If you would like your program to display different data for each item that the user clicks, then they must all be a **different colour**. You can see an example of how to code this for all of your data points here:
 
+**Note** that the `colours` dictionary also needs to be define in the main part of your code. 
+
 --- code ---
 ---
 language: python
 filename: main.py - draw_data()
 line_numbers: false
 line_number_start: 1
-line_highlights: 11
+line_highlights: 1, 6, 17-20
 ---
-def draw_data():
-  red_value = 255
+colours = {}
 
-  for region in region_list:
-    region_name = region['name']
-    region_coords = get_region_coords(region_name)
+def draw_data():
+  
+  no_stroke()
+  
+  # Use the lat and long data to calculate the x y coords for the shape
+  
+  red = 255
+  
+  for eruption in volcano_eruptions:
+    longitude = float(eruption['longitude'])
+    latitude = float(eruption['latitude'])
+    region_coords = get_xy_coords(longitude, latitude)
     region_x = region_coords['x']
     region_y = region_coords['y']
-    region_colour = color(red_value, 0, 0)
-    draw_pin(region_x, region_y, region_colour)
-    red_value -= 1
+    colour = color(red, 0, 0)
+    colours[colour] = eruption
+    draw_volcano(colour, region_x, region_y)
+    red -= 2
 
 --- /code ---
 

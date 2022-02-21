@@ -77,7 +77,45 @@ def draw_emoji(emoji, size): #snake
 
 [[[processing-rotation]]]
 
-<mark> Add a collapse here for using the xy file to convert lat and lon to x and y. Called Placing an shape according to latitude and longitude.</mark>
+
+--- collapse ---
+---
+title: Placing a shape according to latitude and longitude
+---
+
+The `xy.py` file is available in all of the starter projects. This file will take the **longitude** and **latitude** data from your **CSV** file and return the coordinates for a shape to be placed on an image. 
+
+The example code below shows the `longitude` and `latitude` data being accessed from the dictionary. It then passes this data as arguments into the `get_xy_coords` function which then returns the coordinates.  
+
+--- code ---
+---
+language: python
+filename: 
+line_numbers: false
+line_number_start: 1
+line_highlights: 10-12
+---
+def draw_data():
+  
+  no_stroke()
+  
+  # Use the lat and long data to calculate the x y coords for the shape
+  
+  i = 255
+  
+  for eruption in volcano_eruptions:
+    longitude = float(eruption['longitude'])
+    latitude = float(eruption['latitude'])
+    region_coords = get_xy_coords(longitude, latitude) # return coordinates to place map pin
+    region_x = region_coords['x']
+    region_y = region_coords['y']
+    colour = color(i, 255, 255)
+    colours[colour] = eruption
+    draw_volcano(colour, region_x, region_y)
+    i -= 2
+--- /code ---
+
+--- /collapse ---
 
 ### Colours and effects
 
@@ -111,7 +149,135 @@ blue = color(50, 70, 206) #Red = 50, Green = 70, Blue = 206
 
 [[[processing-tint]]]
 
-<mark> Add a collapse here for using random and seed to generate different colours for the pins. The colours need storing in a dictionary as keys, mapped to the data to be retrieved, as in mapping-data</mark>
+--- collapse ---
+---
+title: Change the value of one map pin colour
+---
+This example changes the value for red each time the code places a pin:
+
+**Remember** to also define a `colours` dictionary in the main part of your code, typically near the top. 
+
+--- code ---
+---
+language: python
+filename: 
+line_numbers: false
+line_number_start: 
+line_highlights: 1, 9, 17-20
+---
+colours = {}
+
+def draw_data():
+  
+  no_stroke()
+  
+  # Use the lat and long data to calculate the x y coords for the shape
+  
+  red = 255
+  
+  for eruption in volcano_eruptions:
+    longitude = float(eruption['longitude'])
+    latitude = float(eruption['latitude'])
+    region_coords = get_xy_coords(longitude, latitude)
+    region_x = region_coords['x']
+    region_y = region_coords['y']
+    colour = color(red, 0, 0)
+    colours[colour] = eruption
+    draw_volcano(colour, region_x, region_y)
+    red -= 2
+--- /code ---
+
+
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: Change the value of multiple map pin colours
+---
+
+This example changes the red, green and blue values each time the code places a pin:
+
+**Remember** to also define a `colours` dictionary in the main part of your code, typically near the top.
+
+--- code ---
+---
+language: python
+filename: 
+line_numbers: false
+line_number_start: 
+line_highlights: 1, 9-11, 19-24  
+---
+colours = {}
+
+def draw_data():
+  
+  no_stroke()
+  
+  # Use the lat and long data to calculate the x y coords for the shape
+  
+  red = 255
+  green = 0
+  blue = 255
+  
+  for eruption in volcano_eruptions:
+    longitude = float(eruption['longitude'])
+    latitude = float(eruption['latitude'])
+    region_coords = get_xy_coords(longitude, latitude)
+    region_x = region_coords['x']
+    region_y = region_coords['y']
+    colour = color(red, green, blue)
+    colours[colour] = eruption
+    draw_volcano(colour, region_x, region_y)
+    red -= 1 # Change the red value
+    green += 1 #Change the green value
+    blue -= 1 #Change the blue value
+--- /code ---
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: Choose random colours for your map pins
+---
+
+At the top of your code, with your other imports, you will need to import `randint` from the `random` library.
+
+You will also need to define a `colours` dictionary in the main part of your code. This is typically placed under your import statements. 
+
+You can then choose a random colour for your region colours, each time around the for loop. There is a small chance that two or more colours might end up the same, but it is a very small chance.
+
+--- code ---
+---
+language: python
+filename: 
+line_numbers: false
+line_number_start: 
+line_highlights: 1, 3, 17-19
+---
+from random import randint
+
+colours = {}
+
+def draw_data():
+  
+  no_stroke()
+  
+  # Use the lat and long data to calculate the x y coords for the shape
+  
+  for eruption in volcano_eruptions:
+    longitude = float(eruption['longitude'])
+    latitude = float(eruption['latitude'])
+    region_coords = get_xy_coords(longitude, latitude)
+    region_x = region_coords['x']
+    region_y = region_coords['y']
+    colour = color(randint(0,255), randint(0,255), randint(0,255)) # Select a random colour
+    colours[colour] = eruption
+    draw_volcano(colour, region_x, region_y)
+--- /code ---
+
+
+--- /collapse ---
 
 --- collapse ---
 ---

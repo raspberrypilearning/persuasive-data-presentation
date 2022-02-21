@@ -15,10 +15,10 @@ You will:
 
 --- task ---
 
-**ISS crew expeditions:** [See inside](https://trinket.io/python/822033c5b6){:target="_blank"}
+**ISS crew expeditions:** [See inside](https://trinket.io/python/9a1769f293){:target="_blank"}
 
 <div class="trinket">
-<iframe src="https://trinket.io/embed/python/822033c5b6?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.io/embed/python/9a1769f293?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
 --- /task ---
@@ -48,18 +48,18 @@ Your data visualisation could:
 
 --- task ---
 
-**UFO tracker:** [See inside](https://trinket.io/python/cb376de667){:target="_blank"}
+**UFO tracker:** [See inside](https://trinket.io/python/9aa4c950e2){:target="_blank"}
 
 <div class="trinket">
-<iframe src="https://trinket.io/embed/python/cb376de667?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.io/embed/python/9aa4c950e2?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
 **A charting example:** <mark> add this in when we are testing </mark>
 
-**Volcanic eruptions:** [See inside](https://trinket.io/python/2164174e96){:target="_blank"}
+**Volcanic eruptions:** [See inside](https://trinket.io/python/818ad12eeb){:target="_blank"}
 
 <div class="trinket">
-<iframe src="https://trinket.io/embed/python/2164174e96?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.io/embed/python/818ad12eeb?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
 --- /task ---
