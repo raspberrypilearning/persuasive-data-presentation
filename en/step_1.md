@@ -54,7 +54,11 @@ Your data visualisation could:
 <iframe src="https://trinket.io/embed/python/9aa4c950e2?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
-**A charting example:** <mark> add this in when we are testing </mark>
+**Toy dog analysis:** [See inside](https://trinket.io/python/5d0fbef33b){:target="_blank"}
+
+<div class="trinket">
+<iframe src="https://trinket.io/embed/python/5d0fbef33b?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
 
 **Volcanic eruptions:** [See inside](https://trinket.io/python/818ad12eeb){:target="_blank"}
 
