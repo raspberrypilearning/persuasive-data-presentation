@@ -21,9 +21,9 @@ You will:
 <iframe src="https://trinket.io/embed/python/822033c5b6?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </div>
 
-<div style="border-top: 15px solid #f3524f; background-color: whitesmoke; margin-bottom: 20px; padding: 10px;">
-
 --- /task ---
+
+<div style="border-top: 15px solid #f3524f; background-color: whitesmoke; margin-bottom: 20px; padding: 10px;">
 
 ### PROJECT BRIEF: Persuasive data presentation
 <hr style="border-top: 2px solid black;"> 
