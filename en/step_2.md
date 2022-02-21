@@ -215,7 +215,7 @@ line_highlights:
 from pygal import *
 --- /code ---
 
-The import statement imports **all** of the code from the `p5.py` file that is also in your Trinket window.
+The import statement imports **all** of the code from the pygal library.
 
 --- /collapse ---
 
