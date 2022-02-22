@@ -25,9 +25,7 @@ Could you use this idea to help you add user interaction to your project?
 
 --- task ---
 
-<mark>change text here if we change graph project</mark>
-
-Explore the [**World happiness index**](https://trinket.io/python/0507433548){:target="_blank"} project. This asks the user to choose what type of data is displayed to them in a graph.
+Explore the [**Toy Dog Analysis**](https://trinket.io/python/5d0fbef33b){:target="_blank"} project. This asks the user to choose what type of data is displayed to them in a graph.
 
 Could you give your user options about the type of data they want to see?
 
