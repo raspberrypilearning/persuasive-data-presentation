@@ -1,86 +1,23 @@
-## Reflect
+## Upgrade your project
 
-Did you meet the **project brief**? Think about your project and go through the checklist below and check off the ones that apply to your project.
+If you have time you can upgrade your project. You might have ideas to add more already or you might want to go back to the first step and look at other projects again for more inspiration.
 
-Does your data visualisation:
+You could:
+- Analyse the data from the CSV file to calculate totals or averages that could be displayed in charts.
+- Think of other ways to present your data. Could you have different shapes? Could you use an image?
+- Add other images to your background to give it more detail.
 
---- task ---
+Here is a data presentation using a custom csv file with information on chemical elements. Click on an element to see its description.
 
-Load data from a text/CSV file?
+[See inside](https://trinket.io/python/0b3890fd32)
+<iframe src="https://trinket.io/embed/python/0b3890fd32" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
---- /task ---
 
---- task ---
+Each example project in the [Introduction](https://projects.raspberrypi.org/en/projects/persuasive-data-presentation/0) has a ‘See inside’ link for you to open the project in Trinket and look at the code to get ideas and see how they work.
 
-Use **lists** and/or **dictionaries** to store the data?
+### Get inspiration
 
---- /task ---
+Take a look at some of the data visualisations created by community members in the Raspberry Pi Foundation’s studio [Persuasive data presentation projects](https://wke.lt/w/s/Pmjl0o){:target="_blank"}.
 
---- task ---
-
-**Visualise** the data through a **chart** or **drawing**?
-
---- /task ---
-
---- task ---
-
-Allow the user to **input** different options for what they would like to see?
-
---- /task ---
-
-Your data visualisation project could also:
-
---- task ---
-
-Use **unique** shapes to display the data points on a map
-
---- /task ---
-
---- task ---
-
-**Analyse** the data using mathematical formulas before displaying it in a chart or drawing
-
---- /task ---
-
-## Sharing your work
-
---- task ---
-
-Did you share your work with others in an online gallery?
-
---- /task ---
-
-Reflecting about how you made your data visualisation project will help you in your future projects.
-
-Answer the questions below by drawing, writing, typing in a document, talking to someone, or in your own creative way that works best for you.
-
---- task ---
-
-How did you get your ideas? 
-
---- /task ---
-
---- task ---
-
-What cool new thing(s) did you learn?
-
---- /task ---
-
---- task ---
-
-Mistakes are the "portals of discovery" (James Joyce, Ulysses). 
-
-What mistakes did you make and how did they help you create your data visualisation project?
-
---- /task ---
-
-### Now you know how to create your own data visualisation!
-
-Take a moment to celebrate what you have made.
-
---- task ---
-
-Where will you take your new powers? What will you make next?
-
---- /task ---
+--- save ---
 
