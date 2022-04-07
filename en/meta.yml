@@ -11,9 +11,9 @@ steps:
   - title: Build and test - Draw or chart
     completion: engaged
   - title: Expand and test - User interaction
-  - title: Share
     completion: internal
   - title: Reflect
-  - title: Upgrade your project
     completion: external 
+  - title: Upgrade your project
+  - title: Share
   - title: What next?
