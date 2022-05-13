@@ -2,8 +2,8 @@ title: Persuasive data presentation
 hero_image: images/banner.png
 description: Create a data visualisation for a topic that you are passionate about
 version: 4
-listed: false
-copyedit: false
+listed: true
+copyedit: true
 last_tested: "2021-03-26"
 steps:
   - title: Introduction
@@ -11,9 +11,9 @@ steps:
   - title: Build and test - Draw or chart
     completion: engaged
   - title: Expand and test - User interaction
-  - title: Share
     completion: internal
   - title: Reflect
-  - title: Upgrade your project
     completion: external 
+  - title: Upgrade your project
+  - title: Share
   - title: What next?
