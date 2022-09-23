@@ -1,4 +1,4 @@
-## Introduction
+## You will make
 
 Create a data visualisation for a topic that you are passionate about. 
 
@@ -12,6 +12,8 @@ You will:
 + Load data from a **text/CSV file**
 + Use **lists** and/or **dictionaries** to store the data
 + **Visualise** the data through a **chart** or **drawing**
+
+### Play ▶️ 
 
 --- task ---
 
@@ -44,7 +46,7 @@ Your data visualisation could:
 <span style="color: #0faeb0">ISS</span> stands for International Space Station. The space station is a collaboration between many of the world's space agencies, and orbits the Earth, conducting scientific experiments. There are two Raspberry Pi Computers on the ISS, and the Raspberry Pi Foundation runs a challenge each year called [Astro Pi](https://astro-pi.org), that allows you to write code that will actually run in space.
 </p>
 
-### Get inspiration
+### Get ideas 💭
 
 --- task ---
 
