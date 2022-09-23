@@ -7,17 +7,17 @@ listed: true
 copyedit: true
 last_tested: '2021-03-26'
 steps:
-- title: Introduction
-- title: Your idea
-- title: Build and test - Draw or chart
-  completion:
-  - engaged
-- title: Expand and test - User interaction
-  completion:
-  - internal
-- title: Reflect
-  completion:
-  - external
-- title: Upgrade your project
-- title: Share
-- title: What next?
+  - title: You will make
+  - title: Your idea
+  - title: Build and test - Draw or chart
+    completion:
+      - engaged
+  - title: Expand and test - User interaction
+    completion:
+      - internal
+  - title: Checklist
+    completion:
+      - external
+  - title: Upgrade your project
+  - title: Share
+  - title: What next?
