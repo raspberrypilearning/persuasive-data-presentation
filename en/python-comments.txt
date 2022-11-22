@@ -1,0 +1,65 @@
+Runs once at the start
+
+Choose the size of your canvas
+
+Runs every frame
+
+Use the lat and long data to calculate the x y coords for the shape
+
+return coordinates to place map pin
+
+Red = 50, Green = 70, Blue = 206
+
+Change the red value
+
+Change the green value
+
+Change the blue value
+
+Background colour
+
+Initialises the variable so that it can be added to it
+
+Opens the file temporarily
+
+Loops through each line in the file
+
+Adds the line to the current contents of the variable
+
+Initialises the list so that data can be appended (added) to it
+
+Adds each line as an item in the list
+
+Split each item separated by a comma into a list
+
+Add the info list to the my_text_file list
+
+Initialise the list to store the eruptions
+
+Split the line into a list
+
+Create a dictionary for the event
+
+Store dictionary in a list
+
+Strip away the \n
+
+For each line in the text file
+
+Loop through all of the expedition dictionaries in the expeditions list
+
+Check if the expedition number is equal to 3
+
+If true, store the matching mission launch date
+
+Loop through all of the sighting dictionaries in the ufo_sightings list
+
+Store the longitude data
+
+Store the latitude data
+
+Display a message depending on what shape the user has pressed
+
+Start with a wrong answer for choice
+
+Keep asking the user for the right answer
