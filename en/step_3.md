@@ -13,11 +13,11 @@ In order to be successful with a programming project, you need to use **decompos
 title: Example decomposition
 ---
 
-Does your idea require a drawing to appear on the screen based on data in a text file? If so, you can break this problem down in the following way:
+Does your idea require a drawing to appear on the screen based on data in a text or csv file? If so, you can break this problem down in the following way:
 
 1. Write the code for drawing a shape or loading an image
 2. Make the image appear in the centre of the screen to test it
-3. Load the required data from the text file
+3. Load the required data from the text or csv file
 4. `print()` the data that you need for the image location to check that the code works
 5. Use the data to place the image in the correct location
 
@@ -63,10 +63,10 @@ line_highlights:
 ---
 def setup():
   size(400, 400)
-  text_align(CENTER, TOP) #Position around the centre
+  text_align(CENTER, TOP)  # Position around the centre
 
-def draw_emoji(emoji, size): #snake
-  text_size(size) #Controls the size of the emoji
+def draw_emoji(emoji, size):  # snake
+  text_size(size)  # controls the size of the emoji
   text(emoji, 200, 200)
   
 --- /code ---
@@ -106,7 +106,7 @@ def draw_data():
   for eruption in volcano_eruptions:
     longitude = float(eruption['longitude'])
     latitude = float(eruption['latitude'])
-    region_coords = get_xy_coords(longitude, latitude) # return coordinates to place map pin
+    region_coords = get_xy_coords(longitude, latitude)  # return coordinates to place map pin
     region_x = region_coords['x']
     region_y = region_coords['y']
     colour = Color(i, 255, 255).hex
@@ -137,7 +137,7 @@ line_numbers: false
 line_number_start: 1
 line_highlights: 1
 ---
-blue = Color(50, 70, 206) #Red = 50, Green = 70, Blue = 206
+blue = Color(50, 70, 206)  # Red = 50, Green = 70, Blue = 206
 
 --- /code ---
 
