@@ -74,23 +74,23 @@ def mouse_pressed():
   
   # Display a message depending on what shape the user has pressed
   
-  pixel_colour = Color(get(mouse_x, mouse_y))
-  if pixel_colour == fireball:
-    print('A fireball UFO was spotted here!')
-  elif pixel_colour == circle:
-    print('A circle-shaped UFO was spotted here!')
-  elif pixel_colour == tri:
-    print('A triangle-shaped UFO was spotted here!')
-  elif pixel_colour == light:
-    print('A UFO made of light was spotted here!')
-  elif pixel_colour == disc:
-    print('A disc-shaped UFO was spotted here!')
-  elif pixel_colour == misc:
-    print('A random-shaped UFO was spotted here!')
-  elif pixel_colour == cylinder:
-    print('A cylinder-shaped UFO was spotted here!')
-  else:
-    print('There were no UFO sightings in this area!')
+    pixel_colour = Color(get(mouse_x, mouse_y)).hex
+    if pixel_colour == fireball.hex:
+        print('A fireball UFO was spotted here!')
+    elif pixel_colour == circle.hex:
+        print('A circle-shaped UFO was spotted here!')
+    elif pixel_colour == tri.hex:
+        print('A triangle-shaped UFO was spotted here!')
+    elif pixel_colour == light.hex:
+        print('A UFO made of light was spotted here!')
+    elif pixel_colour == disc.hex:
+        print('A disc-shaped UFO was spotted here!')
+    elif pixel_colour == misc.hex:
+        print('A random-shaped UFO was spotted here!')
+    elif pixel_colour == cylinder.hex:
+        print('A cylinder-shaped UFO was spotted here!')
+    else:
+        print('There were no UFO sightings in this area!')
 
 --- /code ---
 
@@ -114,12 +114,12 @@ line_highlights:
 ---
 def mouse_pressed():
 # Put code to run when the mouse is pressed here
-  pixel_colour = Color(get(mouse_x, mouse_y))
-  if pixel_colour in colours:
-    facts = colours[pixel_colour]
-    print('A volcano erupted in ' + facts['region'] + ' in ' + facts['year'])
-  else:
-    print('Region not detected')
+    pixel_colour = Color(get(mouse_x, mouse_y)).hex
+    if pixel_colour in colours:
+        facts = colours[pixel_colour]
+        print('A volcano erupted in ' + facts['region'] + ' in ' + facts['year'])
+    else:
+        print('Region not detected')
 --- /code ---
 
 --- /collapse ---
@@ -148,16 +148,16 @@ line_number_start: 1
 line_highlights:
 ---
 def main():
-  print('World Happiness Index Data 2019')
-  
-  choice = input('''What would you like to see?
-  1. How happy are countries overall?
-  2. How much does national wealth matter?
-  3. How well does your country look after the disadvantaged?
-  4. How generous are people?
-  5. How fair and honest are people?
-  6. How much freedom do you have?
-  Choice: ''')
+    print('World Happiness Index Data 2019')
+
+    choice = input('''What would you like to see?
+        1. How happy are countries overall?
+        2. How much does national wealth matter?
+        3. How well does your country look after the disadvantaged?
+        4. How generous are people?
+        5. How fair and honest are people?
+        6. How much freedom do you have?
+    Choice: ''')
   
 --- /code ---
 
@@ -179,16 +179,16 @@ line_number_start:
 line_highlights:
 ---
 def menu():
-  choice = '' # Start with a wrong answer for choice
-  
-  while choice != '1' and choice != '2': # Keep asking the user for the right answer
-    choice = input('Please enter 1 to encode/decode text, or 2 to perform frequency analysis: ')
+    choice = ''  # Start with a wrong answer for choice
+
+    while choice != '1' and choice != '2':  # Keep asking the user for the right answer
+        choice = input('Please enter 1 to encode/decode text, or 2 to perform frequency analysis: ')
 
     if choice == '1':
-      do_something()
+        do_something()
 
-    elif  choice == '2':
-      do_something_else()
+    elif choice == '2':
+        do_something_else()
      
 --- /code ---
 
@@ -259,23 +259,23 @@ line_highlights: 1, 6, 17-20
 colours = {}
 
 def draw_data():
-  
-  no_stroke()
-  
-  # Use the lat and long data to calculate the x y coords for the shape
-  
-  red = 255
-  
-  for eruption in volcano_eruptions:
-    longitude = float(eruption['longitude'])
-    latitude = float(eruption['latitude'])
-    region_coords = get_xy_coords(longitude, latitude)
-    region_x = region_coords['x']
-    region_y = region_coords['y']
-    colour = Color(red, 0, 0)
-    colours[colour] = eruption
-    draw_volcano(colour, region_x, region_y)
-    red -= 2
+
+    no_stroke()
+
+    # Use the lat and long data to calculate the x y coords for the shape
+
+    red = 255
+
+    for eruption in volcano_eruptions:
+        longitude = float(eruption['longitude'])
+        latitude = float(eruption['latitude'])
+        region_coords = get_xy_coords(longitude, latitude)
+        region_x = region_coords['x']
+        region_y = region_coords['y']
+        colour = Color(red, 0, 0)
+        colours[colour] = eruption
+        draw_volcano(colour, region_x, region_y)
+        red -= 2
 
 --- /code ---
 
@@ -284,8 +284,6 @@ def draw_data():
 --- /collapse ---
 
 --- /task ---
-
-
 
 
 --- save ---

@@ -9,11 +9,13 @@ You could:
 
 Here is a data presentation using a custom csv file with information on chemical elements. Click on an element to see its description.
 
-[See inside](https://trinket.io/python/0b3890fd32)
-<iframe src="https://trinket.io/embed/python/0b3890fd32" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+**Periodic table**: 
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/periodic-table-example" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+</iframe>
 
+You can find the Periodic table project [here](https://editor.raspberrypi.org/en/projects/periodic-table-example){:target="_blank"}
 
-Each example project in the [Introduction](https://projects.raspberrypi.org/en/projects/persuasive-data-presentation/0) has a ‘See inside’ link for you to open the project in Trinket and look at the code to get ideas and see how they work.
+Each example project in the [Introduction](https://projects.raspberrypi.org/en/projects/persuasive-data-presentation/0) has a ‘See inside’ link for you to open the project in the Editor and look at the code to get ideas and see how they work.
 
 ### Get inspiration
 
