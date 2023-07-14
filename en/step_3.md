@@ -109,7 +109,7 @@ def draw_data():
     region_coords = get_xy_coords(longitude, latitude) # return coordinates to place map pin
     region_x = region_coords['x']
     region_y = region_coords['y']
-    colour = color(i, 255, 255)
+    colour = Color(i, 255, 255).hex
     colours[colour] = eruption
     draw_volcano(colour, region_x, region_y)
     i -= 2
@@ -127,7 +127,7 @@ def draw_data():
 title: Colour in p5
 ---
 
-The p5 color() function expects three numbers: one each for red, green, and blue.
+The p5 Color() function expects three numbers: one each for red, green, and blue.
 
 --- code ---
 ---
@@ -137,7 +137,7 @@ line_numbers: false
 line_number_start: 1
 line_highlights: 1
 ---
-blue = color(50, 70, 206) #Red = 50, Green = 70, Blue = 206
+blue = Color(50, 70, 206) #Red = 50, Green = 70, Blue = 206
 
 --- /code ---
 
@@ -181,7 +181,7 @@ def draw_data():
     region_coords = get_xy_coords(longitude, latitude)
     region_x = region_coords['x']
     region_y = region_coords['y']
-    colour = color(red, 0, 0)
+    colour = Color(red, 0, 0)
     colours[colour] = eruption
     draw_volcano(colour, region_x, region_y)
     red -= 2
@@ -226,7 +226,7 @@ def draw_data():
     region_coords = get_xy_coords(longitude, latitude)
     region_x = region_coords['x']
     region_y = region_coords['y']
-    colour = color(red, green, blue)
+    colour = Color(red, green, blue)
     colours[colour] = eruption
     draw_volcano(colour, region_x, region_y)
     red -= 1 # Change the red value
@@ -271,7 +271,7 @@ def draw_data():
     region_coords = get_xy_coords(longitude, latitude)
     region_x = region_coords['x']
     region_y = region_coords['y']
-    colour = color(randint(0,255), randint(0,255), randint(0,255)) # Select a random colour
+    colour = Color(randint(0,255), randint(0,255), randint(0,255)) # Select a random colour
     colours[colour] = eruption
     draw_volcano(colour, region_x, region_y)
 --- /code ---
@@ -313,9 +313,9 @@ line_highlights: 8
 ---
 def draw():
 
-  red = color(255,0,0)
-  green = color(0,255,0)
-  blue = color(0,0,255)
+  red = Color(255,0,0)
+  green = Color(0,255,0)
+  blue = Color(0,0,255)
 
   no_stroke()
   draw_background(red)
@@ -354,9 +354,9 @@ line_highlights: 7-8
 ---
 def draw():
 
-  red = color(255, 0, 0)
-  green = color(0, 255, 0)
-  blue = color(0, 0, 255)
+  red = Color(255, 0, 0)
+  green = Color(0, 255, 0)
+  blue = Color(0, 0, 255)
 
   no_stroke()
   draw_background(green, blue)

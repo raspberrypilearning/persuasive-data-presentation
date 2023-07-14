@@ -6,7 +6,7 @@ Now it's time to add some user interaction to your data visualisation!
 
 --- task ---
 
-Look at the [**ISS expedition project**](https://trinket.io/python/822033c5b6){:target="_blank"} project. It asks the user to choose an ISS expedition to explore. The user enters a number and then this number is used to:
+Look at the [**ISS expedition project**](https://editor.raspberrypi.org/en/projects/data-iss-example){:target="_blank"} project. It asks the user to choose an ISS expedition to explore. The user enters a number and then this number is used to:
 + Access the relevant data for that expedition
 + Draw flags on the ISS based on the data
 + Display the relevant expedition data as output for the user
@@ -17,7 +17,7 @@ Could your project do something similar?
 
 --- task ---
 
-Look at the [**UFO tracker**](https://trinket.io/python/cb376de667){:target="_blank"} project. This project allows the user to click on the different shapes that are displayed on the map. When the user clicks on an object, a message is shown to say the **type** of UFO that was spotted in that location. 
+Look at the [**UFO tracker**](https://editor.raspberrypi.org/en/projects/data-ufo-example){:target="_blank"} project. This project allows the user to click on the different shapes that are displayed on the map. When the user clicks on an object, a message is shown to say the **type** of UFO that was spotted in that location. 
 
 Could you use this idea to help you add user interaction to your project?
 
@@ -25,7 +25,7 @@ Could you use this idea to help you add user interaction to your project?
 
 --- task ---
 
-Explore the [**Toy dog analysis**](https://trinket.io/python/5d0fbef33b){:target="_blank"} project. This asks the user to choose what type of data is displayed to them in a graph.
+Explore the [**Toy dog analysis**](https://editor.raspberrypi.org/en/projects/data-dogs-example){:target="_blank"} project. This asks the user to choose what type of data is displayed to them in a graph.
 
 Could you give your user options about the type of data they want to see?
 
@@ -44,7 +44,7 @@ title: Choose what happens when a specific colour is clicked
 
 You can create a `mouse_pressed()` function to work with the `p5` library. This allows a task to be carried out when the mouse is pressed. 
 
-The code below detects the colour of the pixel that has been clicked with the mouse:
+The code below retrieves the hexadecimal colour of the pixel that has been clicked with the mouse:
 
 --- code ---
 ---
@@ -54,7 +54,7 @@ line_numbers: false
 line_number_start: 1
 line_highlights: 
 ---
-pixel_colour = color(get(mouse_x, mouse_y))
+pixel_colour = Color(get(mouse_x, mouse_y)).hex
 
 --- /code ---
 
@@ -74,7 +74,7 @@ def mouse_pressed():
   
   # Display a message depending on what shape the user has pressed
   
-  pixel_colour = color(get(mouse_x, mouse_y))
+  pixel_colour = Color(get(mouse_x, mouse_y))
   if pixel_colour == fireball:
     print('A fireball UFO was spotted here!')
   elif pixel_colour == circle:
@@ -114,7 +114,7 @@ line_highlights:
 ---
 def mouse_pressed():
 # Put code to run when the mouse is pressed here
-  pixel_colour = color(get(mouse_x, mouse_y))
+  pixel_colour = Color(get(mouse_x, mouse_y))
   if pixel_colour in colours:
     facts = colours[pixel_colour]
     print('A volcano erupted in ' + facts['region'] + ' in ' + facts['year'])
@@ -272,7 +272,7 @@ def draw_data():
     region_coords = get_xy_coords(longitude, latitude)
     region_x = region_coords['x']
     region_y = region_coords['y']
-    colour = color(red, 0, 0)
+    colour = Color(red, 0, 0)
     colours[colour] = eruption
     draw_volcano(colour, region_x, region_y)
     red -= 2
