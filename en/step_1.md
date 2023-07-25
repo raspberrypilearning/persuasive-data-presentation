@@ -17,11 +17,10 @@ You will:
 
 --- task ---
 
-**ISS crew expeditions:** [See inside](https://trinket.io/python/9a1769f293){:target="_blank"}
+**ISS crew expeditions:** [See inside](https://editor.raspberrypi.org/en/projects/data-iss-example){:target="_blank"} 
 
-<div class="trinket">
-<iframe src="https://trinket.io/embed/python/9a1769f293?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-</div>
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/data-iss-example" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+</iframe>
 
 --- /task ---
 
@@ -50,23 +49,20 @@ Your data visualisation could:
 
 --- task ---
 
-**UFO tracker:** [See inside](https://trinket.io/python/9aa4c950e2){:target="_blank"}
+**UFO tracker:** [See inside](https://editor.raspberrypi.org/en/projects/data-ufo-example){:target="_blank"}
 
-<div class="trinket">
-<iframe src="https://trinket.io/embed/python/9aa4c950e2?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-</div>
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/data-ufo-example" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+</iframe>
 
-**Toy dog analysis:** [See inside](https://trinket.io/python/5d0fbef33b){:target="_blank"}
+**Toy dog analysis:** [See inside](https://editor.raspberrypi.org/en/projects/data-dogs-example){:target="_blank"}
 
-<div class="trinket">
-<iframe src="https://trinket.io/embed/python/5d0fbef33b?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-</div>
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/data-dogs-example" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+</iframe>
 
-**Volcanic eruptions:** [See inside](https://trinket.io/python/818ad12eeb){:target="_blank"}
+**Volcanic eruptions:** [See inside](https://editor.raspberrypi.org/en/projects/data-volcano-example){:target="_blank"}
 
-<div class="trinket">
-<iframe src="https://trinket.io/embed/python/818ad12eeb?outputOnly=true&runOption=run" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-</div>
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/data-volcano-example" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+</iframe>
 
 --- /task ---
 

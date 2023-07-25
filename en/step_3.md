@@ -13,11 +13,11 @@ In order to be successful with a programming project, you need to use **decompos
 title: Example decomposition
 ---
 
-Does your idea require a drawing to appear on the screen based on data in a text file? If so, you can break this problem down in the following way:
+Does your idea require a drawing to appear on the screen based on data in a text or csv file? If so, you can break this problem down in the following way:
 
 1. Write the code for drawing a shape or loading an image
 2. Make the image appear in the centre of the screen to test it
-3. Load the required data from the text file
+3. Load the required data from the text or csv file
 4. `print()` the data that you need for the image location to check that the code works
 5. Use the data to place the image in the correct location
 
@@ -63,10 +63,10 @@ line_highlights:
 ---
 def setup():
   size(400, 400)
-  text_align(CENTER, TOP) #Position around the centre
+  text_align(CENTER, TOP)  # Position around the centre
 
-def draw_emoji(emoji, size): #snake
-  text_size(size) #Controls the size of the emoji
+def draw_emoji(emoji, size):  # snake
+  text_size(size)  # controls the size of the emoji
   text(emoji, 200, 200)
   
 --- /code ---
@@ -106,11 +106,11 @@ def draw_data():
   for eruption in volcano_eruptions:
     longitude = float(eruption['longitude'])
     latitude = float(eruption['latitude'])
-    region_coords = get_xy_coords(longitude, latitude) # return coordinates to place map pin
+    region_coords = get_xy_coords(longitude, latitude)  # return coordinates to place map pin
     region_x = region_coords['x']
     region_y = region_coords['y']
-    colour = color(i, 255, 255)
-    colours[colour] = eruption
+    colour = Color(i, 255, 255)
+    colours[colour.hex] = eruption
     draw_volcano(colour, region_x, region_y)
     i -= 2
 --- /code ---
@@ -127,7 +127,7 @@ def draw_data():
 title: Colour in p5
 ---
 
-The p5 color() function expects three numbers: one each for red, green, and blue.
+The p5 Color() function expects three numbers: one each for red, green, and blue.
 
 --- code ---
 ---
@@ -137,7 +137,7 @@ line_numbers: false
 line_number_start: 1
 line_highlights: 1
 ---
-blue = color(50, 70, 206) #Red = 50, Green = 70, Blue = 206
+blue = Color(50, 70, 206)  # Red = 50, Green = 70, Blue = 206
 
 --- /code ---
 
@@ -181,8 +181,8 @@ def draw_data():
     region_coords = get_xy_coords(longitude, latitude)
     region_x = region_coords['x']
     region_y = region_coords['y']
-    colour = color(red, 0, 0)
-    colours[colour] = eruption
+    colour = Color(red, 0, 0)
+    colours[colour.hex] = eruption
     draw_volcano(colour, region_x, region_y)
     red -= 2
 --- /code ---
@@ -212,26 +212,26 @@ colours = {}
 
 def draw_data():
   
-  no_stroke()
-  
-  # Use the lat and long data to calculate the x y coords for the shape
-  
-  red = 255
-  green = 0
-  blue = 255
-  
-  for eruption in volcano_eruptions:
-    longitude = float(eruption['longitude'])
-    latitude = float(eruption['latitude'])
-    region_coords = get_xy_coords(longitude, latitude)
-    region_x = region_coords['x']
-    region_y = region_coords['y']
-    colour = color(red, green, blue)
-    colours[colour] = eruption
-    draw_volcano(colour, region_x, region_y)
-    red -= 1 # Change the red value
-    green += 1 #Change the green value
-    blue -= 1 #Change the blue value
+    no_stroke()
+
+    # Use the lat and long data to calculate the x y coords for the shape
+
+    red = 255
+    green = 0
+    blue = 255
+
+    for eruption in volcano_eruptions:
+        longitude = float(eruption['longitude'])
+        latitude = float(eruption['latitude'])
+        region_coords = get_xy_coords(longitude, latitude)
+        region_x = region_coords['x']
+        region_y = region_coords['y']
+        colour = Color(red, green, blue)
+        colours[colour.hex] = eruption
+        draw_volcano(colour, region_x, region_y)
+        red -= 1  # Change the red value
+        green += 1  # Change the green value
+        blue -= 1  # Change the blue value
 --- /code ---
 
 --- /collapse ---
@@ -246,6 +246,8 @@ At the top of your code, with your other imports, you will need to import `randi
 You will also need to define a `colours` dictionary in the main part of your code. This is typically placed under your import statements. 
 
 You can then choose a random colour for your region colours, each time around the for loop. There is a small chance that two or more colours might end up the same, but it is a very small chance.
+
+**Warning:** Choosing random colours will mean your pins will change colour on each loop.
 
 --- code ---
 ---
@@ -271,8 +273,8 @@ def draw_data():
     region_coords = get_xy_coords(longitude, latitude)
     region_x = region_coords['x']
     region_y = region_coords['y']
-    colour = color(randint(0,255), randint(0,255), randint(0,255)) # Select a random colour
-    colours[colour] = eruption
+    colour = Color(randint(0,255), randint(0,255), randint(0,255))  # Select a random colour
+    colours[colour.hex] = eruption
     draw_volcano(colour, region_x, region_y)
 --- /code ---
 
@@ -295,9 +297,9 @@ line_number_start: 1
 line_highlights: 1-4
 ---
 def draw_background(colour):
-  # Background colour
-  fill(colour)
-  rect(0, 0, 400, 400)
+    # Background colour
+    fill(colour)
+    rect(0, 0, 400, 400)
 
 --- /code ---
 
@@ -313,12 +315,12 @@ line_highlights: 8
 ---
 def draw():
 
-  red = color(255,0,0)
-  green = color(0,255,0)
-  blue = color(0,0,255)
+    red = Color(255,0,0)
+    green = Color(0,255,0)
+    blue = Color(0,0,255)
 
-  no_stroke()
-  draw_background(red)
+    no_stroke()
+    draw_background(red)
 
 --- /code ---
 
@@ -334,11 +336,11 @@ line_highlights: 1, 6-7
 ---
 def draw_background(green, blue):
   
-  # Background colour
-  fill(blue)
-  rect(0, 0, 400, 200)
-  fill(green)
-  rect(0, 200, 400, 200)
+    # Background colour
+    fill(blue)
+    rect(0, 0, 400, 200)
+    fill(green)
+    rect(0, 200, 400, 200)
 
 --- /code ---
 
@@ -354,12 +356,12 @@ line_highlights: 7-8
 ---
 def draw():
 
-  red = color(255, 0, 0)
-  green = color(0, 255, 0)
-  blue = color(0, 0, 255)
+    red = Color(255, 0, 0)
+    green = Color(0, 255, 0)
+    blue = Color(0, 0, 255)
 
-  no_stroke()
-  draw_background(green, blue)
+    no_stroke()
+    draw_background(green, blue)
 
 --- /code ---
 
@@ -382,11 +384,12 @@ line_numbers: false
 line_number_start: 
 line_highlights: 
 ---
-my_text_file = '' # Initialises the variable so that it can be added to
+my_text_file = ''  # Initialises the variable so that it can be added to
 
-with open('filename.csv') as f: # Opens the file temporarily
-  for line in f: # Loops through each line in the file
-      my_text_file += line # Adds the line to the current contents of the variable
+with open('filename.csv') as f:  # Opens the file temporarily
+    for line in f:  # Loops through each line in the file
+        my_text_file += line  # Adds the line to the current contents of the variable
+
 --- /code ---
 
 This can be a useful code snippet if you are working with very small text files and you don't intend to perform many actions on the loaded data. For example, you might want to just display the contents of the text file. 
@@ -407,11 +410,11 @@ line_numbers: false
 line_number_start: 
 line_highlights: 
 ---
-my_text_file = [] # Initialises the list so that data can be appended (added) to it
+my_text_file = []  # Initialises the list so that data can be appended (added) to it
 
-with open('filename.csv') as f: # Opens the file temporarily
-  for line in f: # Loops through each line in the file
-      my_text_file.append(line) # Adds each line as an item in the list
+with open('filename.csv') as f:  # Opens the file temporarily
+    for line in f:  # Loops through each line in the file
+        my_text_file.append(line)  # Adds each line as an item in the list
 --- /code ---
 
 This can be useful if your text file only contains **one** piece of data on **each line**. For example, it might by a list of player names for a game. 
@@ -439,9 +442,9 @@ line_highlights: 5
 my_text_file = []
 
 with open('filename.csv') as f:
-  for line in f:
-      info = line.split(',') # Split each item separated by a comma into a list
-
+    for line in f:
+        info = line.split(',')  # Split each item separated by a comma into a list
+  
 print(info)
 
 --- /code ---
@@ -467,9 +470,9 @@ line_highlights: 6
 my_text_file = []
 
 with open('filename.csv') as f:
-  for line in f:
-      info = line.split(',')
-      my_text_file.append(info) # Add the info list to the my_text_file list
+    for line in f:
+        info = line.split(',')
+        my_text_file.append(info)  # Add the info list to the my_text_file list
 
 print(my_text_file)
 
@@ -499,18 +502,18 @@ line_numbers: false
 line_number_start: 1
 line_highlights: 
 ---
-  volcano_eruptions = [] # Initialise the list to store the eruptions
-  
-  with open(file_name) as f:
+volcano_eruptions = []  # Initialise the list to store the eruptions
+
+with open(file_name) as f:
     for line in f:
-      info = line.split(',') # Split the line into a list
-      volcano_dict = { # Create a dictionary for the event
+    info = line.split(',')  # Split the line into a list
+    volcano_dict = { # Create a dictionary for the event
         'date': info[0],
         'longitude': info[1],
         'latitude': info[2],
         'location': info[3]
-      }
-      volcano_eruptions.append(volcano_dict) # Store dictionary in a list
+    }
+    volcano_eruptions.append(volcano_dict)  # Store dictionary in a list
 
 --- /code ---
 
@@ -536,16 +539,15 @@ line_numbers: true
 line_number_start: 1
 line_highlights: 3
 ---
-  with open(file_name) as f:
-    for line in f: # For each line in the text file
-      info = line.strip('\n') # Strip away the \n
-      info = info.split(',')
+with open(file_name) as f:
+    for line in f:  # For each line in the text file
+        info = line.strip('\n')  # Strip away the \n
+        info = info.split(',')
 
 --- /code ---
 
 
 --- /collapse ---
-
 
 ### Access data from lists and dictionaries
 
@@ -566,12 +568,12 @@ line_numbers: true
 line_number_start: 
 line_highlights: 
 ---
-ufo_dict = {
-  'date': '12-1-2020',
-  'time': '13:55',
-  'state': 'TX',
-  'country': 'United States of America'
-  }
+    ufo_dict = {
+        'date': '12-1-2020',
+        'time': '13:55',
+        'state': 'TX',
+        'country': 'United States of America'
+    }
 
 --- /code ---
 
@@ -618,10 +620,10 @@ line_numbers: true
 line_number_start: 1
 line_highlights: 
 ---
-for expedition in expeditions: # Loop through all of the expedition dictionaries in the expeditions list
+for expedition in expeditions:  # Loop through all of the expedition dictionaries in the expeditions list
 
-  if expedition['expedition number'] == 3: # Check if the expedition number is equal to 3
-    date = expedition['mission launch date'] # If true, store the matching mission launch date
+    if expedition['expedition number'] == 3:  # Check if the expedition number is equal to 3
+        date = expedition['mission launch date']  # If true, store the matching mission launch date
   
 --- /code ---
 
@@ -641,10 +643,10 @@ line_numbers: true
 line_number_start: 1
 line_highlights: 
 ---
-for sighting in ufo_sightings: # Loop through all of the sighting dictionaries in the ufo_sightings list
+for sighting in ufo_sightings:  # Loop through all of the sighting dictionaries in the ufo_sightings list
 
-    longitude = float(sighting['longitude']) # Store the longitude data
-    latitude = float(sighting['latitude']) # Store the latitude data
+    longitude = float(sighting['longitude'])  # Store the longitude data
+    latitude = float(sighting['latitude'])  # Store the latitude data
 --- /code ---
 
 You can see the same pattern occurring with this example as you saw with example one. The loop iterates through the list of dictionaries. For each loop, `sighting` is used as a temporary placeholder for the dictionary. The **key** is then used to access the required latitude and longitude data. 
@@ -706,27 +708,27 @@ from math import radians, pi, log, tan
 
 def convert_lat_long(latitude, longitude, map_width, map_height):
   
-  false_easting = 180
-  radius = map_width / (2 * pi)
-  latitude = radians(latitude)
-  longitude = radians(longitude + false_easting)
-  
-  x_coord = longitude * radius
-  
-  y_dist_from_equator = radius * log(tan(pi / 4 + latitude / 2))
-  y_coord = map_height / 2 - y_dist_from_equator
-  
-  coords = {'x': x_coord, 'y': y_coord}
-  
-  return coords
+    false_easting = 180
+    radius = map_width / (2 * pi)
+    latitude = radians(latitude)
+    longitude = radians(longitude + false_easting)
+
+    x_coord = longitude * radius
+
+    y_dist_from_equator = radius * log(tan(pi / 4 + latitude / 2))
+    y_coord = map_height / 2 - y_dist_from_equator
+
+    coords = {'x': x_coord, 'y': y_coord}
+
+    return coords
 
 
 def get_xy_coords(longitude, latitude, map_width=991, map_height=768):
-  
-  coords = None
-  
-  coords = convert_lat_long(latitude, longitude, map_width, map_height)
-  return coords
+
+    coords = None
+
+    coords = convert_lat_long(latitude, longitude, map_width, map_height)
+    return coords
 
 --- /code ---
 
