@@ -80,7 +80,7 @@ The **Volcanic eruptions** [starter project](https://editor.raspberrypi.org/en/p
 
 The **UFO tracker** [starter project](https://editor.raspberrypi.org/en/projects/data-ufo-starter){:target="_blank"}.
 
-The **World happiness index** [starter project](https://editor.raspberrypi.org/en/data-happiness-starter){:target="_blank"}.
+The **World happiness index** [starter project](https://editor.raspberrypi.org/en/projects/data-happiness-starter){:target="_blank"}.
 
 The **Dog breed characteristics** [starter project](https://editor.raspberrypi.org/en/projects/data-dogs-starter){:target="_blank"}.
 

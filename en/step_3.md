@@ -33,8 +33,6 @@ You have built up some really useful skills. Here is a reminder to help you make
 
 [[[p5-coordinates]]]
 
-[[[processing-add-image]]]
-
 [[[processing-python-ellipse]]]
 
 [[[processing-python-rect]]]
