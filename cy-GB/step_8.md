@@ -1,6 +1,6 @@
 ## What next?
 
-You have reached the end of the [More Python](https://projects.raspberrypi.org/en/pathways/name-of-path) path!
+You have reached the end of the [More Python](https://projects.raspberrypi.org/en/pathways/more-python) path!
 
 [[[python-coolest-projects]]]
 
