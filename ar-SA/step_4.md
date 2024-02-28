@@ -6,7 +6,7 @@ Now it's time to add some user interaction to your data visualisation!
 
 --- task ---
 
-Look at the [**ISS expedition project**](https://trinket.io/python/822033c5b6){:target="_blank"} project. It asks the user to choose an ISS expedition to explore. The user enters a number and then this number is used to:
+Look at the [**ISS expedition project**](https://editor.raspberrypi.org/en/projects/data-iss-example){:target="_blank"} project. It asks the user to choose an ISS expedition to explore. The user enters a number and then this number is used to:
 + Access the relevant data for that expedition
 + Draw flags on the ISS based on the data
 + Display the relevant expedition data as output for the user
@@ -17,7 +17,7 @@ Could your project do something similar?
 
 --- task ---
 
-Look at the [**UFO tracker**](https://trinket.io/python/cb376de667){:target="_blank"} project. This project allows the user to click on the different shapes that are displayed on the map. When the user clicks on an object, a message is shown to say the **type** of UFO that was spotted in that location.
+Look at the [**UFO tracker**](https://editor.raspberrypi.org/en/projects/data-ufo-example){:target="_blank"} project. This project allows the user to click on the different shapes that are displayed on the map. When the user clicks on an object, a message is shown to say the **type** of UFO that was spotted in that location.
 
 Could you use this idea to help you add user interaction to your project?
 
@@ -25,7 +25,7 @@ Could you use this idea to help you add user interaction to your project?
 
 --- task ---
 
-Explore the [**Toy dog analysis**](https://trinket.io/python/5d0fbef33b){:target="_blank"} project. This asks the user to choose what type of data is displayed to them in a graph.
+Explore the [**Toy dog analysis**](https://editor.raspberrypi.org/en/projects/data-dogs-example){:target="_blank"} project. This asks the user to choose what type of data is displayed to them in a graph.
 
 Could you give your user options about the type of data they want to see?
 
@@ -44,14 +44,14 @@ title: Choose what happens when a specific colour is clicked
 
 You can create a `mouse_pressed()` function to work with the `p5` library. This allows a task to be carried out when the mouse is pressed.
 
-The code below detects the colour of the pixel that has been clicked with the mouse:
+The code below retrieves the hexadecimal colour of the pixel that has been clicked with the mouse:
 
 --- code ---
 ---
 language: python filename: main.py line_numbers: false line_number_start: 1
 line_highlights:
 ---
-pixel_colour = color(get(mouse_x, mouse_y))
+pixel_colour = Color(get(mouse_x, mouse_y)).hex
 
 --- /code ---
 
@@ -68,7 +68,23 @@ def mouse_pressed():
 
   # Display a message depending on what shape the user has pressed
 
-  pixel_colour = color(get(mouse_x, mouse_y)) if pixel_colour == fireball: print('A fireball UFO was spotted here!') elif pixel_colour == circle: print('A circle-shaped UFO was spotted here!') elif pixel_colour == tri: print('A triangle-shaped UFO was spotted here!') elif pixel_colour == light: print('A UFO made of light was spotted here!') elif pixel_colour == disc: print('A disc-shaped UFO was spotted here!') elif pixel_colour == misc: print('A random-shaped UFO was spotted here!') elif pixel_colour == cylinder: print('A cylinder-shaped UFO was spotted here!') else: print('There were no UFO sightings in this area!')
+    pixel_colour = Color(get(mouse_x, mouse_y)).hex
+    if pixel_colour == fireball.hex:
+        print('A fireball UFO was spotted here!')
+    elif pixel_colour == circle.hex:
+        print('A circle-shaped UFO was spotted here!')
+    elif pixel_colour == tri.hex:
+        print('A triangle-shaped UFO was spotted here!')
+    elif pixel_colour == light.hex:
+        print('A UFO made of light was spotted here!')
+    elif pixel_colour == disc.hex:
+        print('A disc-shaped UFO was spotted here!')
+    elif pixel_colour == misc.hex:
+        print('A random-shaped UFO was spotted here!')
+    elif pixel_colour == cylinder.hex:
+        print('A cylinder-shaped UFO was spotted here!')
+    else:
+        print('There were no UFO sightings in this area!')
 
 --- /code ---
 
@@ -89,7 +105,14 @@ line_highlights:
 ---
 def mouse_pressed():
 # Put code to run when the mouse is pressed here
-  pixel_colour = color(get(mouse_x, mouse_y)) if pixel_colour in colours: facts = colours[pixel_colour] print('A volcano erupted in ' + facts['region'] + ' in ' + facts['year']) else: print('Region not detected') --- /code ---
+
+    pixel_colour = Color(get(mouse_x, mouse_y)).hex
+    if pixel_colour in colours:
+        facts = colours[pixel_colour]
+        print('A volcano erupted in ' + facts['region'] + ' in ' + facts['year'])
+    else:
+        print('Region not detected')
+--- /code ---
 
 --- /collapse ---
 
@@ -115,13 +138,14 @@ line_highlights:
 ---
 def main(): print('World Happiness Index Data 2019')
 
-  choice = input('''What would you like to see?
-  1. How happy are countries overall?
-  2. How much does national wealth matter?
-  3. How well does your country look after the disadvantaged?
-  4. How generous are people?
-  5. How fair and honest are people?
-  6. How much freedom do you have? Choice: ''')
+    choice = input('''What would you like to see?
+        1. How happy are countries overall?
+        2. How much does national wealth matter?
+        3. How well does your country look after the disadvantaged?
+        4. How generous are people?
+        5. How fair and honest are people?
+        6. How much freedom do you have?
+    Choice: ''')
 
 --- /code ---
 
@@ -139,15 +163,16 @@ You can use a **while loop** to run a piece of code **while** a **condition** is
 language: python filename: main.py line_numbers: false line_number_start:
 line_highlights:
 ---
-def menu(): choice = '' # Start with a wrong answer for choice
+def menu(): choice = ''  # Start with a wrong answer for choice
 
-  while choice != '1' and choice != '2': # Keep asking the user for the right answer choice = input('Please enter 1 to encode/decode text, or 2 to perform frequency analysis: ')
-
-    if choice == '1':
-      do_something()
+    while choice != '1' and choice != '2':  # Keep asking the user for the right answer
+        choice = input('Please enter 1 to encode/decode text, or 2 to perform frequency analysis: ')
     
-    elif  choice == '2':
-      do_something_else()
+    if choice == '1':
+        do_something()
+    
+    elif choice == '2':
+        do_something_else()
 
 --- /code ---
 
@@ -216,13 +241,22 @@ colours = {}
 
 def draw_data():
 
-  no_stroke()
-
-  # Use the lat and long data to calculate the x y coords for the shape
-
-  red = 255
-
-  for eruption in volcano_eruptions: longitude = float(eruption['longitude']) latitude = float(eruption['latitude']) region_coords = get_xy_coords(longitude, latitude) region_x = region_coords['x'] region_y = region_coords['y'] colour = color(red, 0, 0) colours[colour] = eruption draw_volcano(colour, region_x, region_y) red -= 2
+    no_stroke()
+    
+    # Use the lat and long data to calculate the x y coords for the shape
+    
+    red = 255
+    
+    for eruption in volcano_eruptions:
+        longitude = float(eruption['longitude'])
+        latitude = float(eruption['latitude'])
+        region_coords = get_xy_coords(longitude, latitude)
+        region_x = region_coords['x']
+        region_y = region_coords['y']
+        colour = Color(red, 0, 0)
+        colours[colour] = eruption
+        draw_volcano(colour, region_x, region_y)
+        red -= 2
 
 --- /code ---
 
@@ -231,8 +265,6 @@ def draw_data():
 --- /collapse ---
 
 --- /task ---
-
-
 
 
 --- save ---
