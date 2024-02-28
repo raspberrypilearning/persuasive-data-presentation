@@ -71,27 +71,25 @@ Sharing your data visualisation is a great way to express something about yourse
 
 --- task ---
 
-Select the correct **starter project** for your chosen data visualisation. Trinket will open in a new window. Select **remix** to create your own copy of the project.
+Select the correct **starter project** for your chosen data visualisation. The Raspberry Pi code editor will open in a new window. Make sure you are **logged in** and click **Save** to save a copy to your projects.
 
-The **ISS expedition** [starter project](https://trinket.io/python/21eb7fb833){:target="_blank"}.
+The **ISS expedition** [starter project](https://editor.raspberrypi.org/en/projects/data-iss-starter){:target="_blank"}.
 
-The **Volcanic eruptions** [starter project](https://trinket.io/python/62af00db94){:target="_blank"}.
+The **Volcanic eruptions** [starter project](https://editor.raspberrypi.org/en/projects/data-volcano-starter){:target="_blank"}.
 
-The **UFO tracker** [starter project](https://trinket.io/python/3ea4e1440c){:target="_blank"}.
+The **UFO tracker** [starter project](https://editor.raspberrypi.org/en/projects/data-ufo-starter){:target="_blank"}.
 
-The **World happiness index** [starter project](https://trinket.io/python/d9f19977c1){:target="_blank"}.
+The **World happiness index** [starter project](https://editor.raspberrypi.org/en/projects/data-happiness-starter){:target="_blank"}.
 
-The **Dog breed characteristics** [starter project](https://trinket.io/python/e0b08a10f4){:target="_blank"}.
+The **Dog breed characteristics** [starter project](https://editor.raspberrypi.org/en/projects/data-dogs-starter){:target="_blank"}.
 
-The **Caffeinated drinks** [starter project](https://trinket.io/python/0f11ace963){:target="_blank"}.
+The **Caffeinated drinks** [starter project](https://editor.raspberrypi.org/en/projects/data-caffeine-starter){:target="_blank"}.
 
-The **Bechdel Test scores** [starter project](https://trinket.io/python/2affa12e55){:target="_blank"}.
-
-The **Pokemon card data** [starter project](https://trinket.io/python/002f48dc17){:target="_blank"}.
+The **Bechdel Test scores** [starter project](https://editor.raspberrypi.org/en/projects/data-bechdel-starter){:target="_blank"}.
 
 **Using your own data set**
 
-If you are using your own data set then you will need to use the blank [starter project](https://trinket.io/python/9834b55047){:target="_blank"}. You will also need to **add** in your own data set.
+If you are using your own data set then you will need to use the blank [starter project](https://editor.raspberrypi.org/en/projects/data-blank-starter){:target="_blank"}. You will also need to **add** in your own data set.
 
 --- collapse ---
 ---
@@ -108,26 +106,17 @@ You should then **open** the file and check it for missing or unusual data.
 
 **Tip 3:** If your data has lots of extra columns that you aren't going to use for your visualisation then it is a good idea to delete them. This will make it easier to navigate and access your data from your code.
 
-Once you are satisfied that your data is looking good, it is time to upload it. Here's how:
+Once you are satisfied that your data is looking good, it is time to add it to your project. Here's how:
 
 1. Make sure that you have saved your CSV file as a CSV file. If you have been editing it in spreadsheet software then you might have to change the file type to CSV **before** pressing save.
 2. Find the location of your CSV file. It will most likely be in your downloads folder if you downloaded it from a site like Kaggle.
 3. Open the file with notepad (right-click on the file and choose **Open with** > **Notepad**).
 4. Delete the header (top) row of data as you will not need this for your program.
 5. Scroll to the bottom of your file and check that there isn't a blank space at the bottom. If there is, delete it.
-6. Go to **File** > **Save As** and save the file as `your-file-name.txt`. You **must** put `.txt` at the end of the file name.
-7. Go to your starter project in Trinket.
-8. Click on the icon next to the image upload icon, it has a little up arrow on it.
-
-![A screenshot of three icons in Trinket. The left icon is used to add a blank file, the middle icon is used to upload a file, and the right icon is used to upload an image.](images/upload.PNG)
-
-9. Find your text file, select it and click on **Open**.
-
-**Note:** Your file has the extension `txt`. You can keep it as `txt` and it will work in exactly the same way as the other CSV files that you have used.
-
-If you wish to change it to `.csv` then you can click the settings icon to the right of the file name and chose the edit button.
-
-![A screenshot of the settings icon in Trinket.](images/settings-icon.png)
+7. Go to your project in the Code Editor.
+8. Click on `+ Add file` button.
+9. Give it a sensible name (e.g. `mydata.csv`) and then click `Add file` to confirm.
+10. Copy all the data from notepad (Select All > Copy) and then paste it into your new file in your project.
 
 --- /collapse ---
 
@@ -146,7 +135,7 @@ title: Use p5 to draw shapes, maps, and images
 
 If you are going to be drawing shapes using `p5` then you will need to include the import statement at the top of your code.
 
-The import statement imports **all** of the code from the `p5.py` file that is also in your Trinket window.
+The import statement imports **all** of the code from the `p5`.
 
 To use p5, you will also need to create two functions and to include the `run()` function call.
 
@@ -159,9 +148,9 @@ line_highlights: 1-7
 ---
 from p5 import *
 
-def setup(): # Runs once at the start size(400, 400) # Choose the size of your canvas
+def setup():  # Runs once at the start size(400, 400)  # Choose the size of your canvas
 
-def draw(): # Runs every frame
+def draw():  # Runs every frame
 
 run()
 
