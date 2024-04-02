@@ -88,7 +88,7 @@ The **Caffeinated drinks** [starter project](https://editor.raspberrypi.org/en/p
 
 The **Bechdel Test scores** [starter project](https://editor.raspberrypi.org/en/projects/data-bechdel-starter){:target="_blank"}.
 
-The **Pokemon card data** [starter project](https://editor.raspberrypi.org/en/projects/persuasive_data_presentation_cards_starter){:target="_blank"}.
+The **Pokemon card data** [starter project](https://editor.raspberrypi.org/en/projects/data-cards-starter){:target="_blank"}.
 
 **Using your own data set**
 
