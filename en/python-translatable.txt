@@ -80,7 +80,7 @@ light
 
 dics
 
-miscellaneous
+misc
 
 cylinder
 
