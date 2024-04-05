@@ -32,7 +32,7 @@ date
 
 location
 
-ufo_dictionary
+ufo_dict
 
 state
 
