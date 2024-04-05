@@ -32,7 +32,7 @@ date
 
 location
 
-ufo_dictionary
+ufo_dict
 
 state
 
@@ -74,53 +74,21 @@ fireball
 
 circle
 
-triangle
+tri
 
 light
 
 dics
 
-miscellaneous
+misc
 
 cylinder
 
-A fireball UFO was spotted here!
+facts
 
-A circle-shaped UFO was spotted here!
-
-A triangle-shaped UFO was spotted here!
-
-A UFO made of light was spotted here!
-
-A disc-shaped UFO was spotted here!
-
-A random-shaped UFO was spotted here!
-
-A cylinder-shaped UFO was spotted here!
-
-There were no UFO sightings in this area!
-
-World Happiness Index Data 2019
-
-What would you like to see?
-
-1.How happy are countries overall?
-
-2.How much does national wealth matter?
-
-3.How well does your country look after the disadvantaged?
-
-4.How generous are people?
-
-5.How fair and honest are people?
-
-6.How much freedom do you have?
-
-Choice:
+choice
 
 menu
-
-Please enter 1 to encode/decode text, or 2 to perform frequency analysis:
 
 do_something
 
