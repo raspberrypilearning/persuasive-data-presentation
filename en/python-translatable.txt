@@ -26,7 +26,7 @@ line
 
 info
 
-volcano_dictionary
+volcano_dict
 
 date
 

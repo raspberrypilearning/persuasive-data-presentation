@@ -44,6 +44,10 @@ Store dictionary in a list
 
 Strip away the \n
 
+Display a message depending on what shape the user has pressed
+
+Put code to run when the mouse is pressed here
+
 For each line in the text file
 
 Loop through all of the expedition dictionaries in the expeditions list
