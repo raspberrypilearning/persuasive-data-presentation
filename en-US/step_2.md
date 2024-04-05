@@ -87,6 +87,8 @@ The **Caffeinated drinks** [starter project](https://editor.raspberrypi.org/en/p
 
 The **Bechdel Test scores** [starter project](https://editor.raspberrypi.org/en/projects/data-bechdel-starter){:target="_blank"}.
 
+The **Pokemon card data** [starter project](https://editor.raspberrypi.org/en/projects/data-cards-starter){:target="_blank"}.
+
 **Using your own data set**
 
 If you are using your own data set then you will need to use the blank [starter project](https://editor.raspberrypi.org/en/projects/data-blank-starter){:target="_blank"}. You will also need to **add** in your own data set.
