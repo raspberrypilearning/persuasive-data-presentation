@@ -100,3 +100,17 @@ What would you like to see?
     Choice: 
 
 Please enter 1 to encode/decode text, or 2 to perform frequency analysis:
+
+Toy
+
+Sporting
+
+Terrier
+
+Working
+
+Herding
+
+Hound
+
+Non Sporting
