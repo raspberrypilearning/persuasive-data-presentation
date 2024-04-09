@@ -78,7 +78,7 @@ tri
 
 light
 
-dics
+disc
 
 misc
 
