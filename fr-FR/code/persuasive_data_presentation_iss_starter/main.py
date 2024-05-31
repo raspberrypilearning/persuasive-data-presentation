@@ -1,3 +1,3 @@
 #!/bin/python3
 
-# Data headings: 0 Expedition number, 1 Representing country, 2 Astronaut, 3 Mission launch date
+# En-têtes de données : 0 Numéro d'expédition, 1 Pays représentant, 2 Astronaute, 3 Date de lancement de la mission
