@@ -1,6 +1,6 @@
 eruption
 
-volcano_eruptions
+eruptions_volcan
 
 longitude
 
@@ -12,86 +12,86 @@ region_x
 
 region_y
 
-colour
+couleur
 
-colours
+couleurs
 
-draw_volcano
+dessiner_volcan
 
-draw_background
+dessine_arriere_plan
 
-my_text_file
+mon_fichier_texte
 
-line
+ligne
 
 info
 
-volcano_dict
+dict_volcan
 
 date
 
-location
+lieu
 
-ufo_dict
+dict_ovni
 
-state
+etat
 
-country
+pays
 
-time
+heure
 
 expedition
 
 expeditions
 
-expedition number
+numéro d'expédition
 
-mission launch date
+date de lancement de la mission
 
-sighting
+observation
 
-ufo_sightings
+observations_ovni
 
 convert_lat_long
 
-false_easting
+fausse_ordonnee
 
-radius
+rayon
 
 x_coord
 
-y_dist_from_equator
+y_dist_depuis_equateur
 
 y_coord
 
 coords
 
-get_xy_coords
+obt_xy_coords
 
-pixel_colour
+couleur_pixel
 
-fireball
+boule_de_feu
 
-circle
+cercle
 
 tri
 
-light
+lumiere
 
-disc
+disque
 
-misc
+divers
 
-cylinder
+cylindre
 
-facts
+faits
 
-choice
+choix
 
 menu
 
-do_something
+faire_quelquechose
 
-do_something_else
+faire_quelquechose_autre
 
-flag
+drapeau
