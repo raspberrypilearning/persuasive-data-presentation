@@ -149,7 +149,7 @@ bleu = Color(50, 70, 206)  # Rouge = 50, Vert = 70, Bleu = 206
 
 --- collapse ---
 ---
-title: Modifier la valeur d'une couleur d'épingle de carte
+title: Modifier la valeur d'une couleur d'épingle de carte
 ---
 Cet exemple modifie la valeur du rouge à chaque fois que le code place une épingle :
 
@@ -236,7 +236,7 @@ def dessine_donnees():
 
 --- collapse ---
 ---
-titre: Choisir des couleurs aléatoires pour tes épingles de carte
+title: Choisir des couleurs aléatoires pour tes épingles de carte
 ---
 
 Au début de ton code, avec tes autres imports, tu devras importer `randint` depuis la bibliothèque `random`.
