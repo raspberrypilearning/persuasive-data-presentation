@@ -120,7 +120,7 @@ def mouse_pressed():
     if couleur_pixel == cylindre.hex:
         print('Un OVNI en forme de cylindre a été repéré ici !')
     else:
-        print('Il n'y a eu aucune observation d'OVNI dans cette zone !')
+        print('Il n\'y a eu aucune observation d\'OVNI dans cette zone !')
 
 
 run()
