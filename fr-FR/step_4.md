@@ -1,50 +1,50 @@
-## Expand and test – User interaction
+## Développer et tester – Interaction utilisateur
 
-Now it's time to add some user interaction to your data visualisation!
+Il est maintenant temps d'ajouter une interaction utilisateur à ta visualisation de données !
 
-![A screenshot of the ISS expedition project. The user is asked to input which crew expedition number they would like to explore.](images/user-interaction.PNG)
+![Une capture d'écran du projet d'expédition ISS. L'utilisateur est invité à saisir le numéro d'expédition de l'équipage qu'il souhaite explorer.](images/user-interaction.PNG)
 
 --- task ---
 
-Look at the [**ISS expedition project**](https://editor.raspberrypi.org/en/projects/data-iss-example){:target="_blank"} project. It asks the user to choose an ISS expedition to explore. The user enters a number and then this number is used to:
-+ Access the relevant data for that expedition
-+ Draw flags on the ISS based on the data
-+ Display the relevant expedition data as output for the user
+Regarde le projet [**projet d'expédition ISS**](https://editor.raspberrypi.org/en/projects/data-iss-example){:target="_blank"}. Il demande à l'utilisateur de choisir une expédition ISS à explorer. L'utilisateur saisit un numéro et ce numéro est ensuite utilisé pour :
++ Accéder aux données pertinentes pour cette expédition
++ Dessiner des drapeaux sur l'ISS sur la base des données
++ Afficher les données d'expédition pertinentes en sortie pour l'utilisateur
 
-Could your project do something similar?
+Ton projet pourrait-il faire quelque chose de similaire ?
 
 --- /task ---
 
 --- task ---
 
-Look at the [**UFO tracker**](https://editor.raspberrypi.org/en/projects/data-ufo-example){:target="_blank"} project. This project allows the user to click on the different shapes that are displayed on the map. When the user clicks on an object, a message is shown to say the **type** of UFO that was spotted in that location.
+Regarde le projet [**Traqueur d'OVNI**](https://editor.raspberrypi.org/en/projects/data-ufo-example){:target="_blank"}. Ce projet permet à l'utilisateur de cliquer sur les différentes formes affichées sur la carte. Lorsque l'utilisateur clique sur un objet, un message s'affiche indiquant le **type** d'OVNI qui a été repéré à cet endroit.
 
-Could you use this idea to help you add user interaction to your project?
-
---- /task ---
-
---- task ---
-
-Explore the [**Toy dog analysis**](https://editor.raspberrypi.org/en/projects/data-dogs-example){:target="_blank"} project. This asks the user to choose what type of data is displayed to them in a graph.
-
-Could you give your user options about the type of data they want to see?
-
-Think about your own project and the data that you want your users to be able to explore. Draw inspiration from the example projects and think about how your user could interact with the project.
+Pourrais-tu utiliser cette idée pour t'aider à ajouter une interaction utilisateur à ton projet ?
 
 --- /task ---
 
 --- task ---
 
-Add user interaction to your project. Here's a reminder of some of the skills that you might need to do this:
+Explore le projet [**Analyse des chiens jouets**](https://editor.raspberrypi.org/en/projects/data-dogs-example){:target="_blank"}. Cela demande à l'utilisateur de choisir quel type de données est affiché pour lui dans un graphique.
+
+Pourrais-tu donner à tes utilisateurs des options sur le type de données qu'ils souhaitent voir ?
+
+Pense à ton propre projet et aux données que tu veux que tes utilisateurs puissent explorer. Inspire-toi des exemples de projets et pense à la façon dont ton utilisateur peut interagir avec le projet.
+
+--- /task ---
+
+--- task ---
+
+Ajoute une interaction utilisateur à ton projet. Voici un rappel de certaines des compétences dont tu pourrais avoir besoin pour cela :
 
 --- collapse ---
 ---
-title: Choose what happens when a specific colour is clicked
+title: Choisir ce qui se passe quand une couleur spécifique est cliquée
 ---
 
-You can create a `mouse_pressed()` function to work with the `p5` library. This allows a task to be carried out when the mouse is pressed.
+Tu peux créer une fonction `mouse_pressed()` pour travailler avec la bibliothèque `p5`. Cela permet d'exécuter une tâche lorsque l'on appuie sur la souris.
 
-The code below retrieves the hexadecimal colour of the pixel that has been clicked with the mouse:
+Le code ci-dessous récupère la couleur hexadécimale du pixel sur lequel a été cliqué la souris :
 
 --- code ---
 ---
@@ -55,9 +55,9 @@ pixel_colour = Color(get(mouse_x, mouse_y)).hex
 
 --- /code ---
 
-This piece of code can be used with a selection (`if`) statement to make something happen based on the pixel colour.
+Ce morceau de code peut être utilisé avec une instruction de sélection (`if`) pour faire en sorte que quelque chose se produise en fonction de la couleur du pixel.
 
-An example of this happening can be seen in the **UFO sightings** project:
+Un exemple de ceci peut être vu dans le projet **Observations d'ovnis** :
 
 --- code ---
 ---
@@ -92,11 +92,11 @@ def mouse_pressed():
 
 --- collapse ---
 ---
-title: Choose what happens when a specific region is clicked
+title: Choisir ce qui se passe quand une région spécifique est cliquée
 ---
-For this to work correctly, you need to make sure that each pin is a different colour. You also need to make sure that the colour has been matched to a region using a dictionary. You should have already populated your `colours` dictionary using code in the previous step.
+Pour que cela fonctionne correctement, tu dois t'assurer que chaque épingle est d'une couleur différente. Tu dois également t'assurer que la couleur correspond à une région à l’aide d’un dictionnaire. Tu devrais déjà avoir rempli ton dictionnaire `couleurs` en utilisant du code à l'étape précédente.
 
-The example below shows the `colours` dictionary being accessed to display facts about region that was clicked on by the mouse.
+L'exemple ci-dessous montre l'accès au dictionnaire `couleurs` pour afficher des informations sur la région sur laquelle la souris a cliqué.
 
 --- code ---
 ---
@@ -119,17 +119,17 @@ def mouse_pressed():
 
 --- collapse ---
 ---
-title: Interaction based on user input
+title: Interaction basée sur la saisie de l'utilisateur
 ---
 
-A good way to interact with your user is to ask them a question. Their response can then be held in a variable and used to display the requested data. If you want your question to happen before a map, chart, or drawing is displayed, then you need to make sure that this is one of the first pieces of code that runs.
+Une bonne façon d'interagir avec ton utilisateur est de lui poser une question. Sa réponse peut ensuite être conservée dans une variable et utilisée pour afficher les données demandées. Si tu veux que ta question se produise avant l'affichage d'une carte, d'un graphique ou d'un dessin, alors tu dois t'assurer que c'est l'un des premiers morceaux de code qui s'exécute.
 
-Common places to ask a user question:
-+ In the main part of your code (not inside a function)
-+ In a `main()` function
-+ In the `setup()` function (if using `p5`)
+Lieux courants pour poser une question à un utilisateur :
++ Dans la partie principale de ton code (pas à l'intérieur d'une fonction)
++ Dans une fonction `main()`
++ Dans la fonction `setup()` (si tu utilises `p5`)
 
-Here is the code to ask a question; this was used in the **Happiness index project**:
+Voici le code pour poser une question ; cela a été utilisé dans le **projet Indice de bonheur** :
 
 --- code ---
 ---
@@ -153,10 +153,10 @@ def main(): print('World Happiness Index Data 2019')
 
 --- collapse ---
 ---
-title: Using a while loop to repeat questions
+title: Utiliser une boucle "while" pour répéter les questions
 ---
 
-You can use a **while loop** to run a piece of code **while** a **condition** is **True**. In the example below, as long as the user **does not** choose `c` or `f`, the loop will continue to run. You might find this helpful to use in your own project.
+Tu peux utiliser une **boucle while** pour exécuter un morceau de code **pendant** qu'une **condition** est **Vraie**. Dans l'exemple ci-dessous, tant que l'utilisateur **ne choisit pas** `c` ou `f`, la boucle va continuer à s'exécuter. Tu pourrais trouver cela utile à utiliser dans ton propre projet.
 
 --- code ---
 ---
@@ -182,55 +182,55 @@ def menu(): choice = ''  # Start with a wrong answer for choice
 
 --- task ---
 
-**Test:** Run your code and make sure that it does what you expect when the user enters their choice. If your program has multiple options, then make sure that you test that **each** option works as expected.
+**Test :** exécute ton code et assure-toi qu'il fait ce que tu attends lorsque l'utilisateur entre son choix. Si ton programme propose plusieurs options, assure-toi de tester que **chaque option** fonctionne comme prévu.
 
-Finally, ask another person to take a look at your program and provide any feedback on the user interaction element.
+Enfin, demande à une autre personne de jeter un coup d'œil à ton programme et de fournir tout commentaire sur l'élément d'interaction utilisateur.
 
 --- /task ---
 
 --- task ---
 
-**Debug:** Below are some potential bugs that might occur when working with user interaction:
+**Débogage :** tu trouveras ci-dessous quelques bogues potentiels pouvant survenir lors de l'utilisation de l'interaction utilisateur :
 
 --- collapse ---
 ---
-title: The question doesn't appear when the program runs
+title: La question n'apparaît pas lorsque le programme s'exécute
 ---
-Check that your question and `input()` function have been placed in the correct part of your program. This is typically:
-+ In the main part of your code (not inside a function)
-+ In a `main()` function
-+ In the `setup()` function (if using `p5`)
+Vérifie que ta question et la fonction `input()` ont été placées dans la bonne partie de ton programme. C'est typiquement :
++ Dans la partie principale de ton code (pas à l'intérieur d'une fonction)
++ Dans une fonction `main()`
++ Dans la fonction `setup()` (si tu utilises `p5`)
 
 --- /collapse ---
 
 --- collapse ---
 ---
-title: Nothing happens when the user enters a number
+title: Rien ne se passe lorsque l'utilisateur saisit un numéro
 ---
 
-The `input()` function is designed to take whatever a user types and return it as **string**. This means that in your **conditions**, you need to also use string values. You might have a condition that looks like this:
+La fonction `input()` est conçue pour prendre tout ce qu'un utilisateur tape et le renvoyer sous forme de **string**. Cela signifie que dans tes **conditions**, tu dois également utiliser des strings. Tu pourrais avoir une condition qui ressemble à ceci :
 
 ```
-if choice == 1:
+if choix == 1:
 ```
-This is checking for the **integer** value: 1 and not the **string** value: 1. To fix this, you can add apostrophes `'` to either side of your number.
+Ceci vérifie la valeur **entière** : 1 et non la valeur **string** : 1. Pour corriger cela, tu peux ajouter des apostrophes `'` de chaque côté de ton numéro.
 
 ```
-if choice == '1':
+if choix == '1':
 ```
 
 --- /collapse ---
 
 --- collapse ---
 ---
-title: It is not displaying the correct data when I click the mouse
+title: Les données correctes ne s'affichent pas lorsque je clique sur la souris
 ---
 
-The `mouse_pressed()` function that you have created is designed to check the **pixel colour** that has been clicked on the screen. If you have two or more objects that are the same colour, then your program will display the data for the first condition in the sequence that is false.
+La fonction `mouse_pressed()` que tu as créée est conçue pour vérifier la couleur **pixel** qui a été cliquée sur l'écran. Si tu as deux objets ou plus qui sont de la même couleur, alors ton programme affichera les données de la première condition de la séquence qui est fausse.
 
-If you would like your program to display different data for each item that the user clicks, then they must all be a **different colour**. You can see an example of how to code this for all of your data points here:
+Si tu souhaites que ton programme affiche des données différentes pour chaque élément sur lequel l'utilisateur clique, alors elles doivent toutes être d'une **couleur différente**. Tu peux voir un exemple de la façon de coder cela pour tous tes points de données ici :
 
-**Note** that the `colours` dictionary also needs to be define in the main part of your code.
+**Note** que le dictionnaire `couleurs` doit également être défini dans la partie principale de ton code.
 
 --- code ---
 ---
@@ -260,7 +260,7 @@ def draw_data():
 
 --- /code ---
 
-**Notice** that the colour is originally set to `red_value = 255`; this is the most amount of red that you can use. After each data point is drawn, the value of `red_value` is reduced by `1`. This ensures that each data point is a different colour.
+**Note** que la couleur est initialement définie sur `valeur_rouge = 255` ; c'est la plus grande quantité de rouge que tu puisses utiliser. Après chaque point de données dessiné, la valeur de `valeur_rouge` est réduite de `1`. Cela garantit que chaque point de données est d’une couleur différente.
 
 --- /collapse ---
 
