@@ -88,7 +88,7 @@ Un volcan est entré en éruption en ' + faits['region'] + ' en ' + faits['annee
 
 Région non détectée
 
-Données de l'Indice du bonheur dans le monde 2019
+Données de l\'Indice du bonheur dans le monde 2019
 
 Qu'aimerais-tu voir ?
         1. Quel est le degré de satisfaction des pays en général ?
