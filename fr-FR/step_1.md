@@ -1,23 +1,23 @@
-## You will make
+## Ce que tu vas faire
 
-Create a data visualisation for a topic that you are passionate about.
+Crée une visualisation de données pour un sujet qui te passionne.
 
-Your visualisation will need to meet the **project brief**.
+Ta visualisation devra répondre à la **fiche de projet**.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-A <span style="color: #0faeb0">data visualisation</span> is an interesting way to display data. It could be in the form of a graph, diagram, chart, or drawing. Data visualisations are used quite regularly in news articles as an accessible way to show readers the relevant data related to the article. For example, there might be a map that shows traffic hotspots in your area or the local weather for certain locations. Visualisations are also used by sports analysers, product promoters and people in many other roles.
+Une <span style="color: #0faeb0">visualisation de données</span> est un moyen intéressant d'afficher des données. Elle peut être sous la forme d'un graphique, d'un diagramme, d'un graphique ou d'un dessin. Les visualisations de données sont utilisées assez régulièrement dans les articles de presse comme moyen accessible de montrer aux lecteurs les données pertinentes liées à l'article. Par exemple, il peut y avoir une carte montrant les points chauds de circulation dans ta région ou la météo locale pour certains emplacements. Les visualisations sont également utilisées par les analyseurs sportifs, les promoteurs de produits et les personnes occupant de nombreux autres rôles.
 </p>
 
-You will:
-+ Load data from a **text/CSV file**
-+ Use **lists** and/or **dictionaries** to store the data
-+ **Visualise** the data through a **chart** or **drawing**
+Tu vas :
++ Charger les données depuis un fichier **texte/CSV**
++ Utiliser les **listes** et/ou **dictionnaires** pour stocker les données
++ **Visualiser** les données via un **graphique** ou **dessin**
 
-### Play ▶️
+### Joue ▶️
 
 --- task ---
 
-**ISS crew expeditions:** [See inside](https://editor.raspberrypi.org/en/projects/data-iss-example){:target="_blank"}
+**Expéditions d'équipage ISS :** [voir dans](https://editor.raspberrypi.org/en/projects/data-iss-example){:target="_blank"}
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/data-iss-example" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
@@ -26,40 +26,40 @@ You will:
 
 <div style="border-top: 15px solid #f3524f; background-color: whitesmoke; margin-bottom: 20px; padding: 10px;">
 
-### PROJECT BRIEF: Persuasive data presentation
+### FICHE DE PROJET : présentation convaincante des données
 <hr style="border-top: 2px solid black;"> 
 
-Your data visualisation should:
-+ Load data from a **text file/CSV** 
-+ Use **lists** and/or **dictionaries** to store the data
-+ **Visualise** the data through a **chart** or **drawing**
-+ Allow the user to **input** different options for what they would like to see
+Ta visualisation de données devrait :
++ Charger les données depuis un **fichier texte/CSV** 
++ Utiliser des **listes** et/ou des **dictionnaires** pour stocker les données
++ **Visualiser** les données à travers un **graphique** ou un **dessin**
++ Autoriser l'utilisateur à **entrer** différentes options pour ce qu'il aimerait voir
 
-Your data visualisation could:
-+ Use **unique** shapes to display the data points on a map
-+ **Analyse** the data using mathematical formulas before displaying it in a chart or drawing
+Ta visualisation de données pourrait :
++ Utiliser des formes **uniques** pour afficher les points de données sur une carte
++ **Analyser** les données à l'aide de formules mathématiques avant de les afficher dans un graphique ou un dessin
 
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">ISS</span> stands for International Space Station. The space station is a collaboration between many of the world's space agencies, and orbits the Earth, conducting scientific experiments. There are two Raspberry Pi Computers on the ISS, and the Raspberry Pi Foundation runs a challenge each year called [Astro Pi](https://astro-pi.org), that allows you to write code that will actually run in space.
+<span style="color: #0faeb0">ISS</span> signifie Station spatiale internationale. La station spatiale est le fruit d'une collaboration entre de nombreuses agences spatiales du monde entier. Elle est en orbite autour de la Terre et mène des expériences scientifiques. Il y a deux ordinateurs Raspberry Pi à bord de l'ISS, et la Raspberry Pi Foundation organise chaque année un défi appelé [Astro Pi](https://astro-pi.org), qui te permet d'écrire du code qui s'exécutera réellement dans l'espace.
 </p>
 
-### Get ideas 💭
+### Trouver des idées 💭
 
 --- task ---
 
-**UFO tracker:** [See inside](https://editor.raspberrypi.org/en/projects/data-ufo-example){:target="_blank"}
+**Traqueur d'OVNI :** [voir à l'intérieur](https://editor.raspberrypi.org/en/projects/data-ufo-example){:target="_blank"}
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/data-ufo-example" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
 
-**Toy dog analysis:** [See inside](https://editor.raspberrypi.org/en/projects/data-dogs-example){:target="_blank"}
+**Analyse du chien jouet :** [voir à l'intérieur](https://editor.raspberrypi.org/en/projects/data-dogs-example){:target="_blank"}
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/data-dogs-example" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
 
-**Volcanic eruptions:** [See inside](https://editor.raspberrypi.org/en/projects/data-volcano-example){:target="_blank"}
+**Éruptions volcaniques :** [voir à l'intérieur](https://editor.raspberrypi.org/en/projects/data-volcano-example){:target="_blank"}
 
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/data-volcano-example" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
