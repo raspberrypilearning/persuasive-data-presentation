@@ -1,0 +1,33 @@
+---
+title: Présentation convaincante des données
+hero_image: images/banner.png
+description: Crée une visualisation de données pour un sujet qui te passionne
+meta_title: Projets de codage Python pour enfants et adolescents | Données convaincantes
+meta_description: Apprends Python avec les projets de codage de la Raspberry Pi Foundation pour les enfants et les adolescents. Crée une visualisation de données en Python pour un sujet qui te passionne.
+version: 4
+listed: true
+copyedit: true
+last_tested: '2021-03-26'
+steps:
+  - 
+    title: Ce que tu vas faire
+  - 
+    title: Ton idée
+  - 
+    title: Construire et tester – Dessiner ou créer un graphique
+    completion:
+      - engaged
+  - 
+    title: Développer et tester - Interaction utilisateur
+    completion:
+      - internal
+  - 
+    title: Checklist
+    completion:
+      - external
+  - 
+    title: Améliorer ton projet
+  - 
+    title: Partager
+  - 
+    title: Et ensuite ?

@@ -1,0 +1,116 @@
+S'exécute une fois au début
+
+Choisir le format de ta carte
+
+Exécute chaque image
+
+Utilise les données de latitude et de longueur pour calculer les coordonnées x y de la forme
+
+retourne les coordonnées pour placer l'épingle de la carte
+
+Rouge = 50, Vert = 70, Bleu = 206
+
+Change la valeur du rouge
+
+Change la valeur du vert
+
+Change la valeur du bleu
+
+Couleur de l'arrière-plan
+
+Initialise la variable pour qu'elle puisse y être ajoutée
+
+Ouvre le fichier temporairement
+
+Boucle à travers chaque ligne du fichier
+
+Ajoute la ligne au contenu actuel de la variable
+
+Initialise la liste afin que les données puissent y être ajoutées (ajoutées)
+
+Ajoute chaque ligne en tant qu'élément dans la liste
+
+Divise chaque élément séparé par une virgule dans une liste
+
+Ajoute la liste d'informations à la liste mon_fichier_texte
+
+Initialiser la liste pour stocker les éruptions
+
+Diviser la ligne en une liste
+
+Créer un dictionnaire pour l'événement
+
+Stocker le dictionnaire dans une liste
+
+Enleve le \n
+
+Affiche un message en fonction de la forme sur laquelle l'utilisateur a appuyé
+
+Place ici le code à exécuter lorsque la souris est cliquée
+
+Pour chaque ligne dans le fichier texte
+
+Parcourir tous les dictionnaires d'expédition de la liste des expéditions
+
+Vérifier si le numéro d'expédition est égal à 3
+
+Si vrai, stocker la date de lancement de la mission correspondante
+
+Parcourir tous les dictionnaires d'observation de la liste observation_ovni
+
+Stocker les données de longitude
+
+Stocker les données de latitude
+
+Affiche un message en fonction de la forme sur laquelle l'utilisateur a appuyé
+
+Commencer par une mauvaise réponse pour le choix
+
+Continuer à demander à l'utilisateur la bonne réponse
+
+Un OVNI boule de feu a été repéré ici !
+
+Un OVNI en forme de cercle a été repéré ici !
+
+Un OVNI en forme de triangle a été repéré ici !
+
+Un OVNI fait de lumière a été repéré ici !
+
+Un OVNI en forme de disque a été repéré ici !
+
+Un OVNI de forme aléatoire a été repéré ici !
+
+Un OVNI en forme de cylindre a été repéré ici !
+
+Il n’y a eu aucune observation d’OVNI dans cette zone !
+
+Un volcan est entré en éruption en ' + faits['region'] + ' en ' + faits['annee']
+
+Région non détectée
+
+Données de l\'Indice du bonheur dans le monde 2019
+
+Qu'aimerais-tu voir ?
+        1. Quel est le degré de satisfaction des pays en général ?
+        2. Quelle est l\’importance de la richesse nationale ?
+        3. Dans quelle mesure ton pays prend-il soin des personnes défavorisées ?
+        4. À quel point les gens sont-ils généreux ?
+        5. Dans quelle mesure les gens sont-ils justes et honnêtes ?
+        6. De quelle liberté disposes-tu ?
+    Choix : 
+
+Saisis 1 pour encoder/décoder du texte, ou 2 pour effectuer une analyse fréquentielle :
+
+Jouet
+
+Sportif
+
+Terrier
+
+En fonctionnement
+
+Élevage
+
+Chien
+
+Non Sportif
