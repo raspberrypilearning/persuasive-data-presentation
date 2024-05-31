@@ -1,11 +1,11 @@
-## Share
+## Partager
 
-If you are in a club, why not share your project with friends?
+Si tu es dans un club, pourquoi ne pas partager ton projet avec des amis ?
 
 --- task ---
 
-Inspire the Raspberry Pi Foundation community with your project!
+Inspire la communauté Raspberry Pi Foundation avec ton projet !
 
-To submit your project to our ['Persuasive data presentation - Community'](https://wke.lt/w/s/Pmjl0o){:target="_blank"} studio, please complete [this form](https://form.raspberrypi.org/f/community-project-submissions){:target="_blank"}.
+Pour soumettre ton projet à notre studio ['Persuasive data presentation - Community'](https://wke.lt/w/s/Pmjl0o){:target="_blank"}, remplis [ce formulaire](https://form.raspberrypi.org/f/community-project-submissions){:target = "_vierge"}.
 
 --- /task ---
