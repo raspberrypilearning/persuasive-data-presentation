@@ -1,24 +1,24 @@
 ---
-title: Persuasive data presentation
+title: Présentation convaincante des données
 hero_image: images/banner.png
-description: Create a data visualisation for a topic that you are passionate about
-meta_title: Python coding projects for kids and teens | Persuasive data
-meta_description: Learn Python with the Raspberry Pi Foundation's coding projects for kids and teens. Create a data visualisation in Python for a topic that you are passionate about.
+description: Crée une visualisation de données pour un sujet qui te passionne
+meta_title: Projets de codage Python pour enfants et adolescents | Données convaincantes
+meta_description: Apprends Python avec les projets de codage de la Raspberry Pi Foundation pour les enfants et les adolescents. Crée une visualisation de données en Python pour un sujet qui te passionne.
 version: 4
 listed: true
 copyedit: true
 last_tested: '2021-03-26'
 steps:
   - 
-    title: You will make
+    title: Ce que tu vas faire
   - 
-    title: Your idea
+    title: Ton idée
   - 
-    title: Build and test - Draw or chart
+    title: Construire et tester – Dessiner ou créer un graphique
     completion:
       - engaged
   - 
-    title: Expand and test - User interaction
+    title: Développer et tester - Interaction utilisateur
     completion:
       - internal
   - 
@@ -26,8 +26,8 @@ steps:
     completion:
       - external
   - 
-    title: Upgrade your project
+    title: Améliorer ton projet
   - 
-    title: Share
+    title: Partager
   - 
-    title: What next?
+    title: Et ensuite ?
