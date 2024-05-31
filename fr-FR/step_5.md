@@ -1,86 +1,86 @@
 ## Checklist
 
-Did you meet the **project brief**? Think about your project and go through the checklist below and check off the ones that apply to your project.
+Est-ce que tu as respecté la **fiche de projet** ? Réfléchis à ton projet et parcours la checklist ci-dessous et coche celles qui s'appliquent à ton projet.
 
-Does your data visualisation:
+La visualisation de tes données est-elle :
 
 --- task ---
 
-Load data from a text/CSV file?
+Charger les données depuis un fichier texte/CSV ?
 
 --- /task ---
 
 --- task ---
 
-Use **lists** and/or **dictionaries** to store the data?
+Utiliser des **listes** et/ou **dictionnaires** pour stocker les données ?
 
 --- /task ---
 
 --- task ---
 
-**Visualise** the data through a **chart** or **drawing**?
+**Visualiser** les données via un **graphique** ou **dessin** ?
 
 --- /task ---
 
 --- task ---
 
-Allow the user to **input** different options for what they would like to see?
+Autoriser l'utilisateur à **saisir** différentes options pour ce qu'il aimerait voir ?
 
 --- /task ---
 
-Your data visualisation project could also:
+Ton projet de visualisation de données pourrait également :
 
 --- task ---
 
-Use **unique** shapes to display the data points on a map
-
---- /task ---
-
---- task ---
-
-**Analyse** the data using mathematical formulas before displaying it in a chart or drawing
-
---- /task ---
-
-## Sharing your work
-
---- task ---
-
-Did you share your work with others in an online gallery?
-
---- /task ---
-
-Reflecting about how you made your data visualisation project will help you in your future projects.
-
-Answer the questions below by drawing, writing, typing in a document, talking to someone, or in your own creative way that works best for you.
-
---- task ---
-
-How did you get your ideas?
+Utiliser des formes **uniques** pour afficher les points de données sur une carte
 
 --- /task ---
 
 --- task ---
 
-What cool new thing(s) did you learn?
+**Analyser** les données à l'aide de formules mathématiques avant de les afficher dans un graphique ou un dessin
+
+--- /task ---
+
+## Partager ton travail
+
+--- task ---
+
+As-tu partagé ton travail avec d’autres dans une galerie en ligne ?
+
+--- /task ---
+
+Réfléchir à la façon dont tu as réalisé ton projet de visualisation de données t'aidera dans tes projets futurs.
+
+Réponds aux questions ci-dessous en dessinant, en écrivant, en tapant dans un document, en parlant à quelqu'un ou de la manière créative qui te convient le mieux.
+
+--- task ---
+
+Comment as-tu eu tes idées ?
 
 --- /task ---
 
 --- task ---
 
-Mistakes are the "portals of discovery" (James Joyce, Ulysses).
-
-What mistakes did you make and how did they help you create your data visualisation project?
+Quelle(s) nouvelle(s) chose(s) cool as-tu apprise(s) ?
 
 --- /task ---
 
-### Now you know how to create your own data visualisation!
+--- task ---
 
-Take a moment to celebrate what you have made.
+Les erreurs sont les « portails de la découverte » (James Joyce, Ulysse).
+
+Quelles erreurs as-tu commises et comment t'ont-elles aidé à créer ton projet de visualisation de données ?
+
+--- /task ---
+
+### Maintenant tu sais comment créer ta propre visualisation de données !
+
+Prends un moment pour célébrer ce que tu as fait.
 
 --- task ---
 
-Where will you take your new powers? What will you make next?
+Comment vas-tu utiliser tes nouveaux pouvoirs ? Que feras-tu ensuite ?
 
 --- /task ---
 
