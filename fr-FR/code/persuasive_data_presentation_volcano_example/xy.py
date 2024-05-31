@@ -1,26 +1,26 @@
 #!/bin/python3
 from math import radians, pi, log, tan
 
-def convert_lat_long(latitude, longitude, map_width, map_height):
+def convert_lat_long(latitude, longitude, largeur_carte, hauteur_carte):
   
-  false_easting = 180
-  radius = map_width / (2 * pi)
+  fausse_ordonnee = 180
+  rayon = largeur_carte / (2 * pi)
   latitude = radians(latitude)
-  longitude = radians(longitude + false_easting)
+  longitude = radians(longitude + fausse_ordonnee)
   
-  x_coord = longitude * radius
+  x_coord = longitude * rayon
   
-  y_dist_from_equator = radius * log(tan(pi / 4 + latitude / 2))
-  y_coord = map_height / 2 - y_dist_from_equator
+  y_dist_depuis_equateur = rayon * log(tan(pi / 4 + latitude / 2))
+  y_coord = hauteur_carte / 2 - y_dist_depuis_equateur
   
   coords = {'x': x_coord, 'y': y_coord}
   
   return coords
 
 
-def get_xy_coords(longitude, latitude, map_width=991, map_height=768):
+def obt_xy_coords(longitude, latitude, largeur_carte=991, hauteur_carte=768):
   
   coords = None
   
-  coords = convert_lat_long(latitude, longitude, map_width, map_height)
+  coords = convert_lat_long(latitude, longitude, largeur_carte, hauteur_carte)
   return coords
