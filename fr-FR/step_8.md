@@ -1,9 +1,9 @@
-## What next?
+## Et ensuite ?
 
-You have reached the end of the [More Python](https://projects.raspberrypi.org/en/pathways/more-python) path!
+Tu as atteint la fin du parcours [Plus de Python](https://projects.raspberrypi.org/en/pathways/more-python) !
 
 [[[python-coolest-projects]]]
 
-Now you can bring all your ideas to life in Python. Try using Python to make more cool stuff.
+Tu peux maintenant donner vie à toutes tes idées en Python. Essaie d'utiliser Python pour faire d'autres trucs cool.
 
-Or, you can explore our [other Python projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=python) and try them out.
+Tu peux également explorer nos [autres projets Python](https://projects.raspberrypi.org/en/projects?software%5B%5D=python) et les essayer.
