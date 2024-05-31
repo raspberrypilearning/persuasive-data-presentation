@@ -50,7 +50,7 @@ def charge_donnees(nom_fichier):
             info = ligne.split('\n')
             info = info.split(',')
             expedition_dict = {
-                'numéro d'expédition': info[0],
+                'numéro d\'expédition': info[0],
                 'pays représenté': info[1],
                 'astronaute': info[2],
                 'date de lancement de la mission': info[3]
@@ -61,7 +61,7 @@ def charge_donnees(nom_fichier):
 def expedition_date(nombre):
 
     for expedition in expeditions:
-        if expedition['numéro d'expédition'] == nombre:
+        if expedition['numéro d\'expédition'] == nombre:
             date = expedition['date de lancement de la mission']
 
     return date
@@ -72,7 +72,7 @@ def expedition_astronautes(nombre):
     astronautes = []
 
     for expedition in expeditions:
-        if expedition['numéro d'expédition'] == nombre:
+        if expedition['numéro d\'expédition'] == nombre:
             astronaute = expedition['astronaute']
             astronautes.append(astronaute)
 
@@ -84,7 +84,7 @@ def expedition_pays(nombre):
     pays = []
 
     for expedition in expeditions:
-        if expedition['numéro d'expédition'] == nombre:
+        if expedition['numéro d\'expédition'] == nombre:
             contree = expedition['pays représenté']
             if contree not in pays:
                 pays.append(contree)
@@ -100,7 +100,7 @@ def draw():
     positions_drapeau = [[45, 145], [130, 60], [210, 310], [300, 220], [300, 70]]
 
     pays_dict = {
-        'États-Unis d'Amérique': drapeau_us,
+        'États-Unis d\'Amérique': drapeau_us,
         'Russie': drapeau_ru,
         'Pays-Bas': drapeau_pb,
         'Japon': drapeau_jp,
