@@ -1,147 +1,147 @@
-## Your idea
+## Ton idée
 
-Use this step to plan your data visualisation. You can plan by just thinking, tinkering, drawing or writing, or however you like!
+Utilise cette étape pour planifier ta visualisation de données. Tu peux planifier simplement en pensant, en bricolant, en dessinant ou en écrivant, ou comme bon te semble !
 
-![Three screenshots of example projects. The first is showing the ISS with three flags attached. The second image shows a chart of data from the Happiness Index project. The third shows data points on the UK showing UFO sightings.](images/project-examples.png)
+![Trois captures d'écran d'exemples de projets. La première montre l'ISS avec trois drapeaux attachés. La deuxième image montre un graphique des données du projet Indice du bonheur. Le troisième montre des points de données sur le Royaume-Uni montrant des observations d'ovnis.](images/project-examples.png)
 
-### Why are you making your data visualisation?
+### Pourquoi réalises-tu ta visualisation de données ?
 
 --- task ---
 
-Think about the **purpose** of the data visualisation you are creating. There are **eight** datasets to choose from as starter projects **or** you can find your own data set on a topic that you would like to highlight to others.
+Pense à **l'objectif** de la visualisation de données que tu crées. Il existe **huit** ensembles de données parmi lesquels choisir comme projets de démarrage **ou** tu peux trouver ton propre ensemble de données sur un sujet que tu souhaites mettre en avant auprès des autres.
 
-Use a dataset that is important to you. The datasets in the starter projects are:
-+ ISS expeditions
-+ Volcanic eruptions
-+ UFO tracker
-+ World happiness index
-+ Dog breed characteristics
-+ Caffeinated drinks
-+ Bechdel Test scores
-+ Pokemon card data
+Utilise un jeu de données qui est important pour toi. Les jeux de données dans les projets de démarrage sont :
++ Expéditions ISS
++ Éruptions volcaniques
++ Traqueur d'OVNI
++ Indice mondial du bonheur
++ Caractéristiques de la race de chien
++ Boissons caféinées
++ Résultats du test de Bechdel
++ Données de la carte Pokémon
 
 --- collapse ---
 
 ---
-title: Ideas for your data visualisation
+title: Idées pour la visualisation de tes données
 ---
 
-The **purpose** of your data visualisation could be to:
+Le **but** de ta visualisation de données pourrait être de :
 
-+ Show the different **expeditions** that have taken place on the **ISS**
-+ Demonstrate the **most intelligent dog** breeds
-+ Classify the different types of **UFO sightings** and where they are mostly located
-+ Show areas around the world that have experienced **volcanic eruptions**
-+ Discover the areas around the world that are the **best places to live** (according to the happiness index)
-+ Show the most powerful **pokemon** characters
-+ Analyse the **caffeine** levels in popular drinks
-+ Find out the **movies** that have the best **Bechdel Test scores** (this is a data set that looks into how women are represented in movies)
++ Montrer les différentes **expéditions** qui ont eu lieu sur l'**ISS**
++ Démontrer les races de **chiens les plus intelligentes**
++ Classer les différents types **d'observations d'ovnis** et où ils sont principalement situés
++ Afficher les zones à travers le monde qui ont connu des **éruptions volcaniques**
++ Découvrir les régions du monde qui sont les **meilleurs endroits où vivre** (selon l'indice de bonheur)
++ Afficher les personnages **Pokémon** les plus puissants
++ Analyser les niveaux **de caféine** dans les boissons populaires
++ Découvrir les **films** qui ont les meilleurs **résultats au test Bechdel** (il s'agit d'un ensemble de données qui examine la façon dont les femmes sont représentées dans les films)
 
 --- /collapse ---
 
-Or you can choose your own, a good place to explore other data sets is [Kaggle](https://www.kaggle.com/datasets){:target="_blank"}.
+Tu peux aussi choisir les tiens, un bon endroit pour explorer d'autres ensembles de données est [Kaggle](https://www.kaggle.com/datasets){:target="_blank"}.
 
-**Tip:** If you are going to use your own data set and want to place shapes on a world map then you will need to have data that contains the **longitude** and **latitude** locations for the items that you wish to display.
+**Astuce :** si tu vas utiliser ton propre jeu de données et que tu veux placer des formes sur une carte du monde, tu devras avoir des données qui contiennent les emplacements **longitude** et **latitude** pour les éléments que tu souhaites afficher.
 
 --- /task ---
 
 <div style="display: flex; flex-wrap: wrap">
-<div style="flex-basis: 200px; flex-grow: 1; margin-right: 10px; border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px; margin-bottom: 27px;">In <span style="color: #0faeb0">1854</span>, the physician John Snow believed that the the outbreak of <span style="color: #0faeb0">cholera</span> in the Soho area of London was being caused by a contaminated water supply — contrary to the commonly held belief that cholera was caused by 'bad air' in the area. To help prove his theory, Snow mapped the deaths from cholera in the area. The map clearly showed the deaths were centred around Broad Street and residents there were getting their water from the pump on this street. By visualising the data in this way, he was able to convince the local council to disable the water pump. It was widely recognised that this visualisation helped to save many lives.
+<div style="flex-basis: 200px; flex-grow: 1; margin-right: 10px; border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px; margin-bottom: 27px;">En <span style="color: #0faeb0">1854</span>, le médecin John Snow pensait que l'épidémie de <span style="color: #0faeb0">choléra</span> dans le quartier de Soho à Londres était due à un approvisionnement en eau contaminée - contrairement à la croyance communément admise selon laquelle le choléra était causé par le « mauvais air » du quartier. Pour aider à prouver sa théorie, Snow a cartographié les décès dus au choléra dans la région. La carte montrait clairement que les décès étaient concentrés autour de Broad Street et que les habitants tiraient leur eau de la pompe de cette rue. En visualisant les données de cette manière, il a réussi à convaincre la municipalité de désactiver la pompe à eau. Il était largement reconnu que cette visualisation avait contribué à sauver de nombreuses vies.
 </div>
 <div>
-![A snippet of John Snow's cholera map showing infections in red.](images/john-snow-map.png){:width="200px"}
+![Un extrait de la carte du choléra de John Snow montrant les infections en rouge.](images/john-snow-map.png){:width="200px"}
 </div>
 </div>
 
-### Who is it for?
+### À qui s'adresse-t-il ?
 
 --- task ---
 
-Think about who you will make your data visualisation for (your **audience**).
+Pense à qui tu destines ta visualisation de données (ton **public**).
 
-What is the **significance** of your visualisation? Does it highlight something specific about the world around us?
+Quelle est la **signification** de ta visualisation ? Cela met-il en évidence quelque chose de spécifique sur le monde qui nous entoure ?
 
-Will the colours, shapes, images, or charts mean **something special** to you or your audience?
+Les couleurs, les formes, les images ou les graphiques signifieront-ils **quelque chose de spécial** pour toi ou ton public ?
 
-Sharing your data visualisation is a great way to express something about yourself, your interests, or your culture.
+Partager ta visualisation de données est un excellent moyen d'exprimer quelque chose à propos de toi, de tes intérêts ou de ta culture.
 
 --- /task ---
 
-### Get started
+### Commencer
 
 --- task ---
 
-Select the correct **starter project** for your chosen data visualisation. The Raspberry Pi code editor will open in a new window. Make sure you are **logged in** and click **Save** to save a copy to your projects.
+Sélectionne le bon **projet de démarrage** pour la visualisation de données que tu as choisie. Le Code Editor Raspberry Pi s'ouvre dans une nouvelle fenêtre. Assure-toi que tu es **connecté** et clique sur **Save** pour enregistrer une copie dans tes projets.
 
-The **ISS expedition** [starter project](https://editor.raspberrypi.org/en/projects/data-iss-starter){:target="_blank"}.
+**Expédition ISS** le [projet de démarrage](https://editor.raspberrypi.org/en/projects/data-iss-starter){:target="_blank"}.
 
-The **Volcanic eruptions** [starter project](https://editor.raspberrypi.org/en/projects/data-volcano-starter){:target="_blank"}.
+**Éruptions volcaniques** le [projet de démarrage](https://editor.raspberrypi.org/en/projects/data-volcano-starter){:target="_blank"}.
 
-The **UFO tracker** [starter project](https://editor.raspberrypi.org/en/projects/data-ufo-starter){:target="_blank"}.
+**Traqueur d'OVNI** le [projet de démarrage](https://editor.raspberrypi.org/en/projects/data-ufo-starter){:target="_blank"}.
 
-The **World happiness index** [starter project](https://editor.raspberrypi.org/en/projects/data-happiness-starter){:target="_blank"}.
+**Indice mondial du bonheur** le [projet de démarrage](https://editor.raspberrypi.org/en/projects/data-happiness-starter){:target="_blank"}.
 
-The **Dog breed characteristics** [starter project](https://editor.raspberrypi.org/en/projects/data-dogs-starter){:target="_blank"}.
+**Caractéristiques de la race de chien** le [projet de démarrage](https://editor.raspberrypi.org/en/projects/data-dogs-starter){:target="_blank"}.
 
-The **Caffeinated drinks** [starter project](https://editor.raspberrypi.org/en/projects/data-caffeine-starter){:target="_blank"}.
+**Boissons caféinées** le [projet de démarrage](https://editor.raspberrypi.org/en/projects/data-caffeine-starter){:target="_blank"}.
 
-The **Bechdel Test scores** [starter project](https://editor.raspberrypi.org/en/projects/data-bechdel-starter){:target="_blank"}.
+**Résultats du test de Bechdel** le [projet de démarrage](https://editor.raspberrypi.org/en/projects/data-bechdel-starter){:target="_blank"}.
 
-The **Pokemon card data** [starter project](https://editor.raspberrypi.org/en/projects/data-cards-starter){:target="_blank"}.
+**Données de la carte Pokémon** le [projet de démarrage](https://editor.raspberrypi.org/en/projects/data-cards-starter){:target="_blank"}.
 
-**Using your own data set**
+**Utiliser ton propre jeu de données**
 
-If you are using your own data set then you will need to use the blank [starter project](https://editor.raspberrypi.org/en/projects/data-blank-starter){:target="_blank"}. You will also need to **add** in your own data set.
+Si tu utilises ton propre jeu de données, tu devras utiliser le projet de démarrage [vide](https://editor.raspberrypi.org/en/projects/data-blank-starter){:target="_blank"}. Tu devras également **ajouter** ton propre jeu de données.
 
 --- collapse ---
 ---
-title: Add your own data set
+title: Ajouter ton propre jeu de données
 ---
 
-Once you have found your own data set you will need to **download** it as a CSV file.
+Une fois que tu as trouvé ton propre jeu de données, tu devras le** télécharger** sous forme de fichier CSV.
 
-You should then **open** the file and check it for missing or unusual data.
+Tu devrais alors **ouvrir** le fichier et le vérifier s'il y a des données manquantes ou inhabituelles.
 
-**Tip 1:** It is a good idea to delete a **whole row** of data if it has sections that are blank. This will help to prevent problems with your code later on.
+**Astuce 1 :** c'est une bonne idée de supprimer une **ligne entière** de données si elle comporte des sections vides. Cela aidera à éviter des problèmes avec ton code ultérieurement.
 
-**Tip 2:** Look carefully at the data in your CSV file. Can you see any unusual symbols where text should be? If so, you might want to also delete these rows. Another option is to delete the symbols as long as that doesn't change the meaning of the data.
+**Astuce 2 :** regarde attentivement les données de ton fichier CSV. Peux-tu voir des symboles inhabituels à l'endroit où le texte devrait se trouver ? Si c'est le cas, tu peux également supprimer ces lignes. Une autre option est de supprimer les symboles tant que cela ne change pas la signification des données.
 
-**Tip 3:** If your data has lots of extra columns that you aren't going to use for your visualisation then it is a good idea to delete them. This will make it easier to navigate and access your data from your code.
+**Astuce 3 :** si tes données ont beaucoup de colonnes supplémentaires que tu ne vas pas utiliser pour ta visualisation, alors c'est une bonne idée de les supprimer. Cela facilitera la navigation et l'accès à tes données à partir de ton code.
 
-Once you are satisfied that your data is looking good, it is time to add it to your project. Here's how:
+Une fois que tu es convaincu que tes données sont correctes, il est temps de les ajouter à ton projet. Voici comment :
 
-1. Make sure that you have saved your CSV file as a CSV file. If you have been editing it in spreadsheet software then you might have to change the file type to CSV **before** pressing save.
-2. Find the location of your CSV file. It will most likely be in your downloads folder if you downloaded it from a site like Kaggle.
-3. Open the file with notepad (right-click on the file and choose **Open with** > **Notepad**).
-4. Delete the header (top) row of data as you will not need this for your program.
-5. Scroll to the bottom of your file and check that there isn't a blank space at the bottom. If there is, delete it.
-7. Go to your project in the Code Editor.
-8. Click on `+ Add file` button.
-9. Give it a sensible name (e.g. `mydata.csv`) and then click `Add file` to confirm.
-10. Copy all the data from notepad (Select All > Copy) and then paste it into your new file in your project.
+1. Assure-toi que tu as enregistré ton fichier CSV en tant que fichier CSV. Si tu l'as modifié dans un tableur, tu devras peut-être changer le type de fichier en CSV **avant** d'appuyer sur Enregistrer.
+2. Trouve l'emplacement de ton fichier CSV. Il sera probablement dans ton dossier de téléchargements si tu le télécharges depuis un site comme Kaggle.
+3. Ouvre le fichier avec le bloc-notes (fais un clic droit sur le fichier et choisis **Ouvrir avec** > **Bloc-notes**).
+4. Supprime la ligne d'en-tête (haut) de données car tu n'en auras pas besoin pour ton programme.
+5. Fais défiler vers le bas de ton fichier et vérifie qu'il n'y a pas d'espace vide en bas de page. Si c'est le cas, supprime-le.
+7. Va dans ton projet dans le Code Editor.
+8. Clique sur le bouton `+ Add file`.
+9. Donne-lui un nom judicieux (par exemple `mesdonnees.csv`) puis clique sur `Add file` pour confirmer.
+10. Copie toutes les données du bloc-notes (Sélectionner tout > Copier), puis colle-les dans ton nouveau fichier de ton projet.
 
 --- /collapse ---
 
 --- /task ---
 
-### Set up your project
+### Configurer ton projet
 
 --- task ---
 
-### Add in your import statements and starter code
+### Ajouter tes relevés d'importation et ton code de démarrage
 
 --- collapse ---
 ---
-title: Use p5 to draw shapes, maps, and images
+title: Utiliser p5 pour dessiner des formes, des cartes et des images
 ---
 
-If you are going to be drawing shapes using `p5` then you will need to include the import statement at the top of your code.
+Si tu vas dessiner des formes en utilisant `p5` alors tu devras inclure l'instruction d'importation en haut de ton code.
 
-The import statement imports **all** of the code from the `p5`.
+L'instruction import importe **tout** le code `p5`.
 
-To use p5, you will also need to create two functions and to include the `run()` function call.
+Pour utiliser p5, tu devras également créer deux fonctions et inclure l'appel de fonction `run()` .
 
-**Function one**
+**Fonction une**
 
 --- code ---
 ---
@@ -162,12 +162,12 @@ run()
 
 --- collapse ---
 ---
-title: Use xy to place data on a map
+title: Utiliser xy pour placer des données sur une carte
 ---
 
-If your CSV file includes longitude and latitude data, then you can use this to place objects on a world map. The file `xy.py` has been created to allow you to convert the latitude and longitude data to xy coordinates that can be used in your program.
+Si ton fichier CSV contient des données de longitude et de latitude, tu peux l'utiliser pour placer des objets sur une carte du monde. Le fichier `xy.py` a été créé pour te permettre de convertir les données de latitude et de longitude en coordonnées xy pouvant être utilisées dans ton programme.
 
-To use the `xy.py` file, you will need the following import statement at the top of your code:
+Pour utiliser le fichier `xy.py`, tu auras besoin de l'instruction d'importation suivante en haut de ton code :
 
 --- code ---
 ---
@@ -182,10 +182,10 @@ from xy import get_xy_coords
 
 --- collapse ---
 ---
-title: Use pygal to create charts
+title: Utiliser pygal pour créer des graphiques
 ---
 
-If your project requires you to create graphs and charts then you will need to use **pygal**. The following line of code imports **pygal** into your program:
+Si ton projet te demande de créer des graphiques et des graphiques, tu devras utiliser **pygal**. La ligne de code suivante importe **pygal** dans ton programme :
 
 --- code ---
 ---
@@ -194,7 +194,7 @@ line_highlights:
 ---
 from pygal import * --- /code ---
 
-The import statement imports **all** of the code from the pygal library.
+L'instruction import importe **tout** le code de la bibliothèque pygal.
 
 --- /collapse ---
 
