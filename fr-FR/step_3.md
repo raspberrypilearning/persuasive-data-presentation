@@ -1,35 +1,35 @@
-## Build and test – Draw or chart
+## Construire et tester - Dessiner ou construire un graphique
 
-Now it's time to make your data visualisation project.
+Il est maintenant temps de réaliser ton projet de visualisation de données.
 
-![A screenshot of the ISS expedition project. There is an illustration of the ISS with three flags on top. One flag is Russian, one is for the United States of America, and the other is for the United Kingdom.](images/iss-project.PNG)
+![Une capture d'écran du projet d'expédition ISS. Il y a une illustration de l'ISS avec trois drapeaux en haut. L’un des drapeaux est russe, l’un est pour les États-Unis d’Amérique, l’autre pour le Royaume-Uni.](images/iss-project.PNG)
 
-In order to be successful with a programming project, you need to use **decomposition** skills to break the problem down into smaller, more manageable parts. This means you should take each part at a time and get it working before moving on to the next part.
+Pour réussir un projet de programmation, tu dois utiliser les compétences de **décomposition** pour décomposer le problème en parties plus petites et plus faciles à gérer. Cela signifie que tu dois prendre chaque partie à la fois et la faire fonctionner avant de passer à la partie suivante.
 
-**Tip:** Test your code after each new section to make it easier to find and fix new errors.
+**Astuce :** teste ton code après chaque nouvelle section pour qu'il soit plus facile de trouver et de corriger de nouvelles erreurs.
 
 --- collapse ---
 ---
-title: Example decomposition
+title: Exemple de décomposition
 ---
 
-Does your idea require a drawing to appear on the screen based on data in a text or csv file? If so, you can break this problem down in the following way:
+Ton idée nécessite qu'un dessin apparaisse à l'écran en fonction des données contenues dans un fichier texte ou csv ? Si c'est le cas, tu peux décomposer ce problème de la manière suivante :
 
-1. Write the code for drawing a shape or loading an image
-2. Make the image appear in the centre of the screen to test it
-3. Load the required data from the text or csv file
-4. `print()` the data that you need for the image location to check that the code works
-5. Use the data to place the image in the correct location
+1. Écrit le code pour dessiner une forme ou charger une image
+2. Fais apparaître l'image au centre de l'écran pour la tester
+3. Charge les données requises depuis le fichier texte ou csv
+4. `print()` les données dont tu as besoin pour l'emplacement de l'image pour vérifier que le code fonctionne
+5. Utilise les données pour placer l'image au bon endroit
 
 --- /collapse ---
 
-Think about the steps that you will need to take in order to be successful in your project. Will you need to display a chart or an image? What skills will you need to make that happen?
+Pense aux étapes que tu devras suivre pour réussir ton projet. Auras-tu besoin d’afficher un graphique ou une image ? De quelles compétences auras-tu besoin pour y parvenir ?
 
 --- task ---
 
-You have built up some really useful skills. Here is a reminder to help you make your data visualisation:
+Tu as acquis des compétences vraiment utiles. Voici un rappel pour t'aider à réaliser ta visualisation de données :
 
-### Shapes and images
+### Formes et images
 
 [[[p5-coordinates]]]
 
@@ -44,12 +44,12 @@ You have built up some really useful skills. Here is a reminder to help you make
 --- collapse ---
 
 ---
-title: Use emoji characters
+title: Utiliser les caractères emoji
 ---
 
-You can use emoji characters in the p5 text() function to use an emoji to represent your player.
+Tu peux utiliser des caractères emoji dans la fonction p5 text() pour utiliser un emoji pour représenter ton joueur.
 
-Here’s an example:
+Voici un exemple :
 
 --- code ---
 ---
@@ -71,12 +71,12 @@ def draw_emoji(emoji, size):  # snake text_size(size)  # controls the size of th
 
 --- collapse ---
 ---
-title: Placing a shape according to latitude and longitude
+title: Placer une forme en fonction de la latitude et de la longitude
 ---
 
-The `xy.py` file is available in all of the starter projects. This file will take the **longitude** and **latitude** data from your **CSV** file and return the coordinates for a shape to be placed on an image.
+Le fichier `xy.py` est disponible dans tous les projets de démarrage. Ce fichier prendra les données **longitude** et **latitude** de ton fichier **CSV** et renverra les coordonnées d'une forme à placer sur une image.
 
-The example code below shows the `longitude` and `latitude` data being accessed from the dictionary. It then passes this data as arguments into the `get_xy_coords` function which then returns the coordinates.
+L'exemple de code ci-dessous montre les données `longitude` et `latitude` accessibles à partir du dictionnaire. Il transmet ensuite ces données comme arguments dans la fonction `obt_xy_coords` qui renvoie ensuite les coordonnées.
 
 --- code ---
 ---
@@ -95,17 +95,17 @@ def draw_data():
 
 --- /collapse ---
 
-### Colours and effects
+### Couleurs et effets
 
 [[[generic-theory-simple-colours]]]
 
 --- collapse ---
 
 ---
-title: Colour in p5
+title: Couleur en p5
 ---
 
-The p5 Color() function expects three numbers: one each for red, green, and blue.
+La fonction p5 Color() attend trois nombres : un pour le rouge, le vert et le bleu.
 
 --- code ---
 ---
@@ -126,11 +126,11 @@ blue = Color(50, 70, 206)  # Red = 50, Green = 70, Blue = 206
 
 --- collapse ---
 ---
-title: Change the value of one map pin colour
+title: Modifier la valeur d'une couleur d'épingle de carte
 ---
-This example changes the value for red each time the code places a pin:
+Cet exemple modifie la valeur du rouge à chaque fois que le code place une épingle :
 
-**Remember** to also define a `colours` dictionary in the main part of your code, typically near the top.
+**N'oublie pas** de définir également un dictionnaire de `couleurs` dans la partie principale de ton code, généralement vers le haut.
 
 --- code ---
 ---
@@ -155,12 +155,12 @@ def draw_data():
 
 --- collapse ---
 ---
-title: Change the value of multiple map pin colours
+title: Changer la valeur de plusieurs couleurs d'épingles de carte
 ---
 
-This example changes the red, green and blue values each time the code places a pin:
+Cet exemple modifie les valeurs du rouge, du vert et du bleu à chaque fois que le code place une épingle :
 
-**Remember** to also define a `colours` dictionary in the main part of your code, typically near the top.
+**N'oublie pas** de définir également un dictionnaire de `couleurs` dans la partie principale de ton code, généralement vers le haut.
 
 --- code ---
 ---
@@ -197,16 +197,16 @@ def draw_data():
 
 --- collapse ---
 ---
-title: Choose random colours for your map pins
+titre: Choisir des couleurs aléatoires pour tes épingles de carte
 ---
 
-At the top of your code, with your other imports, you will need to import `randint` from the `random` library.
+Au début de ton code, avec tes autres imports, tu devras importer `randint` depuis la bibliothèque `random`.
 
-You will also need to define a `colours` dictionary in the main part of your code. This is typically placed under your import statements.
+Tu devras également définir un dictionnaire `couleurs` dans la partie principale de ton code. Ceci est généralement placé sous tes déclarations d'importation.
 
-You can then choose a random colour for your region colours, each time around the for loop. There is a small chance that two or more colours might end up the same, but it is a very small chance.
+Tu peux alors choisir une couleur aléatoire pour les couleurs de ta région, à chaque fois autour de la boucle for. Il y a une petite chance que deux couleurs ou plus finissent par être les mêmes, mais c'est une très petite chance.
 
-**Warning:** Choosing random colours will mean your pins will change colour on each loop.
+**Attention :** choisir des couleurs aléatoires signifie que tes épingles changeront de couleur à chaque boucle.
 
 --- code ---
 ---
@@ -230,10 +230,10 @@ def draw_data():
 
 --- collapse ---
 ---
-title: Set the background colours when your program starts
+title: Définir les couleurs d’arrière-plan au démarrage de ton programme
 ---
 
-Define a new function called `draw_background()` and create a call to it in `draw():`, after a call to `no_stroke()`.
+Définis une nouvelle fonction appelée `dessine_arriere_plan()` et crée un appel à celle-ci dans `draw():`, après un appel à `no_stroke()`.
 
 --- code ---
 ---
@@ -244,7 +244,7 @@ def draw_background(colour): # Background colour fill(colour) rect(0, 0, 400, 40
 
 --- /code ---
 
-Then create a call to it in `draw()`:
+Puis crée un appel avec `draw()`:
 
 --- code ---
 ---
@@ -262,7 +262,7 @@ def draw():
 
 --- /code ---
 
-If you want your background to include more colours, you will need to add more parameters.
+Si tu veux que ton arrière-plan inclue plus de couleurs, tu devras ajouter plus de paramètres.
 
 --- code ---
 ---
@@ -279,7 +279,7 @@ def draw_background(green, blue):
 
 --- /code ---
 
-Then create a call to it in `draw()`:
+Puis crée un appel avec `draw()`:
 
 --- code ---
 ---
@@ -299,14 +299,14 @@ def draw():
 
 --- /collapse ---
 
-### Load data from text files
+### Charger des données à partir de fichiers texte
 
 --- collapse ---
 ---
-title: Load data into a variable
+title: Charger des données dans une variable
 ---
 
-To write the **entire contents** of a text file into a **variable**, you can use the following code:
+Pour écrire le **contenu entier** d'un fichier texte dans une **variable**, tu peux utiliser le code suivant :
 
 --- code ---
 ---
@@ -319,15 +319,15 @@ with open('filename.csv') as f:  # Opens the file temporarily for line in f:  # 
 
 --- /code ---
 
-This can be a useful code snippet if you are working with very small text files and you don't intend to perform many actions on the loaded data. For example, you might want to just display the contents of the text file.
+Cela peut être un extrait de code utile si tu travailles avec de très petits fichiers texte et que tu n'as pas l'intention d'effectuer beaucoup d'actions sur les données chargées. Par exemple, tu voudrais juste afficher le contenu du fichier texte.
 
 --- /collapse ---
 
 --- collapse ---
 ---
-title: Load data into a single list
+title: Charger les données dans une seule liste
 ---
-To write **each line** of a text file as a separate **item** in a list, you can use the following code:
+Pour écrire **chaque ligne** d'un fichier texte en tant qu'élément **distinct** dans une liste, tu peux utiliser le code suivant :
 
 --- code ---
 ---
@@ -338,19 +338,19 @@ my_text_file = []  # Initialises the list so that data can be appended (added) t
 
 with open('filename.csv') as f:  # Opens the file temporarily for line in f:  # Loops through each line in the file my_text_file.append(line)  # Adds each line as an item in the list --- /code ---
 
-This can be useful if your text file only contains **one** piece of data on **each line**. For example, it might by a list of player names for a game.
+Cela peut être utile si ton fichier texte ne contient qu'**un** élément de données sur **chaque ligne**. Par exemple, il peut s'agir d'une liste de noms de joueurs pour un jeu.
 
 --- /collapse ---
 
 --- collapse ---
 ---
-title: Load data into a list of lists (a 2D list)
+title: Charger les données dans une liste de listes (une liste 2D)
 ---
-A list of lists is often called a 2D list. When data is stored in a CSV file, each item in a line (row) is separated by a comma `,`.
+Une liste de listes est souvent appelée liste 2D. Lorsque les données sont stockées dans un fichier CSV, chaque élément d'une ligne (rangée) est séparé par une virgule `,`.
 
-![A screenshot of a text file. The text file contains volcano eruption data. Each row of data has a date, the longitude, the latitude, and the location of the volcano eruption.](images/text-file.PNG)
+![Une capture d'écran d'un fichier texte. Le fichier texte contient des données sur les éruptions volcaniques. Chaque ligne de données a une date, la longitude, la latitude et l'emplacement de l'éruption du volcan.](images/text-file.PNG)
 
-You can use this comma to create a list of the items for each line. A code snippet for this can be seen below at **line 5**:
+Tu peux utiliser cette virgule pour créer une liste des éléments pour chaque ligne. Un extrait de code pour cela peut être vu ci-dessous à **ligne 5** :
 
 --- code ---
 ---
@@ -365,15 +365,15 @@ print(info)
 
 --- /code ---
 
-If you run the code above then it will output **the last line** of the CSV file as a list. This is because, for each line, the `info` list has been recreated. It hasn't been added to.
+Si tu exécutes le code ci-dessus, il affichera **la dernière ligne** du fichier CSV sous forme de liste. En effet, pour chaque ligne, la liste `info` a été recréée. Elle n'a pas été ajoutée.
 
 ```
-['29/12/2020', '6.4', '2.733333333', 'Around 94nm South of Brass\n']
+['29/12/2020', '6.4', '2.733333333', 'Autour de 94nm au sud de Brass\n']
 ```
 
-To store **all** of the data, you can create a **list of lists**!
+Pour stocker **toutes** les données, tu peux créer une **liste de listes** !
 
-The code below uses the same code as above but now it **appends** the `info` list to the `my_text_file` list on **line 6**. This means that you can now store all of the data from the CSV file.
+Le code ci-dessous utilise le même code que ci-dessus mais maintenant il **ajoute** la liste `info` à la liste `mon_fichier_texte` à la **ligne 6**. Cela signifie que tu peux maintenant stocker toutes les données du fichier CSV.
 
 --- code ---
 ---
@@ -388,21 +388,21 @@ print(my_text_file)
 
 --- /code ---
 
-2D lists are really useful for storing and iterating through large amounts of data. However, you need to be very aware of **what** is being stored and **where** it is being stored.
+Les listes 2D sont très utiles pour stocker et parcourir de grandes quantités de données. Cependant, tu dois être très au courant de **ce qui** est stocké et **où** est stocké.
 
 --- /collapse ---
 
 --- collapse ---
 ---
-title: Load data into a list of dictionaries
+title: Charger des données dans une liste de dictionnaires
 ---
-Each line (row) from a CSV file can be stored in a **dictionary**. The CSV file below contains data on volcanic eruptions that have taken place since 2010. Each line is a new eruption. Each eruption has the date, longitude, latitude, and location information, as well as other things.
+Chaque ligne (ligne) d'un fichier CSV peut être stockée dans un **dictionnaire**. Le fichier CSV ci-dessous contient des données sur les éruptions volcaniques ayant eu lieu depuis 2010. Chaque ligne est une nouvelle éruption. Chaque éruption contient des informations sur la date, la longitude, la latitude et l'emplacement, ainsi que d'autres éléments.
 
-![A screenshot of a text file. The text file contains volcano eruption data. Each row of data has a date, the longitude, the latitude, and the location of the volcano eruption.](images/text-file.PNG)
+![Une capture d'écran d'un fichier texte. Le fichier texte contient des données sur les éruptions volcaniques. Chaque ligne de données a une date, la longitude, la latitude et l'emplacement de l'éruption du volcan.](images/text-file.PNG)
 
-If this data was stored in a 2D list, then you would need to know the `index` values for the data in order to access it. With a **dictionary**, you just need to know the `key`. This is the keyword used to represent the data held for each event. In this example, the keys are `date`, `longitude`, `latitude`, and `location`.
+Si ces données étaient stockées dans une liste 2D, tu aurais alors besoin de connaître les valeurs `d'index` des données pour y accéder. Avec un **dictionnaire**, tu as juste besoin de connaître la `clé`. C'est le mot clé utilisé pour représenter les données conservées pour chaque événement. Dans cet exemple, les clés sont `date`, `longitude`, `latitude`et `emplacement`.
 
-The code below shows a **list of dictionaries** being created for the contents of a CSV file:
+Le code ci-dessous montre une **liste de dictionnaires** créés pour le contenu d'un fichier CSV :
 
 --- code ---
 ---
@@ -419,15 +419,15 @@ with open(file_name) as f: for line in f: info = line.split(',')  # Split the li
 
 --- collapse ---
 ---
-title: Remove the \n
+title: Supprimer le \n
 ---
-When you look at a text file in its raw form, there is no `\n` at the end of each line. However, when you load each line from a text file you will see that a `\n` appears. This is because `\n` means **add a new line**. Without this, all of the lines of text would be on one, very long line.
+Quand tu regardes un fichier texte dans sa forme brute, il n'y a pas de `\n` à la fin de chaque ligne. Cependant, lorsque tu charges chaque ligne d'un fichier texte, tu verras qu'un `\n` apparaît. En effet, `\n` signifie **ajouter une nouvelle ligne**. Sans cela, toutes les lignes de texte seraient sur une seule et très longue ligne.
 
-This isn't helpful when you want to use the data in your program.
+Cela n'est pas utile lorsque tu veux utiliser les données dans ton programme.
 
-To remove the `\n` you can use the `strip()` method. This strips whatever you write in the brackets from the data.
+Pour supprimer le `\n` tu peux utiliser la méthode `strip()`. Cela supprime tout ce que tu écris entre parenthèses des données.
 
-You can see an example of this being used on **line 3** below:
+Tu peux voir un exemple de ceci utilisé à la **ligne 3** ci-dessous :
 
 --- code ---
 ---
@@ -441,16 +441,16 @@ with open(file_name) as f: for line in f:  # For each line in the text file info
 
 --- /collapse ---
 
-### Access data from lists and dictionaries
+### Accéder aux données des listes et dictionnaires
 
 [[[generic-python-list-index]]]
 
 --- collapse ---
 ---
-title: Access data from a dictionary
+title: Accéder aux données d'un dictionnaire
 ---
 
-A dictionary has been created to store UFO sightings:
+Un dictionnaire a été créé pour stocker les observations d'ovnis :
 
 --- code ---
 ---
@@ -467,15 +467,15 @@ line_highlights:
 
 --- /code ---
 
-Data is stored in a dictionary using a **key**, which is the label or keyword for the data.
+Les données sont stockées dans un dictionnaire à l'aide d'une **clé**, qui est l'étiquette ou le mot-clé des données.
 
-The **keys** in this dictionary are:
+Les **clés** de ce dictionnaire sont :
 + Date
-+ Time
-+ State
-+ Country
++ Heure
++ État
++ Pays
 
-If you wanted to find out the **date** for the UFO sighting then you would use this snippet of code:
+Si tu voulais connaître la **date** de l'observation d'ovni, tu utiliserais cet extrait de code :
 
 --- code ---
 ---
@@ -490,14 +490,14 @@ ufo_dict['date']
 
 --- collapse ---
 ---
-title: Access data from a list of dictionaries
+title: Accéder aux données à partir d’une liste de dictionnaires
 ---
 
-When you create a list of dictionaries, you can loop through the list to find and use the data that you need.
+Lorsque tu crées une liste de dictionnaires, tu peux parcourir la liste pour rechercher et utiliser les données dont tu as besoin.
 
-### Example one – ISS expeditions
+### Exemple 1 – expéditions ISS
 
-Here is some example code that was used to find the date of an expedition to the ISS:
+Voici un exemple de code utilisé pour trouver la date d'une expédition vers l'ISS :
 
 --- code ---
 ---
@@ -511,13 +511,13 @@ for expedition in expeditions:  # Loop through all of the expedition dictionarie
 
 --- /code ---
 
-Notice how the code `expedition['expedition number']` was used to access the data in the dictionary.
+Remarque comment le code `expedition['numéro d'expédition']` a été utilisé pour accéder aux données du dictionnaire.
 
-`expedition` is used as a temporary placeholder to loop through the list. At each iteration, `expedition` holds the **current** expedition dictionary. The **key** is then named in the square brackets to access the data.
+`expedition` est utilisé comme espace réservé temporaire pour parcourir la liste. À chaque itération, `expedition` contient le dictionnaire d'expédition **actuel**. La **clé** est alors nommée dans les crochets pour accéder aux données.
 
-### Example two – UFO sightings
+### Exemple 2 - Observations d'ovnis
 
-Here is another example that was used to find the latitude and longitude values for UFO sightings.
+Voici un autre exemple qui a été utilisé pour trouver les valeurs de latitude et de longitude pour les observations d'ovnis.
 
 --- code ---
 ---
@@ -530,13 +530,13 @@ for sighting in ufo_sightings:  # Loop through all of the sighting dictionaries 
     latitude = float(sighting['latitude'])  # Store the latitude data
 --- /code ---
 
-You can see the same pattern occurring with this example as you saw with example one. The loop iterates through the list of dictionaries. For each loop, `sighting` is used as a temporary placeholder for the dictionary. The **key** is then used to access the required latitude and longitude data.
+Tu peux voir le même schéma se produire avec cet exemple que dans le premier exemple. La boucle parcourt la liste des dictionnaires. Pour chaque boucle, `observation` est utilisée comme espace réservé temporaire pour le dictionnaire. La **clé** est ensuite utilisée pour accéder aux données de latitude et de longitude requises.
 
-In this case, `float()` was also used because the data needed to be stored as a decimal number.
+Dans ce cas, `float()` a également été utilisé car les données devaient être stockées sous forme de nombre décimal.
 
 --- /collapse ---
 
-### Displaying charts
+### Afficher des graphiques
 
 [[[pygal-library]]]
 
@@ -544,38 +544,38 @@ In this case, `float()` was also used because the data needed to be stored as a 
 
 --- task ---
 
-**Test:** Show someone else your project and get their feedback.
-+ If you are creating charts, are you happy with the type of chart that you have displayed and the data that you have used?
-+ If you are adding drawings on a map, are you happy with the shapes that you have chosen?
-+ If you are creating another type of visualisation, could it be improved in any way?
+**Test :** montre ton projet à quelqu'un d'autre pour avoir son avis.
++ Si tu crées des graphiques, es-tu satisfait du type de graphique que tu as affiché et des données que tu as utilisées ?
++ Si tu ajoutes des dessins sur une carte, es-tu satisfait des formes que tu as choisies ?
++ Si tu crées un autre type de visualisation, pourrait-on l'améliorer d'une manière ou d'une autre ?
 
 --- /task ---
 
 --- task ---
 
-**Debug:** You might find some bugs in your project that you need to fix. Here are some common bugs.
+**Débogage :** tu pourrais trouver des bogues dans ton projet que tu dois corriger. Voici quelques bogues courants.
 
 --- collapse ---
 ---
-title: It keeps saying 'index out of range'
+title: Le message "index out of range" (index hors de portée) s'affiche en permanence
 ---
 
-The `index out of range` error message typically refers to your code trying to access an **item** in a **list** that doesn't exist.
+Le message d'erreur `index out of range` fait généralement référence à ton code essayant d'accéder à un **élément** dans une **liste** qui n'existe pas.
 
-If your list is linked to a text file:
-+ Check that your text file doesn't have a blank line at the bottom of it
-+ Check that the rows in your text file all have the same amount of items (this isn't always needed but in this case, it might be causing a problem)
+Si ta liste est liée à un fichier texte :
++ Vérifie que ton fichier texte n'a pas de ligne vide en bas
++ Vérifie que les lignes dans ton fichier texte ont toutes la même quantité d'éléments (ce n'est pas toujours nécessaire mais dans ce cas, cela pourrait causer un problème)
 
 --- /collapse ---
 
 --- collapse ---
 ---
-title: The data isn't plotting on my map as expected
+title: Les données ne sont pas tracées sur ma carte comme prévu
 ---
 
-A file has been created to support you with this called `xy.py`. It is an additional file within the starter projects where **latitude** and **longitude** data has been included in the CSV file.
+Un fichier a été créé pour t'aider dans cette tâche, il s'appelle `xy.py`. Il s'agit d'un fichier supplémentaire dans les projets de démarrage où les données **latitude** et **longitude** ont été incluses dans le fichier CSV.
 
-The code for this file can be seen below:
+Le code de ce fichier peut être consulté ci-dessous :
 
 --- code ---
 ---
@@ -610,23 +610,23 @@ def get_xy_coords(longitude, latitude, map_width=991, map_height=768):
 
 --- /code ---
 
-This code takes **longitude** and **latitude** data, performs some tasks and then returns the x and y coordinates to place the drawing in the correct location.
+Ce code prend les données **longitude** et **latitude**, effectue certaines tâches puis renvoie les coordonnées x et y pour placer le dessin au bon endroit.
 
-If you are using this file:
-+ Check that you have imported it at the top of your main program. It should say `from xy import get_xy_coords`.
-+ Check that you are passing the **longitude** and **latitude** data in the correct order. Your function call should be similar to this: `get_xy_coords(longitude, latitude)`.
-+ Check that the longitude and latitude data has been converted to the **float** data type. Your code should look similar to this: `longitude = float(sighting['longitude'])`.
+Si tu utilises ce fichier :
++ Vérifie que tu l'as importé en haut de ton programme principal. Il doit être indiqué `from xy import obt_xy_coords`.
++ Vérifie que tu transmets les données **longitude** et **latitude** dans le bon ordre. Ton appel de fonction devrait être similaire à ceci : `obt_xy_coords(longitude, latitude)`.
++ Vérifie que les données de longitude et de latitude ont été converties au type de données **float** . Ton code devrait ressembler à ceci : `longitude = float(observation['longitude'])`.
 
 --- /collapse ---
 
 --- collapse ---
 ---
-title: Something is 'not defined'
+title: Quelque chose n'est "pas défini" (not defined)
 ---
 
-This is a common error. It usually means that a variable, dictionary, or list is trying to be accessed or modified before it has been defined.
+C'est une erreur courante. Cela signifie généralement qu'une variable, un dictionnaire ou une liste est en train d'être consultée ou modifiée avant qu'elle n'ait été définie.
 
-For example, you might use this code to append an item to a list:
+Par exemple, tu peux utiliser ce code pour ajouter un élément à une liste :
 
 --- code ---
 ---
@@ -637,7 +637,7 @@ state = 'TX'
 
 ufo_data.append(state) --- /code ---
 
-This line of code will cause an error message because the list `ufo_data` has not yet been defined. To fix this error, you would add in a line of code that defines the list.
+Cette ligne de code provoquera un message d'erreur car la liste `ufo_data` n'a pas encore été définie. Pour corriger cette erreur, tu dois ajouter une ligne de code qui définit la liste.
 
 --- code ---
 ---
@@ -656,10 +656,10 @@ ufo_data.append(state)
 
 --- collapse ---
 ---
-title: My chart isn't displaying
+title: Mon graphique ne s'affiche pas
 ---
 
-Check that you have included the code to display the chart on the screen:
+Vérifie que tu as inclus le code pour afficher le graphique à l'écran :
 
 --- code ---
 ---
@@ -670,15 +670,15 @@ chart.render()
 
 --- /code ---
 
-You may also need to check that you are converting numerical values to `float()` for decimal numbers or `int()` for whole numbers in your code.
+Tu devras peut-être également vérifier que tu convertis des valeurs numériques en `float()` pour les nombres décimaux ou `int()` pour les nombres entiers dans ton code.
 
 --- /collapse ---
 
-You might find a bug not listed here. Can you figure out how to fix it?
+Tu pourrais trouver un bogue qui n'est pas répertorié ici. Peux-tu trouver un moyen de le corriger ?
 
-**Tip:** Find the example project that is most similar to yours and carefully study the code that has been used to make it work. This can help you spot things that you might have missed in your own program.
+**Astuce :** trouve l'exemple de projet qui ressemble le plus au tien et étudie attentivement le code qui a été utilisé pour le faire fonctionner. Cela peut t'aider à repérer des choses que tu pourrais avoir manquées dans ton propre programme.
 
-We love hearing about your bugs and how you fixed them. Use the feedback button at the bottom of this page if you found a different bug in your project.
+Nous aimerions connaître tes bogues et la façon dont tu les as résolus. Utilise le bouton Envoyer un commentaire au bas de cette page si tu as trouvé un bogue différent dans ton projet.
 
 --- /task ---
 
