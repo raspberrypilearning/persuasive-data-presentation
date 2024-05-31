@@ -3,69 +3,69 @@ from p5 import *
 from random import randint
 
 pt_dict = {}
-pt_dict_group = {}
-pt_dict_period = {}
+pt_dict_groupe = {}
+pt_dict_periode = {}
 
-# Put code to run once here
+# Mets le code à exécuter une seule fois ici
 def setup():
-    global map
-    load_pt_data('pt.csv')
-    setup_coords()
+    global carte
+    charge_donnees_pt('pt.csv')
+    config_coords()
     size(1024, 576)
-    map = load_image('pt.png')
+    carte = load_image('pt.png')
 
 
-def setup_coords():
+def config_coords():
 
     for i in range(18):
-        pt_dict_group[i + 1] = {}
-        pt_dict_group[i + 1]['min_x'] = 25 + (i * 54)
-        pt_dict_group[i + 1]['max_x'] = 25 + (i * 54) + 55
+        pt_dict_groupe[i + 1] = {}
+        pt_dict_groupe[i + 1]['min_x'] = 25 + (i * 54)
+        pt_dict_groupe[i + 1]['max_x'] = 25 + (i * 54) + 55
 
     for i in range(9):
-        pt_dict_period[i + 1] = {}
-        pt_dict_period[i + 1]['min_y'] = 35 + (i * 54)
-        pt_dict_period[i + 1]['max_y'] = 35 + (i * 54) + 55
+        pt_dict_periode[i + 1] = {}
+        pt_dict_periode[i + 1]['min_y'] = 35 + (i * 54)
+        pt_dict_periode[i + 1]['max_y'] = 35 + (i * 54) + 55
 
-# Put code to run every frame here
+# Mets le code à exécuter à chaque image ici
 def draw():
     image(
-        map,  # The image to draw
-        0,  # The x of the top-left corner
-        0,  # The y of the top-left corner
-        width,  # The width of the image
-        height  # The height of the image
+        carte,  # L'image à dessiner
+        0,  # Le x du coin supérieur gauche
+        0,  # Le y du coin supérieur gauche
+        width,  # La largeur de l'image
+        height  # La hauteur de l'image
     )
 
-# Put code to run when the mouse is pressed here
+# Place ici le code à exécuter lorsque la souris est cliquée
 def mouse_pressed():
     x_coord = mouse.x
     y_coord = mouse.y
     if y_coord > 415:
         x_coord -= 30
 
-    for x in pt_dict_group:
-        if pt_dict_group[x]['min_x'] <= x_coord <= pt_dict_group[x]['max_x']:
-            group = x
-    for y in pt_dict_period:
-        if pt_dict_period[y]['min_y'] <= y_coord <= pt_dict_period[y]['max_y']:
-            period = y
+    for x in pt_dict_groupe:
+        if pt_dict_groupe[x]['min_x'] <= x_coord <= pt_dict_groupe[x]['max_x']:
+            groupe = x
+    for y in pt_dict_periode:
+        if pt_dict_periode[y]['min_y'] <= y_coord <= pt_dict_periode[y]['max_y']:
+            periode = y
     for element in pt_dict:
-        if pt_dict[element]['group'] == group and pt_dict[element]['period'] == period:
-            print(pt_dict[element]['name'], 'is a', pt_dict[element]
-                  ['appearance'], 'and is a', pt_dict[element]['phase'])
+        if pt_dict[element]['groupe'] == groupe and pt_dict[element]['periode'] == periode:
+            print(pt_dict[element]['nom'], 'est un', pt_dict[element]
+                  ['apparance'], 'et est un', pt_dict[element]['phase'])
 
 
-def load_pt_data(file_name):
-    with open(file_name) as f:
-        for line in f:
+def charge_donnees_pt(nom_fichier):
+    with open(nom_fichier) as f:
+        for ligne in f:
             info = line.strip().split(',')
             pt_dict[int(info[0])] = {
-                'name': info[1],
-                'period': int(info[7]),
-                'group': int(info[8]),
+                'nom': info[1],
+                'periode': int(info[7]),
+                'groupe': int(info[8]),
                 'phase': info[9],
-                'appearance': info[28]
+                'apparance': info[28]
             }
 
 
