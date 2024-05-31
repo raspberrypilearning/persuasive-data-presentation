@@ -1,3 +1,3 @@
 #!/bin/python3
 
-# Data headings: 0 Number, 1 imdbid, 2 rating, 3 id, 4 year, 5 title
+# En-têtes de données : 0 Numéro, 1 imdbid, 2 évaluation, 3 identifiant, 4 année, 5 titre
