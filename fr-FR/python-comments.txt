@@ -92,7 +92,7 @@ Données de l\'Indice du bonheur dans le monde 2019
 
 Qu'aimerais-tu voir ?
         1. Quel est le degré de satisfaction des pays en général ?
-        2. Quelle est l’importance de la richesse nationale ?
+        2. Quelle est l\’importance de la richesse nationale ?
         3. Dans quelle mesure ton pays prend-il soin des personnes défavorisées ?
         4. À quel point les gens sont-ils généreux ?
         5. Dans quelle mesure les gens sont-ils justes et honnêtes ?
