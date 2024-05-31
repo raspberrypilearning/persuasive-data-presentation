@@ -1,3 +1,3 @@
 #!/bin/python3
 
-# Data headings: 0 BreedName, 1 Type,	2 Average Price (American Dollars),	3 Intelligence score,	4 Popularity score US 2017
+# En-têtes de données : 0 Nom de la race, 1 Type, 2 Prix moyen (en dollars américains), 3 Score d'intelligence, 4 Score de popularité aux États-Unis 2017
