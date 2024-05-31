@@ -62,8 +62,6 @@ Store the longitude data
 
 Store the latitude data
 
-Display a message depending on what shape the user has pressed
-
 Start with a wrong answer for choice
 
 Keep asking the user for the right answer
