@@ -2,94 +2,94 @@
 from p5 import *
 
 
-def preload():
-    global iss, be_flag, ca_flag, fr_flag, uk_flag, gm_flag, it_flag, jp_flag
-    global ne_flag, ru_flag, us_flag
+def prechargement():
+    global iss, drapeau_be, drapeau_ca, drapeau_fr, drapeau_uk, drapeau_gm, drapeau_it, drapeau_jp
+    global drapeau_pb, drapeau_ru, drapeau_us
     iss = load_image('iss.jpg')
-    be_flag = load_image('be.jpg')
-    ca_flag = load_image('ca.jpg')
-    fr_flag = load_image('fr.jpg')
-    uk_flag = load_image('gb.jpg')
-    gm_flag = load_image('gm.jpg')
-    it_flag = load_image('it.jpg')
-    jp_flag = load_image('jp.jpg')
-    ne_flag = load_image('ne.jpg')
-    ru_flag = load_image('ru.jpg')
-    us_flag = load_image('us.jpg')
+    drapeau_be = load_image('be.jpg')
+    drapeau_ca = load_image('ca.jpg')
+    drapeau_fr = load_image('fr.jpg')
+    drapeau_uk = load_image('gb.jpg')
+    drapeau_gm = load_image('gm.jpg')
+    drapeau_it = load_image('it.jpg')
+    drapeau_jp = load_image('jp.jpg')
+    drapeau_pb = load_image('ne.jpg')
+    drapeau_ru = load_image('ru.jpg')
+    drapeau_us = load_image('us.jpg')
 
 
 def setup():
     size(400, 400)
-    load_data('iss-expedition-data.csv')
+    charge_donnees('iss-expedition-data.csv')
 
-    date = (expedition_date(chosen_expedition))
-    astronauts = (expedition_astronauts(chosen_expedition))
-    countries = (expedition_countries(chosen_expedition))
+    date = (expedition_date(expedition_choisie))
+    astronautes = (expedition_astronauts(expedition_choisie))
+    pays = (expedition_pays(expedition_choisie))
 
-    print('Expedition: ' + chosen_expedition)
-    print('Mission launch date: ' + date + '\n')
-    print('Astronauts:')
-    for astronaut in astronauts:
-        print(astronaut)
+    print('Expédition : ' + expedition_choisie)
+    print('Date de lancement de la mission : ' + date + '\n')
+    print('Astronautes :')
+    for astronaute in astronautes:
+        print(astronaute)
 
-    print('\nRepresenting countries:')
-    for country in countries:
-        print(country)
+    print('\nPays représentés :')
+    for contree in pays:
+        print(contree)
 
 
-def load_data(file_name):
+def charge_donnees(nom_fichier):
 
-    # Create a dictionary for each siting based on the data in the csv file
+    # Créer un dictionnaire pour chaque site basé sur les données du fichier csv
 
     global expeditions
 
     expeditions = []
 
-    with open(file_name) as f:
-        for line in f:
-            info = line.strip('\n')
+    with open(nom_fichier) as f:
+        for ligne in f:
+            info = ligne.split('\n')
             info = info.split(',')
             expedition_dict = {
-                'expedition number': info[0],
-                'representing country': info[1],
-                'astronaut': info[2],
-                'mission launch date': info[3]
+                'numéro d'expédition': info[0],
+                'pays représenté': info[1],
+                'astronaute': info[2],
+                'date de lancement de la mission': info[3]
             }
-            expeditions.append(expedition_dict)  # Store dictionary in a list
+            expeditions.append(expedition_dict) # Stocker le dictionnaire dans une liste
 
 
-def expedition_date(number):
+def expedition_date(nombre):
 
     for expedition in expeditions:
-        if expedition['expedition number'] == number:
-            date = expedition['mission launch date']
+        if expedition['numéro d'expédition'] == nombre:
+            date = expedition['date de lancement de la mission']
 
     return date
 
 
-def expedition_astronauts(number):
+def expedition_astronautes(nombre):
 
-    astronauts = []
-
-    for expedition in expeditions:
-        if expedition['expedition number'] == number:
-            astronaut = expedition['astronaut']
-            astronauts.append(astronaut)
-
-    return astronauts
-
-
-def expedition_countries(number):
-
-    countries = []
+    astronautes = []
 
     for expedition in expeditions:
-        if expedition['expedition number'] == number:
-            country = expedition['representing country']
-            if country not in countries:
-                countries.append(country)
+        if expedition['numéro d'expédition'] == nombre:
+            astronaute = expedition['astronaute']
+            astronautes.append(astronaute)
 
-    return countries
+    return astronautes
+
+
+def expedition_pays(nombre):
+
+    pays = []
+
+    for expedition in expeditions:
+        if expedition['numéro d'expédition'] == nombre:
+            contree = expedition['pays représenté']
+            if contree not in pays:
+                pays.append(contree)
+
+    return pays
 
 
 def draw():
@@ -97,35 +97,35 @@ def draw():
     f_width = 60
     f_height = 35
 
-    flag_positions = [[45, 145], [130, 60], [210, 310], [300, 220], [300, 70]]
+    positions_drapeau = [[45, 145], [130, 60], [210, 310], [300, 220], [300, 70]]
 
-    country_dict = {
-        'United States of America': us_flag,
-        'Russia': ru_flag,
-        'Netherlands': ne_flag,
-        'Japan': jp_flag,
-        'Italy': it_flag,
-        'Germany': gm_flag,
-        'United Kingdom': uk_flag,
-        'France': fr_flag,
-        'Canada': ca_flag,
-        'Belgium': be_flag
+    pays_dict = {
+        'États-Unis d'Amérique': drapeau_us,
+        'Russie': drapeau_ru,
+        'Pays-Bas': drapeau_pb,
+        'Japon': drapeau_jp,
+        'Italie': drapeau_it,
+        'Allemagne': drapeau_gm,
+        'Royaume-Uni': drapeau_uk,
+        'France': drapeau_fr,
+        'Canada': drapeau_ca,
+        'Belgique': drapeau_be
     }
 
     image(iss, 0, 0, width, height)
 
-    countries = expedition_countries(chosen_expedition)
+    pays = expedition_pays (expedition_choisie)
 
-    num_countries = len(countries)
+    nbr_pays = len(pays)
 
-    for x in range(num_countries):
-        flag = countries[x]
-        flag_image = country_dict[flag]
-        image(flag_image, flag_positions[x][0],
-              flag_positions[x][1], f_width, f_height)
+    for x in range(nbr_pays):
+        drapeau = pays[x]
+        image_drapeau = pays_dict[drapeau]
+        image(image_drapeau, positions_drapeau[x][0],
+              positions_drapeau[x][1], f_width, f_height)
 
 
-print('Choose an ISS expedition. Enter a number from 1 to 65:')
-chosen_expedition = input()
+print('Choisis une expédition ISS. Entre un nombre de 1 à 65 :')
+expedition_choisie = input()
 
 run()
