@@ -1,25 +1,25 @@
-## Upgrade your project
+## Verbeter je project
 
-If you have time you can upgrade your project. You might have ideas to add more already or you might want to go back to the first step and look at other projects again for more inspiration.
+Als je tijd hebt, kun je jouw project verbeteren. Misschien heb je al ideeën om er al meer toe te voegen of wil je misschien teruggaan naar de eerste stap en nog eens naar andere projecten kijken voor meer inspiratie.
 
-You could:
-- Analyse the data from the CSV file to calculate totals or averages that could be displayed in charts.
-- Think of other ways to present your data. Could you have different shapes? Could you use an image?
-- Add other images to your background to give it more detail.
+Je kunt:
+- De gegevens uit het CSV-bestand analyseren voor de berekening van totalen of gemiddelden die kunnen worden weergegeven in de grafieken.
+- Andere manieren bedenken om je gegevens te presenteren. Zou je verschillende vormen kunnen hebben? Zou je een afbeelding kunnen gebruiken?
+- Voeg andere afbeeldingen toe aan je achtergrond om deze meer details te geven.
 
-Here is a data presentation using a custom csv file with information on chemical elements. Click on an element to see its description.
+Hier is een gegevenspresentatie met behulp van een aangepast csv-bestand met informatie over chemische elementen. Klik op een element om de beschrijving ervan te zien.
 
-**Periodic table**:
+**Periodiek systeem**:
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/periodic-table-example" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
 
-You can find the Periodic table project [here](https://editor.raspberrypi.org/en/projects/periodic-table-example){:target="_blank"}
+Je kunt het Periodiek Systeem-project [hier vinden](https://editor.raspberrypi.org/en/projects/periodic-table-example){:target="_blank"}
 
-Each example project in the [Introduction](https://projects.raspberrypi.org/en/projects/persuasive-data-presentation/0) has a ‘See inside’ link for you to open the project in the Editor and look at the code to get ideas and see how they work.
+Elk voorbeeld project in de [Introductie](https://projects.raspberrypi.org/en/projects/persuasive-data-presentation/0) heeft een 'Zie binnen' link voor je om het project in de Editor te openen en naar de code te kijken om ideeën te krijgen en te zien hoe ze werken.
 
-### Get inspiration
+### Doe inspiratie op
 
-Take a look at some of the data visualisations created by community members in the Raspberry Pi Foundation’s studio [Persuasive data presentation projects](https://wke.lt/w/s/Pmjl0o){:target="_blank"}.
+Bekijk enkele datavisualisaties die zijn gemaakt door communityleden in de studio van de Raspberry Pi Foundation [Overtuigende datapresentatieprojecten](https://wke.lt/w/s/Pmjl0o){:target="_blank"}.
 
 --- save ---
 
