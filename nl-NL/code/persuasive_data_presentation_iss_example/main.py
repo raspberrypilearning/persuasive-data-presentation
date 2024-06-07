@@ -3,129 +3,129 @@ from p5 import *
 
 
 def preload():
-    global iss, be_flag, ca_flag, fr_flag, uk_flag, gm_flag, it_flag, jp_flag
-    global ne_flag, ru_flag, us_flag
+    global iss, be_vlag, ca_vlag, fr_vlag, uk_vlag, gm_vlag, it_vlag, jp_vlag
+    global ne_vlag, ru_vlag, us_vlag
     iss = load_image('iss.jpg')
-    be_flag = load_image('be.jpg')
-    ca_flag = load_image('ca.jpg')
-    fr_flag = load_image('fr.jpg')
-    uk_flag = load_image('gb.jpg')
-    gm_flag = load_image('gm.jpg')
-    it_flag = load_image('it.jpg')
-    jp_flag = load_image('jp.jpg')
-    ne_flag = load_image('ne.jpg')
-    ru_flag = load_image('ru.jpg')
-    us_flag = load_image('us.jpg')
+    be_vlag = load_image('be.jpg')
+    ca_vlag = load_image('ca.jpg')
+    fr_vlag = load_image('fr.jpg')
+    uk_vlag = load_image('gb.jpg')
+    gm_vlag = load_image('gm.jpg')
+    it_vlag = load_image('it.jpg')
+    jp_vlag = load_image('jp.jpg')
+    ne_vlag = load_image('ne.jpg')
+    ru_vlag = load_image('ru.jpg')
+    us_vlag = load_image('us.jpg')
 
 
 def setup():
     size(400, 400)
-    load_data('iss-expedition-data.csv')
+    load_data ('iss-expedition-data.csv')
 
-    date = (expedition_date(chosen_expedition))
-    astronauts = (expedition_astronauts(chosen_expedition))
-    countries = (expedition_countries(chosen_expedition))
+    datum = (expeditie_datum(gekozen_expeditie))
+    astronauten = (expeditie_astronauten(gekozen_expeditie))
+    landen = (expeditielanden(gekozen_expeditie))
 
-    print('Expedition: ' + chosen_expedition)
-    print('Mission launch date: ' + date + '\n')
-    print('Astronauts:')
-    for astronaut in astronauts:
+    print('Expeditie: ' + gekozen_expeditie)
+    print('Lanceringsdatum missie: ' + datum + '\n')
+    print('Astronauten:')
+    for astronaut in astronauten:
         print(astronaut)
 
-    print('\nRepresenting countries:')
-    for country in countries:
-        print(country)
+    print('\nVertegenwoordigde landen:')
+    for land in landen:
+        print(land)
 
 
 def load_data(file_name):
 
-    # Create a dictionary for each siting based on the data in the csv file
+    # Maak voor elke locatie een dictionary op basis van de gegevens in het csv-bestand
 
-    global expeditions
+    wereldwijde expedities
 
-    expeditions = []
+    expedities = []
 
     with open(file_name) as f:
         for line in f:
             info = line.strip('\n')
             info = info.split(',')
-            expedition_dict = {
-                'expedition number': info[0],
-                'representing country': info[1],
+            expeditie_dict = {
+                'expeditienummer': info[0],
+                'vertegenwoordigend land': info[1],
                 'astronaut': info[2],
-                'mission launch date': info[3]
+                'lanceringsdatum missie': info[3]
             }
-            expeditions.append(expedition_dict)  # Store dictionary in a list
+            expedities.append(expedition_dict) # Bewaar dictionary in een lijst
 
 
-def expedition_date(number):
+def expeditie_datum(number):
 
-    for expedition in expeditions:
-        if expedition['expedition number'] == number:
-            date = expedition['mission launch date']
+    for expeditie in expedities:
+        if expeditie['expeditienummer'] == number:
+            datum = expeditie['lanceringsdatum missie']
 
-    return date
-
-
-def expedition_astronauts(number):
-
-    astronauts = []
-
-    for expedition in expeditions:
-        if expedition['expedition number'] == number:
-            astronaut = expedition['astronaut']
-            astronauts.append(astronaut)
-
-    return astronauts
+    return datum
 
 
-def expedition_countries(number):
+def expeditie_astronauten(number):
 
-    countries = []
+    astronauten = []
 
-    for expedition in expeditions:
-        if expedition['expedition number'] == number:
-            country = expedition['representing country']
-            if country not in countries:
-                countries.append(country)
+    for expeditie in expedities:
+        if expeditie['expeditienummer'] == number:
+            astronaut = expeditie['astronaut']
+            astronauten.append(astronaut)
 
-    return countries
+    return astronauten
+
+
+def expeditie_landen(number):
+
+    landen = []
+
+    for expeditie in expedities:
+        if expeditie['expeditienummer'] == number:
+            land = expeditie['vertegenwoordigend land']
+            if land not in landen:
+                landen.append(land)
+
+    return landen
 
 
 def draw():
 
-    f_width = 60
-    f_height = 35
+    v_breedte = 60
+    v_hoogte = 35
 
-    flag_positions = [[45, 145], [130, 60], [210, 310], [300, 220], [300, 70]]
+    vlag_posities = [[45, 145], [130, 60], [210, 310], [300, 220], [300, 70]]
 
-    country_dict = {
-        'United States of America': us_flag,
-        'Russia': ru_flag,
-        'Netherlands': ne_flag,
-        'Japan': jp_flag,
-        'Italy': it_flag,
-        'Germany': gm_flag,
-        'United Kingdom': uk_flag,
-        'France': fr_flag,
-        'Canada': ca_flag,
-        'Belgium': be_flag
+    land_dict = {
+        'Verenigde Staten van Amerika': us_vlag,
+        'Rusland': ru_vlag,
+        'Nederland': ne_vlag,
+        'Japan': jp_vlag,
+        'Italië': it_vlag,
+        'Duitsland': gm_vlag,
+        'Verenigd Koninkrijk': uk_vlag,
+        'Frankrijk': fr_vlag,
+        'Canada': ca_vlag,
+        'België': be_vlag
     }
 
-    image(iss, 0, 0, width, height)
+    image(iss, 0, 0, breedte, hoogte)
 
-    countries = expedition_countries(chosen_expedition)
+    landen = expeditielanden(gekozen_expeditie)
 
-    num_countries = len(countries)
+    aantal_landen = len(landen)
 
-    for x in range(num_countries):
-        flag = countries[x]
-        flag_image = country_dict[flag]
-        image(flag_image, flag_positions[x][0],
-              flag_positions[x][1], f_width, f_height)
+    for x in range(aantal_landen):
+        vlag = landen[x]
+        vlag_image = land_dict[vlag]
+        image(vlag_image, vlag_posities[x][0],
+              vlag_posities[x][1], v_breedte, v_hoogte)
 
 
-print('Choose an ISS expedition. Enter a number from 1 to 65:')
-chosen_expedition = input()
+print('Kies een ISS-expeditie. Voer een getal in van 1 tot 65:')
+gekozen_expeditie = input()
 
 run()
