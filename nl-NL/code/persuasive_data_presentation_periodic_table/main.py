@@ -6,13 +6,13 @@ pt_dict = {}
 pt_dict_group = {}
 pt_dict_period = {}
 
-# Put code to run once here
+# Zet de code om eenmalig uit te voeren hier onder
 def setup():
-    global map
+    wereldkaart
     load_pt_data('pt.csv')
     setup_coords()
     size(1024, 576)
-    map = load_image('pt.png')
+    kaart = load_image('pt.png')
 
 
 def setup_coords():
@@ -27,17 +27,17 @@ def setup_coords():
         pt_dict_period[i + 1]['min_y'] = 35 + (i * 54)
         pt_dict_period[i + 1]['max_y'] = 35 + (i * 54) + 55
 
-# Put code to run every frame here
+# Zet hier code om bij elk frame uit te voeren
 def draw():
     image(
-        map,  # The image to draw
-        0,  # The x of the top-left corner
-        0,  # The y of the top-left corner
-        width,  # The width of the image
-        height  # The height of the image
+        kaart, # De afbeelding om te tekenen
+        0, # De x van de linkerbovenhoek
+        0, # De y van de linker bovenhoek
+        breedte, # De breedte van de afbeelding
+        hoogte # De hoogte van de afbeelding
     )
 
-# Put code to run when the mouse is pressed here
+# Zet code die moet worden uitgevoerd wanneer de muis wordt ingedrukt hier
 def mouse_pressed():
     x_coord = mouse.x
     y_coord = mouse.y
@@ -51,9 +51,9 @@ def mouse_pressed():
         if pt_dict_period[y]['min_y'] <= y_coord <= pt_dict_period[y]['max_y']:
             period = y
     for element in pt_dict:
-        if pt_dict[element]['group'] == group and pt_dict[element]['period'] == period:
-            print(pt_dict[element]['name'], 'is a', pt_dict[element]
-                  ['appearance'], 'and is a', pt_dict[element]['phase'])
+        if pt_dict[element]['groep'] == group and pt_dict[element]['periode'] == period:
+            print(pt_dict[element]['naam'], 'is een', pt_dict[element]
+                  ['uiterlijk'], 'en is een', pt_dict[element]['fase'])
 
 
 def load_pt_data(file_name):
@@ -61,11 +61,11 @@ def load_pt_data(file_name):
         for line in f:
             info = line.strip().split(',')
             pt_dict[int(info[0])] = {
-                'name': info[1],
-                'period': int(info[7]),
-                'group': int(info[8]),
-                'phase': info[9],
-                'appearance': info[28]
+                'naam': info[1],
+                'periode': int(info[7]),
+                'groep': int(info[8]),
+                'fase': info[9],
+                'uiterlijk': info[28]
             }
 
 
