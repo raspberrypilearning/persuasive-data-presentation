@@ -1,35 +1,35 @@
-## Build and test – Draw or chart
+## Bouw en test - Plaatje of grafiek
 
-Now it's time to make your data visualisation project.
+Nu is het tijd om je data weergave project te maken.
 
-![A screenshot of the ISS expedition project. There is an illustration of the ISS with three flags on top. One flag is Russian, one is for the United States of America, and the other is for the United Kingdom.](images/iss-project.PNG)
+![Een screenshot van het ISS-expeditieproject. Er is een illustratie van het ISS met drie vlaggen erop. Eén vlag is Russisch, één is voor de Verenigde Staten van Amerika en de andere is voor Groot-Brittannië.](images/iss-project.PNG)
 
-In order to be successful with a programming project, you need to use **decomposition** skills to break the problem down into smaller, more manageable parts. This means you should take each part at a time and get it working before moving on to the next part.
+Om succesvol te zijn met een programmeerproject, moet je **decompositie** vaardigheden gebruiken om het probleem op te splitsen in kleinere, beter beheersbare delen. Dit betekent dat je elk onderdeel afzonderlijk maakt en zorgt dat het werkt voordat je doorgaat naar het volgende deel.
 
-**Tip:** Test your code after each new section to make it easier to find and fix new errors.
+**Tip:** Test je code na elke nieuwe sectie, zodat je gemakkelijker nieuwe fouten kunt vinden en oplossen.
 
 --- collapse ---
 ---
-title: Example decomposition
+title: Voorbeeld decompositie
 ---
 
-Does your idea require a drawing to appear on the screen based on data in a text or csv file? If so, you can break this problem down in the following way:
+Vereist je idee dat een plaatje moet worden weergegeven op het scherm gebaseerd op gegevens in een tekst of csv-bestand? Zo ja, dan kun je dit probleem op de volgende manier oplossen:
 
-1. Write the code for drawing a shape or loading an image
-2. Make the image appear in the centre of the screen to test it
-3. Load the required data from the text or csv file
-4. `print()` the data that you need for the image location to check that the code works
-5. Use the data to place the image in the correct location
+1. Schrijf de code voor het tekenen van een vorm of het laden van een afbeelding
+2. Laat de afbeelding verschijnen in het midden van het scherm om het te testen
+3. Laad de benodigde gegevens uit het tekst- of csv-bestand
+4. `print()` de gegevens die je nodig hebt voor de afbeeldingslocatie om te controleren of de code werkt
+5. Gebruik de gegevens om de afbeelding op de juiste locatie te plaatsen
 
 --- /collapse ---
 
-Think about the steps that you will need to take in order to be successful in your project. Will you need to display a chart or an image? What skills will you need to make that happen?
+Denk aan de stappen die je moet nemen voor een succesvol project. Wil je een grafiek of een afbeelding weergeven? Welke vaardigheden heb je nodig om dat mogelijk te maken?
 
 --- task ---
 
-You have built up some really useful skills. Here is a reminder to help you make your data visualisation:
+Je hebt een aantal heel nuttige vaardigheden opgebouwd. Hier is een geheugensteuntje om je te helpen bij het maken van jouw data weergave:
 
-### Shapes and images
+### Vormen en afbeeldingen
 
 [[[p5-coordinates]]]
 
@@ -44,12 +44,12 @@ You have built up some really useful skills. Here is a reminder to help you make
 --- collapse ---
 
 ---
-title: Use emoji characters
+title: Emoji-tekens gebruiken
 ---
 
-You can use emoji characters in the p5 text() function to use an emoji to represent your player.
+Je kunt emoji-tekens gebruiken in de p5 text() functie om een emoji als speler te gebruiken.
 
-Here’s an example:
+Hier is een voorbeeld:
 
 --- code ---
 ---
@@ -71,12 +71,12 @@ def draw_emoji(emoji, size):  # snake text_size(size)  # controls the size of th
 
 --- collapse ---
 ---
-title: Placing a shape according to latitude and longitude
+title: Een vorm plaatsen op basis van breedtegraad en lengtegraad
 ---
 
-The `xy.py` file is available in all of the starter projects. This file will take the **longitude** and **latitude** data from your **CSV** file and return the coordinates for a shape to be placed on an image.
+Het `xy.py` bestand is beschikbaar in alle startprojecten. Dit bestand neemt de gegevens **lengtegraad** en **breedtegraad** uit je **CSV** bestand en retourneert de coördinaten om een vorm op een afbeelding te plaatsen.
 
-The example code below shows the `longitude` and `latitude` data being accessed from the dictionary. It then passes this data as arguments into the `get_xy_coords` function which then returns the coordinates.
+De onderstaande voorbeeldcode toont de gegevens `lengtegraad` en `breedtegraad` die vanuit de dictionary worden opgehaald. Vervolgens worden deze gegevens als argumenten doorgegeven aan de functie `get_xy_coords`, die vervolgens de coördinaten retourneert.
 
 --- code ---
 ---
@@ -95,17 +95,17 @@ def draw_data():
 
 --- /collapse ---
 
-### Colours and effects
+### Kleuren en effecten
 
 [[[generic-theory-simple-colours]]]
 
 --- collapse ---
 
 ---
-title: Colour in p5
+title: Kleur in p5
 ---
 
-The p5 Color() function expects three numbers: one each for red, green, and blue.
+De p5 Color() functie verwacht drie getallen: één voor rood, groen en blauw.
 
 --- code ---
 ---
@@ -126,11 +126,11 @@ blue = Color(50, 70, 206)  # Red = 50, Green = 70, Blue = 206
 
 --- collapse ---
 ---
-title: Change the value of one map pin colour
+title: Wijzig de waarde van een speld kleur op de kaart
 ---
-This example changes the value for red each time the code places a pin:
+Dit voorbeeld verandert de waarde voor rood elke keer wanneer de code een speld plaatst:
 
-**Remember** to also define a `colours` dictionary in the main part of your code, typically near the top.
+**Denk er aan** om ook een `kleuren` dictionairy te definiëren in het hoofd(main)gedeelte van je code, meestal staat deze bovenaan.
 
 --- code ---
 ---
@@ -155,12 +155,12 @@ def draw_data():
 
 --- collapse ---
 ---
-title: Change the value of multiple map pin colours
+titel: Wijzig de waarde van meerdere kaartspeldkleuren
 ---
 
-This example changes the red, green and blue values each time the code places a pin:
+In dit voorbeeld worden de rode, groene en blauwe waarden gewijzigd telkens wanneer de code een speld plaatst:
 
-**Remember** to also define a `colours` dictionary in the main part of your code, typically near the top.
+**Denk er aan** om ook een `kleuren` dictionairy te definiëren in het hoofd(main)gedeelte van je code, meestal staat deze bovenaan.
 
 --- code ---
 ---
@@ -197,16 +197,16 @@ def draw_data():
 
 --- collapse ---
 ---
-title: Choose random colours for your map pins
+titel: Kies willekeurige kleuren voor je spelden op de kaart
 ---
 
-At the top of your code, with your other imports, you will need to import `randint` from the `random` library.
+Bovenaan je code, bij je andere imports moet je ook `randint` importeren uit de `random` library.
 
-You will also need to define a `colours` dictionary in the main part of your code. This is typically placed under your import statements.
+Je zult ook een `kleuren` dictionary in het hoofdgedeelte van je code moeten definiëren. Dit wordt meestal onder je importopdrachten geplaatst.
 
-You can then choose a random colour for your region colours, each time around the for loop. There is a small chance that two or more colours might end up the same, but it is a very small chance.
+Je kunt dan een willekeurige kleur kiezen voor jouw regio kleuren, elke keer rond de for-lus. Er is een kans dat twee of meer kleuren hetzelfde zijn, maar deze kans is zeer klein.
 
-**Warning:** Choosing random colours will mean your pins will change colour on each loop.
+**Waarschuwing:** Door willekeurige kleuren te kiezen zullen je pinnen in elke lus van kleur veranderen.
 
 --- code ---
 ---
@@ -230,10 +230,10 @@ def draw_data():
 
 --- collapse ---
 ---
-title: Set the background colours when your program starts
+title: De achtergrondkleur instellen wanneer het programma wordt gestart
 ---
 
-Define a new function called `draw_background()` and create a call to it in `draw():`, after a call to `no_stroke()`.
+Definieer een nieuwe functie genaamd `draw_background()` en maak een oproep in `draw():`, na een oproep naar `no_stroke()`.
 
 --- code ---
 ---
@@ -244,7 +244,7 @@ def draw_background(colour): # Background colour fill(colour) rect(0, 0, 400, 40
 
 --- /code ---
 
-Then create a call to it in `draw()`:
+Maak daarna een oproep aan in `draw()`:
 
 --- code ---
 ---
@@ -262,7 +262,7 @@ def draw():
 
 --- /code ---
 
-If you want your background to include more colours, you will need to add more parameters.
+Als je wilt dat je achtergrond meer kleuren toevoegt, moet je meer parameters toevoegen.
 
 --- code ---
 ---
@@ -279,7 +279,7 @@ def draw_background(green, blue):
 
 --- /code ---
 
-Then create a call to it in `draw()`:
+Maak daarna een oproep aan in `draw()`:
 
 --- code ---
 ---
@@ -299,14 +299,14 @@ def draw():
 
 --- /collapse ---
 
-### Load data from text files
+### Gegevens uit tekstbestanden laden
 
 --- collapse ---
 ---
-title: Load data into a variable
+title: Gegevens in een variabele laden
 ---
 
-To write the **entire contents** of a text file into a **variable**, you can use the following code:
+Om de **volledige inhoud** van een tekstbestand naar een **variabele**te schrijven, kun je de volgende code gebruiken:
 
 --- code ---
 ---
@@ -319,15 +319,15 @@ with open('filename.csv') as f:  # Opens the file temporarily for line in f:  # 
 
 --- /code ---
 
-This can be a useful code snippet if you are working with very small text files and you don't intend to perform many actions on the loaded data. For example, you might want to just display the contents of the text file.
+Dit kan een handig codefragment zijn als je met zeer kleine tekstbestanden werkt en niet van plan bent veel acties uit te voeren op de geladen gegevens. Je wilt bijvoorbeeld gewoon de inhoud van het tekstbestand weergeven.
 
 --- /collapse ---
 
 --- collapse ---
 ---
-title: Load data into a single list
+title: Gegevens in één enkele lijst laden
 ---
-To write **each line** of a text file as a separate **item** in a list, you can use the following code:
+Om **elke regel** van een tekstbestand als een afzonderlijk **item** in een lijst te schrijven, kun je de volgende code gebruiken:
 
 --- code ---
 ---
@@ -338,19 +338,19 @@ my_text_file = []  # Initialises the list so that data can be appended (added) t
 
 with open('filename.csv') as f:  # Opens the file temporarily for line in f:  # Loops through each line in the file my_text_file.append(line)  # Adds each line as an item in the list --- /code ---
 
-This can be useful if your text file only contains **one** piece of data on **each line**. For example, it might by a list of player names for a game.
+Dit kan handig zijn als je tekstbestand slechts **één** stukje gegevens bevat op **elke regel**. Het kan bijvoorbeeld een lijst met spelersnamen voor een spel zijn.
 
 --- /collapse ---
 
 --- collapse ---
 ---
-title: Load data into a list of lists (a 2D list)
+title: Gegevens laden in een lijst met lijsten (een 2D lijst)
 ---
-A list of lists is often called a 2D list. When data is stored in a CSV file, each item in a line (row) is separated by a comma `,`.
+Een lijst met lijsten wordt vaak een 2D-lijst genoemd. Wanneer gegevens in een CSV-bestand worden opgeslagen, wordt elk item in een regel (rij) gescheiden door een komma `,`.
 
-![A screenshot of a text file. The text file contains volcano eruption data. Each row of data has a date, the longitude, the latitude, and the location of the volcano eruption.](images/text-file.PNG)
+![Een screenshot van een tekstbestand. Het tekstbestand bevat gegevens over vulkaanuitbarstingen. Elke rij met gegevens heeft een datum, de lengtegraad, de breedtegraad en de locatie van de vulkaanuitbarsting.](images/text-file.PNG)
 
-You can use this comma to create a list of the items for each line. A code snippet for this can be seen below at **line 5**:
+Je kunt deze komma gebruiken om een lijst van items voor elke regel te maken. Een codefragment hiervoor is hieronder te zien op **regel 5**:
 
 --- code ---
 ---
@@ -365,15 +365,15 @@ print(info)
 
 --- /code ---
 
-If you run the code above then it will output **the last line** of the CSV file as a list. This is because, for each line, the `info` list has been recreated. It hasn't been added to.
+Als je de bovenstaande code uitvoert dan wordt **de laatste regel** van het CSV-bestand als lijst uitgevoerd. Dit is omdat voor elke regel de `info` lijst opnieuw is gemaakt. Het is niet toegevoegd.
 
 ```
-['29/12/2020', '6.4', '2.733333333', 'Around 94nm South of Brass\n']
+['29/12/2020', '6.4', '2.733333333', 'Rond 94 nm ten zuiden van Brass\n']
 ```
 
-To store **all** of the data, you can create a **list of lists**!
+Om **alles** van de gegevens op te slaan, kun je een **lijst met lijsten maken**!
 
-The code below uses the same code as above but now it **appends** the `info` list to the `my_text_file` list on **line 6**. This means that you can now store all of the data from the CSV file.
+De onderstaande code gebruikt dezelfde code als hierboven, maar nu wordt de **info** lijst `toegevoegd` aan de `my_text_file` lijst op **regel 6**. Dit betekent dat je nu alle gegevens uit het CSV-bestand kunt opslaan.
 
 --- code ---
 ---
@@ -388,21 +388,21 @@ print(my_text_file)
 
 --- /code ---
 
-2D lists are really useful for storing and iterating through large amounts of data. However, you need to be very aware of **what** is being stored and **where** it is being stored.
+2D-lijsten zijn erg handig voor het opslaan en doorlopen van grote hoeveelheden gegevens. Je moet je echter goed bewust zijn van **wat** wordt opgeslagen en **waar** het wordt opgeslagen.
 
 --- /collapse ---
 
 --- collapse ---
 ---
-title: Load data into a list of dictionaries
+titel: Gegevens laden in een lijst met dictionaries
 ---
-Each line (row) from a CSV file can be stored in a **dictionary**. The CSV file below contains data on volcanic eruptions that have taken place since 2010. Each line is a new eruption. Each eruption has the date, longitude, latitude, and location information, as well as other things.
+Elke regel (rij) uit een CSV-bestand kan worden opgeslagen in een **dictionary**. Het onderstaande CSV-bestand bevat gegevens over vulkaanuitbarstingen die sinds 2010 hebben plaatsgevonden. Elke regel is een nieuwe uitbarsting. Elke uitbarsting heeft een datum, lengtegraad, breedtegraad en locatieinformatie, evenals andere dingen.
 
-![A screenshot of a text file. The text file contains volcano eruption data. Each row of data has a date, the longitude, the latitude, and the location of the volcano eruption.](images/text-file.PNG)
+![Een screenshot van een tekstbestand. Het tekstbestand bevat gegevens over vulkaanuitbarstingen. Elke rij met gegevens heeft een datum, de lengtegraad, de breedtegraad en de locatie van de vulkaanuitbarsting.](images/text-file.PNG)
 
-If this data was stored in a 2D list, then you would need to know the `index` values for the data in order to access it. With a **dictionary**, you just need to know the `key`. This is the keyword used to represent the data held for each event. In this example, the keys are `date`, `longitude`, `latitude`, and `location`.
+Als deze gegevens zijn opgeslagen in een 2D lijst dan moet je de `index` waarden voor de data kennen om er toegang toe te krijgen. Met een **dictionary**hoef je alleen de `sleutel` te kennen. Dit is het trefwoord dat wordt gebruikt om de gegevens weer te geven die voor elk evenement worden bewaard. In dit voorbeeld zijn de sleutels `datum`, `lengtegraad`, `breedtegraad`en `locatie`.
 
-The code below shows a **list of dictionaries** being created for the contents of a CSV file:
+De onderstaande code toont een **lijst met dictionaries** die worden gemaakt voor de inhoud van een CSV-bestand:
 
 --- code ---
 ---
@@ -419,15 +419,15 @@ with open(file_name) as f: for line in f: info = line.split(',')  # Split the li
 
 --- collapse ---
 ---
-title: Remove the \n
+title: Verwijder de \n
 ---
-When you look at a text file in its raw form, there is no `\n` at the end of each line. However, when you load each line from a text file you will see that a `\n` appears. This is because `\n` means **add a new line**. Without this, all of the lines of text would be on one, very long line.
+Als je een tekstbestand in zijn onbewerkte vorm bekijkt, staat er geen `\n` aan het einde van elke regel. Wanneer je echter elke regel uit een tekstbestand laadt, zie je dat er een `\n` verschijnt. Dit komt omdat `\n` **een nieuwe regel toevoegen** betekent. Zonder deze \n zouden alle tekstregels op één, zeer lange regel staan.
 
-This isn't helpful when you want to use the data in your program.
+Dit is niet handig wanneer je de gegevens in je programma wilt gebruiken.
 
-To remove the `\n` you can use the `strip()` method. This strips whatever you write in the brackets from the data.
+Om de `\n` te verwijderen, kun je de `strip()` methode gebruiken. Deze verwijdert alles wat je tussen de haakjes schrijft, uit de gegevens.
 
-You can see an example of this being used on **line 3** below:
+Je kunt een voorbeeld hiervan zien op **regel 3** hieronder:
 
 --- code ---
 ---
@@ -441,16 +441,16 @@ with open(file_name) as f: for line in f:  # For each line in the text file info
 
 --- /collapse ---
 
-### Access data from lists and dictionaries
+### Toegang tot gegevens uit lijsten en dictionaries
 
 [[[generic-python-list-index]]]
 
 --- collapse ---
 ---
-title: Access data from a dictionary
+title: Toegang tot gegevens uit een dictionary
 ---
 
-A dictionary has been created to store UFO sightings:
+Er is een dictionary gemaakt om UFO-waarnemingen op te slaan:
 
 --- code ---
 ---
@@ -467,15 +467,15 @@ line_highlights:
 
 --- /code ---
 
-Data is stored in a dictionary using a **key**, which is the label or keyword for the data.
+Gegevens worden opgeslagen in een dictionary met behulp van een **key**, wat het label of trefwoord is voor de gegevens.
 
-The **keys** in this dictionary are:
-+ Date
-+ Time
-+ State
-+ Country
+De **keys** in deze dictionary zijn:
++ Datum
++ Tijd
++ Staat
++ Land
 
-If you wanted to find out the **date** for the UFO sighting then you would use this snippet of code:
+Als je de **datum** van de UFO-waarneming wilt weten, kun je dit stukje code gebruiken:
 
 --- code ---
 ---
@@ -490,14 +490,14 @@ ufo_dict['date']
 
 --- collapse ---
 ---
-title: Access data from a list of dictionaries
+title: Toegang tot gegevens uit een lijst van dictionaries
 ---
 
-When you create a list of dictionaries, you can loop through the list to find and use the data that you need.
+Wanneer je een lijst van dictionaries maakt, kun je door de lijst lopen om de data te zoeken die je nodig hebt.
 
-### Example one – ISS expeditions
+### Voorbeeld een - ISS-expedities
 
-Here is some example code that was used to find the date of an expedition to the ISS:
+Hier is een voorbeeldcode die werd gebruikt om de datum van een expeditie naar het ISS te vinden:
 
 --- code ---
 ---
@@ -511,13 +511,13 @@ for expedition in expeditions:  # Loop through all of the expedition dictionarie
 
 --- /code ---
 
-Notice how the code `expedition['expedition number']` was used to access the data in the dictionary.
+Merk op hoe de code `expeditie['expeditienummer']` werd gebruikt om toegang te krijgen tot de gegevens in de dictionary.
 
-`expedition` is used as a temporary placeholder to loop through the list. At each iteration, `expedition` holds the **current** expedition dictionary. The **key** is then named in the square brackets to access the data.
+`expeditie` wordt gebruikt als tijdelijke aanduiding om door de lijst te bladeren. Bij elke iteratie bevat `expeditie` de **huidige** expeditie dictionary. De **sleutel (key)** wordt dan tussen vierkante haakjes genoemd om toegang te krijgen tot de gegevens.
 
-### Example two – UFO sightings
+### Voorbeeld twee – UFO-waarnemingen
 
-Here is another example that was used to find the latitude and longitude values for UFO sightings.
+Hier is nog een voorbeeld dat werd gebruikt om de breedte- en lengtegraadwaarden van UFO-waarnemingen te vinden.
 
 --- code ---
 ---
@@ -530,13 +530,13 @@ for sighting in ufo_sightings:  # Loop through all of the sighting dictionaries 
     latitude = float(sighting['latitude'])  # Store the latitude data
 --- /code ---
 
-You can see the same pattern occurring with this example as you saw with example one. The loop iterates through the list of dictionaries. For each loop, `sighting` is used as a temporary placeholder for the dictionary. The **key** is then used to access the required latitude and longitude data.
+Je ziet bij dit voorbeeld hetzelfde patroon als bij voorbeeld één. De lus doorloopt de lijst met dictionaries. Voor elke lus wordt `waarneming` gebruikt als tijdelijke aanduiding voor de dictionary. De **sleutel** wordt vervolgens gebruikt om toegang te krijgen tot de vereiste gegevens over de breedte- en lengtegraad.
 
-In this case, `float()` was also used because the data needed to be stored as a decimal number.
+In dit geval werd ook `float()` gebruikt omdat de gegevens als decimaal getal moesten worden opgeslagen.
 
 --- /collapse ---
 
-### Displaying charts
+### Grafieken weergeven
 
 [[[pygal-library]]]
 
@@ -544,38 +544,38 @@ In this case, `float()` was also used because the data needed to be stored as a 
 
 --- task ---
 
-**Test:** Show someone else your project and get their feedback.
-+ If you are creating charts, are you happy with the type of chart that you have displayed and the data that you have used?
-+ If you are adding drawings on a map, are you happy with the shapes that you have chosen?
-+ If you are creating another type of visualisation, could it be improved in any way?
+**Test:** Laat iemand anders je project zien en vraag feedback.
++ Als je grafieken maakt, ben je dan tevreden met het type grafiek dat je hebt weergegeven en de gegevens die je hebt gebruikt?
++ Als je afbeeldingen op een kaart toevoegt, ben je dan tevreden met de vormen die je hebt gekozen?
++ Als je een ander soort weergave maakt, kun je hem dan misschien nog verbeteren?
 
 --- /task ---
 
 --- task ---
 
-**Debug:** You might find some bugs in your project that you need to fix. Here are some common bugs.
+**Fouten opsporen:** Mogelijk vind je enkele fouten in jouw project die je moet oplossen. Hier zijn enkele veelvoorkomende fouten.
 
 --- collapse ---
 ---
-title: It keeps saying 'index out of range'
+title: Er blijft 'index out of range' staan
 ---
 
-The `index out of range` error message typically refers to your code trying to access an **item** in a **list** that doesn't exist.
+De `index out of range` foutmelding verwijst meestal naar je code die probeert toegang te krijgen tot een **item** in een **lijst** die niet bestaat.
 
-If your list is linked to a text file:
-+ Check that your text file doesn't have a blank line at the bottom of it
-+ Check that the rows in your text file all have the same amount of items (this isn't always needed but in this case, it might be causing a problem)
+Als je lijst is gekoppeld aan een tekstbestand:
++ Controleer of je tekstbestand geen lege regel heeft onderaan het bestand
++ Controleer of de rijen in je tekstbestand allemaal hetzelfde aantal items bevatten (dit is niet altijd nodig, maar in dit geval kan dit een probleem veroorzaken)
 
 --- /collapse ---
 
 --- collapse ---
 ---
-title: The data isn't plotting on my map as expected
+title: De gegevens worden anders dan ik verwacht op mijn kaart weergegeven
 ---
 
-A file has been created to support you with this called `xy.py`. It is an additional file within the starter projects where **latitude** and **longitude** data has been included in the CSV file.
+Er is een bestand gemaakt om je te ondersteunen namelijk `xy.py`. Het is een aanvullend bestand binnen de startprojecten waarin gegevens over **breedtegraad** en **lengtegraad** in het CSV-bestand zijn opgenomen.
 
-The code for this file can be seen below:
+De code voor dit bestand kan hieronder worden bekeken:
 
 --- code ---
 ---
@@ -610,23 +610,23 @@ def get_xy_coords(longitude, latitude, map_width=991, map_height=768):
 
 --- /code ---
 
-This code takes **longitude** and **latitude** data, performs some tasks and then returns the x and y coordinates to place the drawing in the correct location.
+Deze code neemt gegevens over **lengtegraad** en **breedtegraad**, voert enkele taken uit en retourneert vervolgens de x- en y-coördinaten om de afbeelding op de juiste locatie te plaatsen.
 
-If you are using this file:
-+ Check that you have imported it at the top of your main program. It should say `from xy import get_xy_coords`.
-+ Check that you are passing the **longitude** and **latitude** data in the correct order. Your function call should be similar to this: `get_xy_coords(longitude, latitude)`.
-+ Check that the longitude and latitude data has been converted to the **float** data type. Your code should look similar to this: `longitude = float(sighting['longitude'])`.
+Als je dit bestand gebruikt:
++ Controleer of je het aan de bovenkant van je hoofd(main)programma hebt geïmporteerd. Er zou `from xy import get_xy_coords` moeten staan.
++ Controleer of je de **lengtegraad** en **breedtegraad** gegevens in de juiste volgorde doorgeeft. Je functieaanroep zou er zo uit moeten zien: `get_xy_coords(lengtegraad, breedtegraad)`.
++ Controleer of de lengtegraad en breedtegraad gegevens zijn geconverteerd naar het gegevenstype **float**. Je code zou er ongeveer zo uit moeten zien: `lengtegraad = float(waarneming['lengtegraad'])`.
 
 --- /collapse ---
 
 --- collapse ---
 ---
-title: Something is 'not defined'
+title: Er is iets 'niet gedefinieerd (not defined)'
 ---
 
-This is a common error. It usually means that a variable, dictionary, or list is trying to be accessed or modified before it has been defined.
+Dit is een veel voorkomende fout. Het betekent meestal dat een variabele, dictionary of lijst wordt gebruikt voordat deze is gedefinieerd.
 
-For example, you might use this code to append an item to a list:
+Je kunt bijvoorbeeld deze code gebruiken om een item aan een lijst toe te voegen:
 
 --- code ---
 ---
@@ -637,7 +637,7 @@ state = 'TX'
 
 ufo_data.append(state) --- /code ---
 
-This line of code will cause an error message because the list `ufo_data` has not yet been defined. To fix this error, you would add in a line of code that defines the list.
+Deze coderegel veroorzaakt een foutmelding omdat de lijst `ufo_data` nog niet is gedefinieerd. Om deze fout op te lossen, voeg je een regel code toe die de lijst definieert.
 
 --- code ---
 ---
@@ -656,10 +656,10 @@ ufo_data.append(state)
 
 --- collapse ---
 ---
-title: My chart isn't displaying
+title: Mijn grafiek wordt niet weergegeven
 ---
 
-Check that you have included the code to display the chart on the screen:
+Controleer of je de code hebt toegevoegd om de kaart op het scherm weer te geven:
 
 --- code ---
 ---
@@ -670,15 +670,15 @@ chart.render()
 
 --- /code ---
 
-You may also need to check that you are converting numerical values to `float()` for decimal numbers or `int()` for whole numbers in your code.
+Je moet misschien ook controleren of je numerieke waarden converteert naar `float()` voor decimale getallen of `int()` voor hele getallen in je code.
 
 --- /collapse ---
 
-You might find a bug not listed here. Can you figure out how to fix it?
+Je kunt een fout vinden die hier niet wordt vermeld. Kun je erachter komen hoe je het kunt oplossen?
 
-**Tip:** Find the example project that is most similar to yours and carefully study the code that has been used to make it work. This can help you spot things that you might have missed in your own program.
+**Tip:** Zoek het voorbeeldproject dat het meest op het jouwe lijkt en bestudeer zorgvuldig de code die is gebruikt om het te laten werken. Dit kan je helpen dingen te ontdekken die je misschien hebt gemist in je eigen programma.
 
-We love hearing about your bugs and how you fixed them. Use the feedback button at the bottom of this page if you found a different bug in your project.
+We horen graag over je fouten en hoe je ze hebt opgelost. Gebruik de feedbackknop onderaan deze pagina als je een andere fout in je project hebt gevonden.
 
 --- /task ---
 
