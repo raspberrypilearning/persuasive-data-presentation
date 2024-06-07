@@ -1,116 +1,114 @@
-Runs once at the start
+Voert eenmaal uit aan het begin
 
-Choose the size of your canvas
+Kies het formaat van je canvas
 
-Runs every frame
+Voert elk frame uit
 
-Use the lat and long data to calculate the x y coords for the shape
+Gebruik de breedte- en lengte-gegevens om de xy-coördinaten voor de vorm te berekenen
 
-return coordinates to place map pin
+retourneer coördinaten om kaart speld te plaatsen
 
-Red = 50, Green = 70, Blue = 206
+Rood = 50, Groen = 70, Blauw = 206
 
-Change the red value
+Wijzig de roodwaarde
 
-Change the green value
+Wijzig de groenwaarde
 
-Change the blue value
+Wijzig de blauwwaarde
 
-Background colour
+Achtergrondkleur
 
-Initialises the variable so that it can be added to it
+Initialiseert de variabele zodat deze eraan kan worden toegevoegd
 
-Opens the file temporarily
+Opent het bestand tijdelijk
 
-Loops through each line in the file
+Loopt door elke regel in het bestand
 
-Adds the line to the current contents of the variable
+Voegt de regel toe aan de huidige inhoud van de variabele
 
-Initialises the list so that data can be appended (added) to it
+Initialiseert de lijst zodat er gegevens aan kunnen worden toegevoegd
 
-Adds each line as an item in the list
+Voegt elke regel toe als een item in de lijst
 
-Split each item separated by a comma into a list
+Splits elk item gescheiden door een komma in een lijst
 
-Add the info list to the my_text_file list
+Voeg de infolijst toe aan de my_text_file lijst
 
-Initialise the list to store the eruptions
+Initialiseer de lijst om de uitbarstingen op te slaan
 
-Split the line into a list
+Splits de regel in een lijst
 
-Create a dictionary for the event
+Maak een dictionary voor de gebeurtenis
 
-Store dictionary in a list
+Bewaar dictionary in een lijst
 
-Strip away the \n
+Verwijder de \n
 
-Display a message depending on what shape the user has pressed
+Geef een bericht weer, afhankelijk van welke vorm de gebruiker heeft ingedrukt
 
-Put code to run when the mouse is pressed here
+Zet code die moet worden uitgevoerd wanneer de muis wordt ingedrukt hier
 
-For each line in the text file
+Voor elke regel in het tekstbestand
 
-Loop through all of the expedition dictionaries in the expeditions list
+Doorloop alle expeditie dictionaries in de expeditie lijst
 
-Check if the expedition number is equal to 3
+Controleer of het expeditienummer gelijk is aan 3
 
-If true, store the matching mission launch date
+Indien waar, sla dan de overeenkomende lanceringsdatum van de missie op
 
-Loop through all of the sighting dictionaries in the ufo_sightings list
+Doorloop alle waarnemingsdictionaries in de ufo_sightings-lijst
 
-Store the longitude data
+Sla de lengtegraadgegevens op
 
-Store the latitude data
+Sla de breedtegraadgegevens op
 
-Display a message depending on what shape the user has pressed
+Begin met een verkeerd antwoord voor keuze
 
-Start with a wrong answer for choice
+Blijf de gebruiker om het juiste antwoord vragen
 
-Keep asking the user for the right answer
+Er werd hier een vuurbal-UFO gespot!
 
-A fireball UFO was spotted here!
+Hier werd een cirkelvormige UFO gespot!
 
-A circle-shaped UFO was spotted here!
+Hier werd een driehoekige UFO gespot!
 
-A triangle-shaped UFO was spotted here!
+Hier werd een UFO gemaakt van licht gespot!
 
-A UFO made of light was spotted here!
+Hier werd een schijfvormige UFO gespot!
 
-A disc-shaped UFO was spotted here!
+Hier werd een willekeurig gevormde UFO gespot!
 
-A random-shaped UFO was spotted here!
+Hier werd een cilindervormige UFO gespot!
 
-A cylinder-shaped UFO was spotted here!
+Er waren geen UFO-waarnemingen in dit gebied!
 
-There were no UFO sightings in this area!
+Een vulkaan barstte uit in ' + feiten['regio'] + ' in ' + feiten['jaar']
 
-A volcano erupted in ' + facts['region'] + ' in ' + facts['year']
+Regio niet gedetecteerd
 
-Region not detected
+World Happiness Index-gegevens 2019
 
-World Happiness Index Data 2019
+Wat zou je willen zien?
+        1. Hoe gelukkig zijn landen in het algemeen?
+        2. Hoe belangrijk is de nationale rijkdom?
+        3. Hoe goed zorgt jouw land voor de kansarmen?
+        4. Hoe gul zijn mensen?
+        5. Hoe oprecht en eerlijk zijn mensen?
+        6. Hoeveel vrijheid heb je?
+    Keuze: 
 
-What would you like to see?
-        1. How happy are countries overall?
-        2. How much does national wealth matter?
-        3. How well does your country look after the disadvantaged?
-        4. How generous are people?
-        5. How fair and honest are people?
-        6. How much freedom do you have?
-    Choice: 
+Voer 1 in om de tekst te coderen/decoderen, of 2 om frequentie analyse uit te voeren:
 
-Please enter 1 to encode/decode text, or 2 to perform frequency analysis:
+Klein
 
-Toy
+Sportief
 
-Sporting
+Terriër
 
-Terrier
+Werk
 
-Working
+Hoeden
 
-Herding
+Jachthond
 
-Hound
-
-Non Sporting
+Niet sportief
