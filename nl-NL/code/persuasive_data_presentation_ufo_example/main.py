@@ -3,8 +3,8 @@ from p5 import *
 
 from xy import get_xy_coords
 
-# Draw the UFO on the map
-def draw_ufo(shape, x, y):
+# Teken de UFO op de kaart
+def draw_ufo(vorm, x, y):
 
     global fireball, circle, tri, light, disk, misc, cylinder
     fireball = Color(252, 186, 3)
@@ -15,22 +15,22 @@ def draw_ufo(shape, x, y):
     misc = Color(255, 0, 0)
     cylinder = Color(73, 99, 230)
 
-    if shape == 'fireball':
+    if vorm == 'fireball':
         fill(fireball)
         ellipse(x, y, 15, 10)
-    elif shape == 'circle':
+    elif vorm == 'circle':
         fill(circle)
         ellipse(x, y, 8, 8)
-    elif shape == 'triangle':
+    elif vorm == 'triangle':
         fill(tri)
         triangle(x-8, y-15, x, y, x+8, y-15)
-    elif shape == 'light':
+    elif vorm == 'light':
         fill(light)
         ellipse(x, y, 15, 15)
-    elif shape == 'disk':
+    elif vorm == 'disk':
         fill(disk)
         ellipse(x, y, 20, 10)
-    elif shape == 'cylinder' or shape == 'cigar':
+    elif vorm== 'cylinder' or vorm == 'cigar':
         fill(cylinder)
         rect(x, y, 20, 10)
     else:
@@ -39,88 +39,88 @@ def draw_ufo(shape, x, y):
 
 
 def preload():
-    global map
-    map = load_image('mercator.jpeg')
+    wereldkaart
+    kaart = load_image('mercator.jpeg')
 
 
 def setup():
 
     size(991, 768)
-    load_data('ufo-sightings.csv')
+    load_data ('ufo-sightings.csv')
     image(
-        map,  # The image to draw
-        0,  # The x of the top-left corner
-        0,  # The y of the top-left corner
-        width,  # The width of the image
-        height  # The height of the image
+        kaart, # De afbeelding om te tekenen
+        0, # De x van de linkerbovenhoek
+        0, # De y van de linkerbovenhoek
+        breedte, # De breedte van de afbeelding
+        hoogte # De hoogte van de afbeelding
     )
     draw_data()
 
 
 def load_data(file_name):
 
-    # Create a dictionary for each siting based on the data in the csv file
+    # Maak voor elke locatie een dictionary op basis van de gegevens in het csv-bestand
 
-    global ufo_sightings
+    wereldwijde ufo_waarnemingen
 
-    ufo_sightings = []
+    ufo_waarnemingen = []
 
     with open(file_name) as f:
         for line in f:
             info = line.split(',')
             ufo_dict = {
-                'date': info[0],
-                'time': info[1],
-                'state': info[2],
-                'country': info[3],
-                'shape': info[4],
-                'duration': info[5],
-                'latitude': info[6],
-                'longitude': info[7]
+                'datum': info[0],
+                'tijd': info[1],
+                'staat': info[2],
+                'land': info[3],
+                'vorm': info[4],
+                'duur': info[5],
+                'breedtegraad': info[6],
+                'lengtegraad': info[7]
             }
-            ufo_sightings.append(ufo_dict)  # Store dictionary in a list
+            ufo_waarnemingen.append(ufo_dict) # Bewaar dictionary in een lijst
 
 
 def draw_data():
 
-    # Use the lat and long data to calculate the x y coords for the shape
+    # Gebruik de breedte- en lengte-gegevens om de xy-coördinaten voor de vorm te berekenen
 
-    for sighting in ufo_sightings:
+    for waarneming in ufo_waarnemingen:
 
-        longitude = float(sighting['longitude'])
-        latitude = float(sighting['latitude'])
+        lengtegraad= float(waarneming['lengtegraad'])
+        breedtegraad = float(waarneming['breedtegraad'])
 
-        region_coords = get_xy_coords(longitude, latitude)
+        region_coords = get_xy_coords(lengtegraad, breedtegraad)
 
-        region_x = region_coords['x']
-        region_y = region_coords['y']
+        regio_x = region_coords['x']
+        regio_y = region_coords['y']
 
-        shape = sighting['shape']
+        vorm = waarneming['vorm']
 
-        draw_ufo(shape, region_x, region_y)
+        draw_ufo(vorm, regio_x, regio_y)
 
 
 def mouse_pressed():
 
-    # Display a message depending on what shape the user has pressed
+    # Geef een bericht weer, afhankelijk van welke vorm de gebruiker heeft ingedrukt
 
     pixel_colour = Color(get(mouse_x, mouse_y)).hex
     if pixel_colour == fireball.hex:
-        print('A fireball UFO was spotted here!')
+        print('Hier is een vuurbal-UFO gespot!')
     elif pixel_colour == circle.hex:
-        print('A circle shaped UFO was spotted here!')
+        print('Hier werd een cirkelvormige UFO gezien!')
     elif pixel_colour == tri.hex:
-        print('A triangle shaped UFO was spotted here!')
+        print('Hier werd een driehoekige UFO gezien!')
     elif pixel_colour == light.hex:
-        print('A UFO made of light was spotted here!')
+        print('Een UFO van licht is hier gezien!')
     elif pixel_colour == disk.hex:
-        print('A disk shaped UFO was spotted here!')
+        print('Hier werd een schijfvormige UFO gezien!')
     elif pixel_colour == misc.hex:
-        print('A random shaped UFO was spotted here!')
-    elif pixel_colour == cylinder.hex:
-        print('A cylinder shaped UFO was spotted here!')
+        print('Hier werd een willekeurig gevormde UFO gespot!')
+    elif pixel_colour == misc.hex:
+        print('Hier werd een cilindervormige UFO gezien!')
     else:
-        print('There were no UFO sightings in this area!')
+        print('Er waren geen UFO-waarnemingen in dit gebied!')
 
 
 run()
