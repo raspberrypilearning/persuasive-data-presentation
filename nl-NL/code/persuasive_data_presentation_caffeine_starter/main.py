@@ -1,3 +1,3 @@
 #!/bin/python3
 
-# Data headings: 0 Drink, 1	Volume (ml), 2	Calories, 3	Caffeine (mg), 4	Type
+# Gegevens Rubrieken: 0 Drank, 1 Volume (ml), 2 Calorieën, 3 Cafeïne (mg), 4 Type
