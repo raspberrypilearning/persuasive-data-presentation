@@ -1,147 +1,147 @@
-## Your idea
+## Jouw idee
 
-Use this step to plan your data visualisation. You can plan by just thinking, tinkering, drawing or writing, or however you like!
+Gebruik deze stap om je gegevens weergave te plannen. Je kunt het plannen door erover na te denken, te knutselen, te tekenen of te schrijven, of hoe je maar wilt!
 
-![Three screenshots of example projects. The first is showing the ISS with three flags attached. The second image shows a chart of data from the Happiness Index project. The third shows data points on the UK showing UFO sightings.](images/project-examples.png)
+![Drie screenshots van voorbeeldprojecten. De eerste toont het ISS met drie vlaggen eraan toegevoegd. De tweede afbeelding toont een grafiek met gegevens van het Happiness Index-project. De derde toont gegevens over UFO-waarnemingen in het Verenigd Koninkrijk.](images/project-examples.png)
 
-### Why are you making your data visualisation?
+### Waarom maak je jouw data visualisatie?
 
 --- task ---
 
-Think about the **purpose** of the data visualisation you are creating. There are **eight** datasets to choose from as starter projects **or** you can find your own data set on a topic that you would like to highlight to others.
+Denk na over het **doel** van de datavisualisatie die je maakt. Er zijn **acht** datasets waaruit je kunt kiezen. Als startproject **of** kun je je eigen dataset vinden over een onderwerp dat je graag onder de aandacht van anderen wilt brengen.
 
-Use a dataset that is important to you. The datasets in the starter projects are:
-+ ISS expeditions
-+ Volcanic eruptions
-+ UFO tracker
-+ World happiness index
-+ Dog breed characteristics
-+ Caffeinated drinks
-+ Bechdel Test scores
-+ Pokemon card data
+Gebruik een dataset die belangrijk is voor jou. De datasets in de startersprojecten zijn:
++ ISS-expedities
++ Vulkaan uitbarstingen
++ UFO-tracker
++ World Happiness Index
++ Kenmerken van hondenrassen
++ Cafeïnehoudende dranken
++ Bechdel testscores
++ Pokemon-kaartgegevens
 
 --- collapse ---
 
 ---
-title: Ideas for your data visualisation
+title: Ideeën voor de visualisatie van jouw gegevens
 ---
 
-The **purpose** of your data visualisation could be to:
+Het **doel** van je gegevensvisualisatie kan zijn:
 
-+ Show the different **expeditions** that have taken place on the **ISS**
-+ Demonstrate the **most intelligent dog** breeds
-+ Classify the different types of **UFO sightings** and where they are mostly located
-+ Show areas around the world that have experienced **volcanic eruptions**
-+ Discover the areas around the world that are the **best places to live** (according to the happiness index)
-+ Show the most powerful **pokemon** characters
-+ Analyse the **caffeine** levels in popular drinks
-+ Find out the **movies** that have the best **Bechdel Test scores** (this is a data set that looks into how women are represented in movies)
++ Toon de verschillende **expedities** die hebben plaatsgevonden op het **ISS**
++ Laat de **meest intelligente hond** rassen zien
++ Classificeer de verschillende soorten **UFO-waarnemingen** en waar deze zich meestal bevinden
++ Toon gebieden over de hele wereld waar **vulkaanuitbarstingen** hebben plaatsgevonden
++ Ontdek de gebieden over de hele wereld die de **beste plekken zijn om te wonen** (volgens de happiness index)
++ Toon de krachtigste **Pokemon** karakters
++ Analyseer het **cafeïnegehalte van** in populaire drankjes
++ Ontdek de **films** met de beste **Bechdel Test-scores** (dit is een dataset die onderzoekt hoe vrouwen in films worden weergegeven)
 
 --- /collapse ---
 
-Or you can choose your own, a good place to explore other data sets is [Kaggle](https://www.kaggle.com/datasets){:target="_blank"}.
+Of je kunt je eigen datasets kiezen. Een goede plek om andere datasets te verkennen is [Kaggle](https://www.kaggle.com/datasets){:target="_blank"}.
 
-**Tip:** If you are going to use your own data set and want to place shapes on a world map then you will need to have data that contains the **longitude** and **latitude** locations for the items that you wish to display.
+**Tip:** Als je je eigen data set gaat gebruiken en je wil vormen op een wereldkaart plaatsen dan heb je data nodig die de **lengtegraad** en **breedtegraad** locaties bevatten van de dingen die je wil laten zien.
 
 --- /task ---
 
 <div style="display: flex; flex-wrap: wrap">
-<div style="flex-basis: 200px; flex-grow: 1; margin-right: 10px; border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px; margin-bottom: 27px;">In <span style="color: #0faeb0">1854</span>, the physician John Snow believed that the the outbreak of <span style="color: #0faeb0">cholera</span> in the Soho area of London was being caused by a contaminated water supply — contrary to the commonly held belief that cholera was caused by 'bad air' in the area. To help prove his theory, Snow mapped the deaths from cholera in the area. The map clearly showed the deaths were centred around Broad Street and residents there were getting their water from the pump on this street. By visualising the data in this way, he was able to convince the local council to disable the water pump. It was widely recognised that this visualisation helped to save many lives.
+<div style="flex-basis: 200px; flex-grow: 1; margin-right: 10px; border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px; margin-bottom: 27px;">In <span style="color: #0faeb0">1854</span> dacht de arts John Snow dat de uitbraak van <span style="color: #0faeb0">cholera</span> in het Soho-gebied van Londen werd veroorzaakt door een vervuilde watervoorziening – het tegendeel tot de algemeen aanvaarde opvatting dat cholera werd veroorzaakt door 'slechte lucht' in het gebied. Om zijn theorie te helpen bewijzen, bracht Snow de sterfgevallen als gevolg van cholera in het gebied in kaart. Op de kaart was duidelijk te zien dat de sterfgevallen zich concentreerden rond Broad Street en dat de bewoners daar hun water haalden uit de pomp in deze straat. Door de gegevens op deze manier weer te geven kon hij de gemeente ervan overtuigen de waterpomp uit te schakelen. Het werd algemeen erkend dat deze visualisatie heeft bijgedragen aan het redden van vele levens.
 </div>
 <div>
-![A snippet of John Snow's cholera map showing infections in red.](images/john-snow-map.png){:width="200px"}
+![Een fragment van de cholera kaart van John Snow die infecties in rood laat zien.](images/john-snow-map.png){:width="200px"}
 </div>
 </div>
 
-### Who is it for?
+### Voor wie is het?
 
 --- task ---
 
-Think about who you will make your data visualisation for (your **audience**).
+Bedenk voor wie je de weergave gaat maken (je **publiek**).
 
-What is the **significance** of your visualisation? Does it highlight something specific about the world around us?
+Wat is de **betekenis** van je weergave? Benadrukt het iets specifieks over de wereld om ons heen?
 
-Will the colours, shapes, images, or charts mean **something special** to you or your audience?
+Zullen de kleuren, vormen, afbeeldingen of manier waarop het patroon wordt herhaald **iets speciaals** voor jou of je publiek betekenen?
 
-Sharing your data visualisation is a great way to express something about yourself, your interests, or your culture.
+Het delen van je data weergave is een geweldige manier om iets over jezelf, je interesses of je cultuur uit te drukken.
 
 --- /task ---
 
-### Get started
+### Aan de slag
 
 --- task ---
 
-Select the correct **starter project** for your chosen data visualisation. The Raspberry Pi code editor will open in a new window. Make sure you are **logged in** and click **Save** to save a copy to your projects.
+Selecteer het juiste **startersproject** voor de door jou gekozen data weergave. De Raspberry Pi code-editor wordt geopend in een nieuw tabblad. Zorg ervoor dat je **ingelogd bent** en klik op **Save** om een kopie in je projecten op te slaan.
 
-The **ISS expedition** [starter project](https://editor.raspberrypi.org/en/projects/data-iss-starter){:target="_blank"}.
+Het **ISS-expeditie** [startproject](https://editor.raspberrypi.org/en/projects/data-iss-starter){:target="_blank"}.
 
-The **Volcanic eruptions** [starter project](https://editor.raspberrypi.org/en/projects/data-volcano-starter){:target="_blank"}.
+Het **Vulkaanuitbarstingen** [startproject](https://editor.raspberrypi.org/en/projects/data-volcano-starter){:target="_blank"}.
 
-The **UFO tracker** [starter project](https://editor.raspberrypi.org/en/projects/data-ufo-starter){:target="_blank"}.
+Het **UFO-tracker** [startproject](https://editor.raspberrypi.org/en/projects/data-ufo-starter){:target="_blank"}.
 
-The **World happiness index** [starter project](https://editor.raspberrypi.org/en/projects/data-happiness-starter){:target="_blank"}.
+Het **World happiness index** [startproject](https://editor.raspberrypi.org/en/projects/data-happiness-starter){:target="_blank"}.
 
-The **Dog breed characteristics** [starter project](https://editor.raspberrypi.org/en/projects/data-dogs-starter){:target="_blank"}.
+Het **Kenmerken van hondenrassen** [startproject](https://editor.raspberrypi.org/en/projects/data-dogs-starter){:target="_blank"}.
 
-The **Caffeinated drinks** [starter project](https://editor.raspberrypi.org/en/projects/data-caffeine-starter){:target="_blank"}.
+Het **Cafeïnehoudende dranken** [startproject](https://editor.raspberrypi.org/en/projects/data-caffeine-starter){:target="_blank"}.
 
-The **Bechdel Test scores** [starter project](https://editor.raspberrypi.org/en/projects/data-bechdel-starter){:target="_blank"}.
+Het **Bechdel Test scores** [startproject](https://editor.raspberrypi.org/en/projects/data-bechdel-starter){:target="_ blank"}.
 
-The **Pokemon card data** [starter project](https://editor.raspberrypi.org/en/projects/data-cards-starter){:target="_blank"}.
+De **Pokemon-kaartgegevens** [startproject](https://editor.raspberrypi.org/en/projects/data-cards-starter){:target="_blank"}.
 
-**Using your own data set**
+**Je eigen dataset gebruiken**
 
-If you are using your own data set then you will need to use the blank [starter project](https://editor.raspberrypi.org/en/projects/data-blank-starter){:target="_blank"}. You will also need to **add** in your own data set.
+Als je je eigen dataset gebruikt, dan moet je het lege [startproject](https://editor.raspberrypi.org/en/projects/data-blank-starter){:target="_ blank"} gebruiken. Je zult ook **gegevens** moeten toevoegen aan je eigen dataset.
 
 --- collapse ---
 ---
-title: Add your own data set
+title: Voeg je eigen dataset toe
 ---
 
-Once you have found your own data set you will need to **download** it as a CSV file.
+Zodra je jouw eigen dataset hebt gevonden, moet je deze **downloaden** als CSV-bestand.
 
-You should then **open** the file and check it for missing or unusual data.
+Vervolgens moet je het bestand **openen** en controleren op ontbrekende of ongebruikelijke gegevens.
 
-**Tip 1:** It is a good idea to delete a **whole row** of data if it has sections that are blank. This will help to prevent problems with your code later on.
+**Tip 1:** Het is een goed idee om een **hele rij** met gegevens te verwijderen als deze secties bevat die leeg zijn. Dit helpt later problemen met je code te voorkomen.
 
-**Tip 2:** Look carefully at the data in your CSV file. Can you see any unusual symbols where text should be? If so, you might want to also delete these rows. Another option is to delete the symbols as long as that doesn't change the meaning of the data.
+**Tip 2:** Kijk goed naar de gegevens in je CSV-bestand. Zie jij ongebruikelijke symbolen waar tekst zou moeten staan? Zo ja, dan kun je ook deze rijen verwijderen. Een andere optie is om de symbolen te verwijderen, zolang dat de betekenis van de gegevens niet verandert.
 
-**Tip 3:** If your data has lots of extra columns that you aren't going to use for your visualisation then it is a good idea to delete them. This will make it easier to navigate and access your data from your code.
+**Tip 3:** Als jouw gegevens veel extra kolommen bevatten die je niet gaat gebruiken voor je weergave, dan is het een goed idee om ze te verwijderen. Dit zal het makkelijker maken om te navigeren en toegang te krijgen tot je gegevens vanuit je code.
 
-Once you are satisfied that your data is looking good, it is time to add it to your project. Here's how:
+Zodra je tevreden bent dat je gegevens er goed uitzien, is het tijd om ze toe te voegen aan je project. Zo werkt het:
 
-1. Make sure that you have saved your CSV file as a CSV file. If you have been editing it in spreadsheet software then you might have to change the file type to CSV **before** pressing save.
-2. Find the location of your CSV file. It will most likely be in your downloads folder if you downloaded it from a site like Kaggle.
-3. Open the file with notepad (right-click on the file and choose **Open with** > **Notepad**).
-4. Delete the header (top) row of data as you will not need this for your program.
-5. Scroll to the bottom of your file and check that there isn't a blank space at the bottom. If there is, delete it.
-7. Go to your project in the Code Editor.
-8. Click on `+ Add file` button.
-9. Give it a sensible name (e.g. `mydata.csv`) and then click `Add file` to confirm.
-10. Copy all the data from notepad (Select All > Copy) and then paste it into your new file in your project.
+1. Zorg ervoor dat je je CSV-bestand hebt opgeslagen als CSV-bestand. Als je het in spreadsheetsoftware hebt bewerkt, moet je mogelijk het bestandstype wijzigen in CSV **voordat** je op Opslaan drukt.
+2. Zoek de locatie van je CSV-bestand. Het staat waarschijnlijk in je download-map als je het hebt gedownload van een site als Kaggle.
+3. Open het bestand met Notepad (klik met de rechtermuisknop op het bestand en kies **Openen met** > **Notepad**).
+4. Verwijder de kopregel (bovenste) met gegevens, aangezien je deze niet nodig hebt voor jouw programma.
+5. Scroll naar de onderkant van het bestand en controleer of er geen lege ruimte is onderaan. Als dit het geval is, verwijder het dan.
+7. Ga naar je project in de Code Editor.
+8. Klik op de knop `+ Add file`.
+9. Geef het een zinvolle naam (bijvoorbeeld `mijndata.csv`) en klik vervolgens op `Add file` om te bevestigen.
+10. Kopieer alle gegevens uit Notepad (Select All > Copy) en plak deze vervolgens in je nieuwe bestand in je project.
 
 --- /collapse ---
 
 --- /task ---
 
-### Set up your project
+### Stel je project in
 
 --- task ---
 
-### Add in your import statements and starter code
+### Voeg je importopdrachten en begincode toe
 
 --- collapse ---
 ---
-title: Use p5 to draw shapes, maps, and images
+title: Gebruik p5 om vormen, kaarten en afbeeldingen te tekenen
 ---
 
-If you are going to be drawing shapes using `p5` then you will need to include the import statement at the top of your code.
+Als je vormen gaat tekenen met `p5`, dan moet je de importinstructie bovenaan je code opnemen.
 
-The import statement imports **all** of the code from the `p5`.
+De importinstructie importeert **alles** van de code uit de `p5`.
 
-To use p5, you will also need to create two functions and to include the `run()` function call.
+Om p5 te gebruiken, moet je ook twee functies maken en de functie aanroep `run()` toevoegen.
 
-**Function one**
+**Functie één**
 
 --- code ---
 ---
@@ -162,12 +162,12 @@ run()
 
 --- collapse ---
 ---
-title: Use xy to place data on a map
+titel: Gebruik xy om gegevens op een kaart te plaatsen
 ---
 
-If your CSV file includes longitude and latitude data, then you can use this to place objects on a world map. The file `xy.py` has been created to allow you to convert the latitude and longitude data to xy coordinates that can be used in your program.
+Als je CSV-bestand lengte- en breedtegraad gegevens bevat, kun je dit gebruiken om objecten op een wereldkaart te plaatsen. Het bestand `xy.py` is gemaakt om je de breedtegraad en lengtegraad data te laten converteren naar xy coördinaten die kunnen worden gebruikt in je programma.
 
-To use the `xy.py` file, you will need the following import statement at the top of your code:
+Om het bestand `xy.py` te gebruiken, heb je de volgende importinstructie bovenaan je code nodig:
 
 --- code ---
 ---
@@ -182,10 +182,10 @@ from xy import get_xy_coords
 
 --- collapse ---
 ---
-title: Use pygal to create charts
+title: Gebruik pygal om grafieken te maken
 ---
 
-If your project requires you to create graphs and charts then you will need to use **pygal**. The following line of code imports **pygal** into your program:
+Als je project grafieken heeft dan moet je **pygal** gebruiken. De volgende regel code importeert **pygal** in je programma:
 
 --- code ---
 ---
@@ -194,7 +194,7 @@ line_highlights:
 ---
 from pygal import * --- /code ---
 
-The import statement imports **all** of the code from the pygal library.
+De importinstructie importeert **alle** code uit de pygal-bibliotheek.
 
 --- /collapse ---
 
