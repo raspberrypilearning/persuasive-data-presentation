@@ -1,9 +1,9 @@
-## What next?
+## Wat nu?
 
-You have reached the end of the [More Python](https://projects.raspberrypi.org/en/pathways/more-python) path!
+Je hebt het einde bereikt van het [Meer Python](https://projects.raspberrypi.org/en/pathways/more-python) pad!
 
 [[[python-coolest-projects]]]
 
-Now you can bring all your ideas to life in Python. Try using Python to make more cool stuff.
+Nu kun je al je ideeën tot leven brengen in Python. Probeer Python te gebruiken om nog meer coole dingen te maken.
 
-Or, you can explore our [other Python projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=python) and try them out.
+Of, je kunt onze [andere Python-projecten](https://projects.raspberrypi.org/en/projects?software%5B%5D=python) verkennen en ze uitproberen.
