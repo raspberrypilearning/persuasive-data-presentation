@@ -2,84 +2,84 @@
 from p5 import *
 from random import randint
 
-# A visualisation of volcano erruptions since 2010
+# Een visualisatie van vulkaanuitbarstingen sinds 2010
 
-# CSV Headings: 0 Year, 1 Month, 2 Day, 3 Name, 4 Location, 5 Country, 6 Latitude, 7 Longitude, 8 Elevation, 9 Type, 10 Status
+# CSV labels: 0 Jaar, 1 Maand, 2 Dag, 3 Naam, 4 Locatie, 5 Land, 6 Breedtegraad, 7 Lengtegraad, 8 Hoogte, 9 Type, 10 Status
 
 from xy import get_xy_coords
 
-colours = {}
+kleuren = {}
 
-# Draw the volcano on the map
-def draw_volcano(colour, x, y):
-    fill(colour)
+# Teken de vulkaan op de kaart
+def teken_vulkaan(kleur, x, y):
+    fill(kleur)
     ellipse(x, y, 12, 12)
 
 
 def preload():
-    global map
-    map = load_image('mercator.jpeg')
+    wereldkaart
+    kaart = load_image('mercator.jpeg')
 
 
 def setup():
     size(991, 768)
     image(
-        map,  # The image to draw
-        0,  # The x of the top-left corner
-        0,  # The y of the top-left corner
-        width,  # The width of the image
-        height  # The height of the image
+        kaart, # De afbeelding om te tekenen
+        0, # De x van de linkerbovenhoek
+        0, # De y van de linkerbovenhoek
+        breedte, # De breedte van de afbeelding
+        hoogte # De hoogte van de afbeelding
     )
-    load_data('volcano-data.csv')
+    load_data ('volcano-data.csv')
     draw_data()
 
 
 def load_data(file_name):
-    # Create a dictionary for each siting based on the data in the csv file
+    # Maak voor elke waarneming een dictionary op basis van de gegevens in het csv-bestand
 
-    global volcano_eruptions
+    wereldwijde vulkaan_uitbarstingen
 
-    volcano_eruptions = []
+    vulkaan_uitbarstingen = []
 
     with open(file_name) as f:
         for line in f:
             info = line.split(',')
-            volcano_dict = {
-                'longitude': info[7],
-                'latitude': info[6],
-                'year': info[0],
-                'region': info[5]
+            vulkaan_dict = {
+                'lengtegraad': info[7],
+                'breedtegraad': info[6],
+                'jaar': info[0],
+                'regio': info[5]
             }
-            # Store dictionary in a list
-            volcano_eruptions.append(volcano_dict)
+            # Bewaar dictionary in een lijst
+            vulkaan_uitbarstingen.append(vulkaan_dict)
 
 
 def draw_data():
     no_stroke()
 
-    blue_value = 0
-    # Use the lat and long data to calculate the x y coords for the shape
-    for eruption in volcano_eruptions:
-        longitude = float(eruption['longitude'])
-        latitude = float(eruption['latitude'])
-        region_coords = get_xy_coords(longitude, latitude)
-        region_x = region_coords['x']
-        region_y = region_coords['y']
-        colour = Color(255, 100, blue_value)  # Select a random colour
-        colours[colour.hex] = eruption
-        draw_volcano(colour, region_x, region_y)
-        blue_value += 1
+    blauw_waarde = 0
+    # Gebruik de breedte- en lengte-gegevens om de xy-coördinaten voor de vorm te berekenen
+    for uitbarsting in vulkaan_uitbarstingen:
+        lengtegraad= float(uitbarsting['lengtegraad'])
+        breedtegraad = float(uitbarsting['breedtegraad'])
+        region_coords = get_xy_coords(lengtegraad, breedtegraad)
+        regio_x = region_coords['x']
+        regio_y = region_coords['y']
+        kleur = Color(255, 100, blauw_waarde) # Selecteer een willekeurige kleur
+        kleuren[kleur.hex] = uitbarsting
+        draw_vulkaan(kleur, regio_x, regio_y)
+        blauw_waarde += 1
 
 
 def mouse_pressed():
-    # Put code to run when the mouse is pressed here
-    pixel_colour = Color(get(mouse_x, mouse_y)).hex
-    if pixel_colour in colours:
-        facts = colours[pixel_colour]
-        print('A volcano erupted in ' +
-              facts['region'] + ' in ' + facts['year'])
+    # Zet code die moet worden uitgevoerd wanneer de muis wordt ingedrukt hier
+    pixel_kleur = Color(get(mouse_x, mouse_y)).hex
+    if pixel_kleur in kleuren:
+        feiten = kleuren[pixel_kleur]
+        print('Er barstte een vulkaan uit in ' +
+              feiten['regio'] + ' in ' + feiten['jaar'])
     else:
-        print('Region not detected')
+        print('Regio niet gedetecteerd')
 
 
 run()
