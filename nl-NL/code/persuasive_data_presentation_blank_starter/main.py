@@ -1,3 +1,3 @@
 #!/bin/python3
 
-# Add your own CSV file
+# Voeg je eigen CSV-bestand toe
