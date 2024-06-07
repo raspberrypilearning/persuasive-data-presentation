@@ -1,70 +1,70 @@
-eruption
+uitbarsting
 
-volcano_eruptions
+vulkaan_uitbarstingen
 
-longitude
+lengtegraad
 
-latitude
+breedtegraad
 
-region_coords
+regio_coördinaten
 
-region_x
+regio_x
 
-region_y
+regio_y
 
-colour
+kleur
 
-colours
+kleuren
 
-draw_volcano
+draw_vulkaan
 
 draw_background
 
-my_text_file
+my_text-file
 
 line
 
 info
 
-volcano_dict
+vulkaan_dict
 
-date
+datum
 
-location
+locatie
 
 ufo_dict
 
-state
+staat
 
-country
+land
 
-time
+tijd
 
-expedition
+expeditie
 
-expeditions
+expedities
 
-expedition number
+expeditie nummer
 
-mission launch date
+lanceringsdatum van de missie
 
-sighting
+waarneming
 
-ufo_sightings
+ufo_waarnemingen
 
-convert_lat_long
+convert_bre_len
 
 false_easting
 
-radius
+straal
 
 x_coord
 
-y_dist_from_equator
+y_afst_van_evenaar
 
 y_coord
 
-coords
+coördinaten
 
 get_xy_coords
 
@@ -84,14 +84,14 @@ misc
 
 cylinder
 
-facts
+feiten
 
-choice
+keuze
 
 menu
 
-do_something
+doe_iets
 
-do_something_else
+doe_iets_anders
 
-flag
+vlag
