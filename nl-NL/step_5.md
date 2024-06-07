@@ -1,86 +1,86 @@
 ## Checklist
 
-Did you meet the **project brief**? Think about your project and go through the checklist below and check off the ones that apply to your project.
+Voldoet je project aan de **projectbeschrijving**? Denk na over je project en doorloop de onderstaande checklist en vink af wat van toepassing is op je project.
 
-Does your data visualisation:
+Maakt je gegevensweergave gebruik van:
 
 --- task ---
 
-Load data from a text/CSV file?
+Gegevens laden uit een tekst/CSV-bestand?
 
 --- /task ---
 
 --- task ---
 
-Use **lists** and/or **dictionaries** to store the data?
+**lijsten** en/of **dictionaries** om de gegevens op te slaan?
 
 --- /task ---
 
 --- task ---
 
-**Visualise** the data through a **chart** or **drawing**?
+Een **weergave** van de gegevens via een **kaart** of **afbeelding**?
 
 --- /task ---
 
 --- task ---
 
-Allow the user to **input** different options for what they would like to see?
+De gebruiker toestaan om verschillende opties **in te voeren** voor wat ze willen zien?
 
 --- /task ---
 
-Your data visualisation project could also:
+Je gegevensvisualisatie project kan ook:
 
 --- task ---
 
-Use **unique** shapes to display the data points on a map
-
---- /task ---
-
---- task ---
-
-**Analyse** the data using mathematical formulas before displaying it in a chart or drawing
-
---- /task ---
-
-## Sharing your work
-
---- task ---
-
-Did you share your work with others in an online gallery?
-
---- /task ---
-
-Reflecting about how you made your data visualisation project will help you in your future projects.
-
-Answer the questions below by drawing, writing, typing in a document, talking to someone, or in your own creative way that works best for you.
-
---- task ---
-
-How did you get your ideas?
+Gebruik maken van **unieke** vormen om de gegevenspunten op een kaart te tonen
 
 --- /task ---
 
 --- task ---
 
-What cool new thing(s) did you learn?
+Een **analyse** maken van de gegevens met behulp van wiskundige formules voordat deze worden weergegeven in een grafiek of afbeelding
+
+--- /task ---
+
+## Je werk delen
+
+--- task ---
+
+Heb je je werk met anderen gedeeld in een online galerij?
+
+--- /task ---
+
+Nadenken over hoe je je weergave hebt gemaakt, zal je helpen in je toekomstige projecten.
+
+Beantwoord de onderstaande vragen door te tekenen, schrijven, typen in een document, met iemand te praten of op je eigen creatieve manier die het beste bij je past.
+
+--- task ---
+
+Hoe ben je aan je ideeën gekomen?
 
 --- /task ---
 
 --- task ---
 
-Mistakes are the "portals of discovery" (James Joyce, Ulysses).
-
-What mistakes did you make and how did they help you create your data visualisation project?
+Welke coole nieuwe dingen heb je geleerd?
 
 --- /task ---
 
-### Now you know how to create your own data visualisation!
+--- task ---
 
-Take a moment to celebrate what you have made.
+Fouten zijn de "voorportalen van ontdekking" (James Joyce, Ulysses).
+
+Welke fouten heb je gemaakt en hoe hebben ze je geholpen om je gegevensvisualisatieproject te maken?
+
+--- /task ---
+
+### Nu weet je hoe je jouw eigen gegevens visualisatie kunt maken!
+
+Neem even de tijd om dit te vieren.
 
 --- task ---
 
-Where will you take your new powers? What will you make next?
+Wat ga je met je nieuwe kennis doen? Wat ga je hierna maken?
 
 --- /task ---
 
