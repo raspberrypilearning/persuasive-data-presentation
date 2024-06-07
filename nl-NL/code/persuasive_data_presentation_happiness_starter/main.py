@@ -1,3 +1,3 @@
 #!/bin/python3
 
-# Data headings: 0 Overall rank,	1 Country or region,	2 Score,	3 GDP per capita, 4 Social support,	5 Healthy life expectancy,	6 Freedom to make life choices,	7 Generosity,	8 Perceptions of corruption
+# Gegevensrubrieken: 0 Algemene rangschikking, 1 Land of regio, 2 Score, 3 BBP per hoofd van de bevolking, 4 Sociale steun, 5 Levensverwachting, 6 Vrijheid om levenskeuzes te maken, 7 Vrijgevigheid, 8 Vermoeden van corruptie
