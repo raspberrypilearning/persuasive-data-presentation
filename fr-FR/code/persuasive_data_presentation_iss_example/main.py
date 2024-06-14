@@ -23,7 +23,7 @@ def setup():
     charge_donnees('iss-expedition-data.csv')
 
     date = (expedition_date(expedition_choisie))
-    astronautes = (expedition_astronauts(expedition_choisie))
+    astronautes = (expedition_astronautes(expedition_choisie))
     pays = (expedition_pays(expedition_choisie))
 
     print('Expédition : ' + expedition_choisie)
@@ -47,7 +47,7 @@ def charge_donnees(nom_fichier):
 
     with open(nom_fichier) as f:
         for ligne in f:
-            info = ligne.split('\n')
+            info = ligne.strip('\n')
             info = info.split(',')
             expedition_dict = {
                 'numéro d\'expédition': info[0],
@@ -114,7 +114,7 @@ def draw():
 
     image(iss, 0, 0, width, height)
 
-    pays = expedition_pays (expedition_choisie)
+    pays = expedition_pays(expedition_choisie)
 
     nbr_pays = len(pays)
 
