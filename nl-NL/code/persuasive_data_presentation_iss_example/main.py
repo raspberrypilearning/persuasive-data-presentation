@@ -24,7 +24,7 @@ def setup():
 
     datum = (expeditie_datum(gekozen_expeditie))
     astronauten = (expeditie_astronauten(gekozen_expeditie))
-    landen = (expeditielanden(gekozen_expeditie))
+    landen = (expeditie_landen(gekozen_expeditie))
 
     print('Expeditie: ' + gekozen_expeditie)
     print('Lanceringsdatum missie: ' + datum + '\n')
@@ -41,7 +41,7 @@ def load_data(file_name):
 
     # Maak voor elke locatie een dictionary op basis van de gegevens in het csv-bestand
 
-    wereldwijde expedities
+    global expedities
 
     expedities = []
 
@@ -49,13 +49,13 @@ def load_data(file_name):
         for line in f:
             info = line.strip('\n')
             info = info.split(',')
-            expeditie_dict = {
+            expedities_dict = {
                 'expeditienummer': info[0],
                 'vertegenwoordigend land': info[1],
                 'astronaut': info[2],
                 'lanceringsdatum missie': info[3]
             }
-            expedities.append(expedition_dict) # Bewaar dictionary in een lijst
+            expedities.append(expedities_dict) # Bewaar dictionary in een lijst
 
 
 def expeditie_datum(number):
@@ -112,9 +112,9 @@ def draw():
         'België': be_vlag
     }
 
-    image(iss, 0, 0, breedte, hoogte)
+    image(iss, 0, 0, width, height)
 
-    landen = expeditielanden(gekozen_expeditie)
+    landen = expeditie_landen(gekozen_expeditie)
 
     aantal_landen = len(landen)
 
