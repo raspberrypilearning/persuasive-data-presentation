@@ -6,7 +6,7 @@ lengtegraad
 
 breedtegraad
 
-regio_coördinaten
+regio_coordinaten
 
 regio_x
 
@@ -20,7 +20,7 @@ draw_vulkaan
 
 draw_background
 
-my_text-file
+my_text_file
 
 line
 
@@ -64,7 +64,7 @@ y_afst_van_evenaar
 
 y_coord
 
-coördinaten
+coordinaten
 
 get_xy_coords
 
