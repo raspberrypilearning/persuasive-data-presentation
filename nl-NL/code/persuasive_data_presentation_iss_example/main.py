@@ -41,7 +41,7 @@ def load_data(file_name):
 
     # Maak voor elke locatie een dictionary op basis van de gegevens in het csv-bestand
 
-    wereldwijde expedities
+    global expedities
 
     expedities = []
 
