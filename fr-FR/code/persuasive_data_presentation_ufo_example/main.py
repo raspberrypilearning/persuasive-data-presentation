@@ -38,7 +38,7 @@ def dessine_ovni(forme, x, y):
         ellipse(x, y, 10, 10)
 
 
-def prechargement():
+def preload():
     global carte
     carte = load_image('mercator.jpeg')
 
@@ -90,7 +90,7 @@ def dessine_donnees():
         longitude = float(observation['longitude'])
         latitude = float(observation['latitude'])
 
-        region_coords = obt_xy_coords(longitude, latitude)
+        coords_region = obt_xy_coords(longitude, latitude)
 
         region_x = coords_region['x']
         region_y = coords_region['y']

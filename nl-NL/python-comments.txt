@@ -1,0 +1,114 @@
+Voert eenmaal uit aan het begin
+
+Kies het formaat van je canvas
+
+Voert elk frame uit
+
+Gebruik de breedte- en lengte-gegevens om de xy-coördinaten voor de vorm te berekenen
+
+retourneer coördinaten om kaart speld te plaatsen
+
+Rood = 50, Groen = 70, Blauw = 206
+
+Wijzig de roodwaarde
+
+Wijzig de groenwaarde
+
+Wijzig de blauwwaarde
+
+Achtergrondkleur
+
+Initialiseert de variabele zodat deze eraan kan worden toegevoegd
+
+Opent het bestand tijdelijk
+
+Loopt door elke regel in het bestand
+
+Voegt de regel toe aan de huidige inhoud van de variabele
+
+Initialiseert de lijst zodat er gegevens aan kunnen worden toegevoegd
+
+Voegt elke regel toe als een item in de lijst
+
+Splits elk item gescheiden door een komma in een lijst
+
+Voeg de infolijst toe aan de my_text_file lijst
+
+Initialiseer de lijst om de uitbarstingen op te slaan
+
+Splits de regel in een lijst
+
+Maak een dictionary voor de gebeurtenis
+
+Bewaar dictionary in een lijst
+
+Verwijder de \n
+
+Geef een bericht weer, afhankelijk van welke vorm de gebruiker heeft ingedrukt
+
+Zet code die moet worden uitgevoerd wanneer de muis wordt ingedrukt hier
+
+Voor elke regel in het tekstbestand
+
+Doorloop alle expeditie dictionaries in de expeditie lijst
+
+Controleer of het expeditienummer gelijk is aan 3
+
+Indien waar, sla dan de overeenkomende lanceringsdatum van de missie op
+
+Doorloop alle waarnemingsdictionaries in de ufo_sightings-lijst
+
+Sla de lengtegraadgegevens op
+
+Sla de breedtegraadgegevens op
+
+Begin met een verkeerd antwoord voor keuze
+
+Blijf de gebruiker om het juiste antwoord vragen
+
+Er werd hier een vuurbal-UFO gespot!
+
+Hier werd een cirkelvormige UFO gespot!
+
+Hier werd een driehoekige UFO gespot!
+
+Hier werd een UFO gemaakt van licht gespot!
+
+Hier werd een schijfvormige UFO gespot!
+
+Hier werd een willekeurig gevormde UFO gespot!
+
+Hier werd een cilindervormige UFO gespot!
+
+Er waren geen UFO-waarnemingen in dit gebied!
+
+Een vulkaan barstte uit in ' + feiten['regio'] + ' in ' + feiten['jaar']
+
+Regio niet gedetecteerd
+
+World Happiness Index-gegevens 2019
+
+Wat zou je willen zien?
+        1. Hoe gelukkig zijn landen in het algemeen?
+        2. Hoe belangrijk is de nationale rijkdom?
+        3. Hoe goed zorgt jouw land voor de kansarmen?
+        4. Hoe gul zijn mensen?
+        5. Hoe oprecht en eerlijk zijn mensen?
+        6. Hoeveel vrijheid heb je?
+    Keuze: 
+
+Voer 1 in om de tekst te coderen/decoderen, of 2 om frequentie analyse uit te voeren:
+
+Klein
+
+Sportief
+
+Terriër
+
+Werk
+
+Hoeden
+
+Jachthond
+
+Niet sportief
