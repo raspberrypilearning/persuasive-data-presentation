@@ -62,8 +62,6 @@ Stocker les données de longitude
 
 Stocker les données de latitude
 
-Affiche un message en fonction de la forme sur laquelle l'utilisateur a appuyé
-
 Commencer par une mauvaise réponse pour le choix
 
 Continuer à demander à l'utilisateur la bonne réponse
