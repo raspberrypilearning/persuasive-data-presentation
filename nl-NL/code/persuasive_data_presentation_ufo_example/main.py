@@ -30,7 +30,7 @@ def draw_ufo(vorm, x, y):
     elif vorm == 'disk':
         fill(disk)
         ellipse(x, y, 20, 10)
-    elif vorm== 'cylinder' or vorm == 'cigar':
+    elif vorm == 'cylinder' or vorm == 'cigar':
         fill(cylinder)
         rect(x, y, 20, 10)
     else:
@@ -39,20 +39,20 @@ def draw_ufo(vorm, x, y):
 
 
 def preload():
-    wereldkaart
+    global kaart
     kaart = load_image('mercator.jpeg')
 
 
 def setup():
 
     size(991, 768)
-    load_data ('ufo-sightings.csv')
+    load_data('ufo-sightings.csv')
     image(
         kaart, # De afbeelding om te tekenen
         0, # De x van de linkerbovenhoek
         0, # De y van de linkerbovenhoek
-        breedte, # De breedte van de afbeelding
-        hoogte # De hoogte van de afbeelding
+        width, # De breedte van de afbeelding
+        height # De hoogte van de afbeelding
     )
     draw_data()
 
@@ -61,7 +61,7 @@ def load_data(file_name):
 
     # Maak voor elke locatie een dictionary op basis van de gegevens in het csv-bestand
 
-    wereldwijde ufo_waarnemingen
+    global ufo_waarnemingen
 
     ufo_waarnemingen = []
 
@@ -87,7 +87,7 @@ def draw_data():
 
     for waarneming in ufo_waarnemingen:
 
-        lengtegraad= float(waarneming['lengtegraad'])
+        lengtegraad = float(waarneming['lengtegraad'])
         breedtegraad = float(waarneming['breedtegraad'])
 
         region_coords = get_xy_coords(lengtegraad, breedtegraad)
@@ -117,7 +117,7 @@ def mouse_pressed():
         print('Hier werd een schijfvormige UFO gezien!')
     elif pixel_colour == misc.hex:
         print('Hier werd een willekeurig gevormde UFO gespot!')
-    elif pixel_colour == misc.hex:
+    elif pixel_colour == cylinder.hex:
         print('Hier werd een cilindervormige UFO gezien!')
     else:
         print('Er waren geen UFO-waarnemingen in dit gebied!')

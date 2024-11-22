@@ -13,14 +13,14 @@ def convert_bre_leng(breedtegraad, lengtegraad, kaart_breedte, kaart_hoogte):
   y_afst_van_evenaar = straal * log(tan(pi / 4 + breedtegraad / 2))
   y_coord = kaart_hoogte / 2 - y_afst_van_evenaar
   
-  coördinaten = {'x': x_coord, 'y': y_coord}
+  coordinaten = {'x': x_coord, 'y': y_coord}
   
-  return coördinaten
+  return coordinaten
 
 
 def get_xy_coords(lengtegraad, breedtegraad, kaart_breedte=991, kaart_hoogte=768):
   
-  coördinaten = None
+  coordinaten = None
   
-  coördinaten = convert_bre_leng(breedtegraad, lengtegraad, kaart_breedte, kaart_hoogte)
-  return coördinaten
+  coordinaten = convert_bre_leng(breedtegraad, lengtegraad, kaart_breedte, kaart_hoogte)
+  return coordinaten

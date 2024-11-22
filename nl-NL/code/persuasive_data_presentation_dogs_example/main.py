@@ -4,7 +4,7 @@
 
 from pygal import *
 
-with open('dog_breed_characteristics.csv') als f:
+with open('dog_breed_characteristics.csv') as f:
     data = f.read()
     lines = data.splitlines()
 
@@ -21,13 +21,13 @@ def main():
                     title=' 🐶 Gemiddelde prijs van kleine honden per ras 🐶 ')
         for line in lines:
             info = line.split(',')
-            Rasnaam = info[0]
+            RasNaam = info[0]
             Type = info[1]
             GemPrijs = info[2]
             Intelligentie = info[3]
             Populariteit = info[4]
             if Type == 'Toy':
-                chart.add(rasnaam, float(gemprijs))
+                chart.add(RasNaam, float(GemPrijs))
         chart.render()
 
     if keuze == '2':
@@ -41,7 +41,7 @@ def main():
             Intelligentie = info[3]
             Populariteit = info[4]
             if Type == 'Toy':
-                chart.add(RasNaam, float(populariteit))
+                chart.add(RasNaam, float(Populariteit))
         chart.render()
 
     if keuze == '3':
@@ -55,7 +55,7 @@ def main():
             Intelligentie = info[3]
             Populariteit = info[4]
             if Type == 'Toy':
-                chart.add(RasNaam, float(intelligentie))
+                chart.add(RasNaam, float(Intelligentie))
         chart.render()
     main()
 

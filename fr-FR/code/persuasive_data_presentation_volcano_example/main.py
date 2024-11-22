@@ -16,7 +16,7 @@ def dessiner_volcan(couleur, x, y):
     ellipse(x, y, 12, 12)
 
 
-def prechargement():
+def preload():
     global carte
     carte = load_image('mercator.jpeg')
 
@@ -51,7 +51,7 @@ def charge_donnees(nom_fichier):
                 'région': info[5]
             }
             # Stocker le dictionnaire dans une liste
-            eruptions_volcan.append(volcan_dict)
+            eruptions_volcan.append(dict_volcan)
 
 
 def dessine_donnees():
@@ -62,13 +62,13 @@ def dessine_donnees():
     for eruption in eruptions_volcan:
         longitude = float(eruption['longitude'])
         latitude = float(eruption['latitude'])
-        region_coords = obt_xy_coords(longitude, latitude)
+        coords_region = obt_xy_coords(longitude, latitude)
         region_x = coords_region['x']
         region_y = coords_region['y']
-        couleur = Color(255, 100, blue_value) # Sélectionne une couleur aléatoire
+        couleur = Color(255, 100, valeur_bleu) # Sélectionne une couleur aléatoire
         couleurs[couleur.hex] = eruption
         dessiner_volcan(couleur, region_x, region_y)
-        valeur_bleu -= 1
+        valeur_bleu += 1
 
 
 def mouse_pressed():
@@ -76,8 +76,8 @@ def mouse_pressed():
     couleur_pixel = Color(get(mouse_x, mouse_y)).hex
     if couleur_pixel in couleurs:
         faits = couleurs[couleur_pixel]
-        print('Un volcan est entré en éruption en' +
-              faits['région'] + 'dans ' + faits['année'])
+        print('Un volcan est entré en éruption en ' +
+              faits['région'] + ' dans ' + faits['année'])
     else:
         print('Région non détectée')
 

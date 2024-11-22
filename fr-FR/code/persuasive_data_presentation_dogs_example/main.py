@@ -14,7 +14,7 @@ choix = 0
 def main():
 
     choix = input(
-        '« Analyse des chiens jouets. Que veux-tu voir ? \n1. Prix moyen, \n2. Popularité, \n3. Intelligence, \nChoix :')
+        'Analyse des chiens jouets. Que veux-tu voir ? \n1. Prix moyen, \n2. Popularité, \n3. Intelligence, \nChoix :')
 
     if choix == '1':
         graphique = Bar(width=600, height=400,
