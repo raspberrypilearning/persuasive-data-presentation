@@ -8,7 +8,7 @@ pt_dict_period = {}
 
 # Zet de code om eenmalig uit te voeren hier onder
 def setup():
-    wereldkaart
+    global kaart
     load_pt_data('pt.csv')
     setup_coords()
     size(1024, 576)
@@ -33,8 +33,8 @@ def draw():
         kaart, # De afbeelding om te tekenen
         0, # De x van de linkerbovenhoek
         0, # De y van de linker bovenhoek
-        breedte, # De breedte van de afbeelding
-        hoogte # De hoogte van de afbeelding
+        width, # De breedte van de afbeelding
+        height # De hoogte van de afbeelding
     )
 
 # Zet code die moet worden uitgevoerd wanneer de muis wordt ingedrukt hier
@@ -52,8 +52,8 @@ def mouse_pressed():
             period = y
     for element in pt_dict:
         if pt_dict[element]['groep'] == group and pt_dict[element]['periode'] == period:
-            print(pt_dict[element]['naam'], 'is een', pt_dict[element]
-                  ['uiterlijk'], 'en is een', pt_dict[element]['fase'])
+            print(pt_dict[element]['naam'], 'is a', pt_dict[element]
+                  ['uiterlijk'], 'and is a', pt_dict[element]['fase'])
 
 
 def load_pt_data(file_name):
