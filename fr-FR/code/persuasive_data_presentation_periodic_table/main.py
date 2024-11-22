@@ -52,14 +52,14 @@ def mouse_pressed():
             periode = y
     for element in pt_dict:
         if pt_dict[element]['groupe'] == groupe and pt_dict[element]['periode'] == periode:
-            print(pt_dict[element]['nom'], 'est un', pt_dict[element]
-                  ['apparance'], 'et est un', pt_dict[element]['phase'])
+            print(pt_dict[element]['nom'], 'is a', pt_dict[element]
+                  ['apparance'], 'and is a', pt_dict[element]['phase'])
 
 
 def charge_donnees_pt(nom_fichier):
     with open(nom_fichier) as f:
         for ligne in f:
-            info = line.strip().split(',')
+            info = ligne.strip().split(',')
             pt_dict[int(info[0])] = {
                 'nom': info[1],
                 'periode': int(info[7]),
