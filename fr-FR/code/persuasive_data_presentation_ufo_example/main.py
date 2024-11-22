@@ -97,7 +97,7 @@ def dessine_donnees():
 
         forme = observation['forme']
 
-        dessine_ovni(formes, region_x, region_y)
+        dessine_ovni(forme, region_x, region_y)
 
 
 def mouse_pressed():
