@@ -1,6 +1,6 @@
 ## Bouw en test - Plaatje of grafiek
 
-Nu is het tijd om je data weergave project te maken.
+Nu is het tijd om je datavisualisatie-project te maken.
 
 ![Een screenshot van het ISS-expeditieproject. Er is een illustratie van het ISS met drie vlaggen erop. Eén vlag is Russisch, één is voor de Verenigde Staten van Amerika en de andere is voor Groot-Brittannië.](images/iss-project.PNG)
 
@@ -126,7 +126,7 @@ blue = Color(50, 70, 206)  # Red = 50, Green = 70, Blue = 206
 
 --- collapse ---
 ---
-title: Wijzig de waarde van een speld kleur op de kaart
+title: Wijzig de waarde van een speldkleur op de kaart
 ---
 Dit voorbeeld verandert de waarde voor rood elke keer wanneer de code een speld plaatst:
 
@@ -306,7 +306,7 @@ def draw():
 title: Gegevens in een variabele laden
 ---
 
-Om de **volledige inhoud** van een tekstbestand naar een **variabele**te schrijven, kun je de volgende code gebruiken:
+Om de **volledige inhoud** van een tekstbestand naar een **variabele** te schrijven, kun je de volgende code gebruiken:
 
 --- code ---
 ---
@@ -344,7 +344,7 @@ Dit kan handig zijn als je tekstbestand slechts **één** stukje gegevens bevat 
 
 --- collapse ---
 ---
-title: Gegevens laden in een lijst met lijsten (een 2D lijst)
+title: Gegevens laden in een lijst met lijsten (een 2D-lijst)
 ---
 Een lijst met lijsten wordt vaak een 2D-lijst genoemd. Wanneer gegevens in een CSV-bestand worden opgeslagen, wordt elk item in een regel (rij) gescheiden door een komma `,`.
 
@@ -400,7 +400,7 @@ Elke regel (rij) uit een CSV-bestand kan worden opgeslagen in een **dictionary**
 
 ![Een screenshot van een tekstbestand. Het tekstbestand bevat gegevens over vulkaanuitbarstingen. Elke rij met gegevens heeft een datum, de lengtegraad, de breedtegraad en de locatie van de vulkaanuitbarsting.](images/text-file.PNG)
 
-Als deze gegevens zijn opgeslagen in een 2D lijst dan moet je de `index` waarden voor de data kennen om er toegang toe te krijgen. Met een **dictionary**hoef je alleen de `sleutel` te kennen. Dit is het trefwoord dat wordt gebruikt om de gegevens weer te geven die voor elk evenement worden bewaard. In dit voorbeeld zijn de sleutels `datum`, `lengtegraad`, `breedtegraad`en `locatie`.
+Als deze gegevens zijn opgeslagen in een 2D-lijst dan moet je de `index`-waarden voor de data kennen om er toegang toe te krijgen. Met een **dictionary** hoef je alleen de `sleutel` te kennen. Dit is het trefwoord dat wordt gebruikt om de gegevens weer te geven die voor elk evenement worden bewaard. In dit voorbeeld zijn de sleutels `datum`, `lengtegraad`, `breedtegraad` en `locatie`.
 
 De onderstaande code toont een **lijst met dictionaries** die worden gemaakt voor de inhoud van een CSV-bestand:
 
@@ -421,7 +421,7 @@ with open(file_name) as f: for line in f: info = line.split(',')  # Split the li
 ---
 title: Verwijder de \n
 ---
-Als je een tekstbestand in zijn onbewerkte vorm bekijkt, staat er geen `\n` aan het einde van elke regel. Wanneer je echter elke regel uit een tekstbestand laadt, zie je dat er een `\n` verschijnt. Dit komt omdat `\n` **een nieuwe regel toevoegen** betekent. Zonder deze \n zouden alle tekstregels op één, zeer lange regel staan.
+Als je een tekstbestand in zijn onbewerkte vorm bekijkt, staat er geen `\n` aan het einde van elke regel. Wanneer je echter elke regel uit een tekstbestand laadt, zie je dat er een `\n` verschijnt. Dit komt omdat `\n` **een nieuwe regel toevoegen** betekent. Zonder dit zouden alle tekstregels op één, zeer lange regel staan.
 
 Dit is niet handig wanneer je de gegevens in je programma wilt gebruiken.
 
