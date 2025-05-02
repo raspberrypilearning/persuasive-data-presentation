@@ -15,11 +15,11 @@ Hier is een gegevenspresentatie met behulp van een aangepast csv-bestand met inf
 
 Je kunt het Periodiek Systeem-project [hier vinden](https://editor.raspberrypi.org/en/projects/periodic-table-example){:target="_blank"}
 
-Elk voorbeeld project in de [Introductie](https://projects.raspberrypi.org/en/projects/persuasive-data-presentation/0) heeft een 'Zie binnen' link voor je om het project in de Editor te openen en naar de code te kijken om ideeën te krijgen en te zien hoe ze werken.
+Elk voorbeeld project in de [Inleiding](https://projects.raspberrypi.org/en/projects/persuasive-data-presentation/0) heeft een 'Bekijk van binnen' link voor je om het project in de Editor te openen en naar de code te kijken om ideeën te krijgen en te zien hoe ze werken.
 
 ### Doe inspiratie op
 
-Bekijk enkele datavisualisaties die zijn gemaakt door communityleden in de studio van de Raspberry Pi Foundation [Overtuigende datapresentatieprojecten](https://wke.lt/w/s/Pmjl0o){:target="_blank"}.
+Bekijk enkele datavisualisaties die zijn gemaakt door communityleden in de studio van de Raspberry Pi Foundation [Overtuigende presentatie van gegevens-projecten](https://wke.lt/w/s/Pmjl0o){:target="_blank"}.
 
 --- save ---
 
