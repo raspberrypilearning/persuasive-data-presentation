@@ -27,7 +27,7 @@ def main():
             Intelligentie = info[3]
             Populariteit = info[4]
             if Type == 'Toy':
-                chart.add(rasnaam, float(gemprijs))
+                chart.add(RasNaam, float(GemPrijs))
         chart.render()
 
     if keuze == '2':
@@ -41,7 +41,7 @@ def main():
             Intelligentie = info[3]
             Populariteit = info[4]
             if Type == 'Toy':
-                chart.add(RasNaam, float(populariteit))
+                chart.add(RasNaam, float(Populariteit))
         chart.render()
 
     if keuze == '3':
@@ -55,7 +55,7 @@ def main():
             Intelligentie = info[3]
             Populariteit = info[4]
             if Type == 'Toy':
-                chart.add(RasNaam, float(intelligentie))
+                chart.add(RasNaam, float(Intelligentie))
         chart.render()
     main()
 
