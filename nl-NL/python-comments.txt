@@ -1,12 +1,12 @@
-Voert eenmaal uit aan het begin
+Wordt eenmaal aan het begin uitgevoerd
 
 Kies het formaat van je canvas
 
-Voert elk frame uit
+Wordt elk frame uitgevoerd
 
 Gebruik de breedte- en lengte-gegevens om de xy-coördinaten voor de vorm te berekenen
 
-retourneer coördinaten om kaart speld te plaatsen
+retourneer coördinaten om kaartspeld te plaatsen
 
 Rood = 50, Groen = 70, Blauw = 206
 
@@ -50,7 +50,7 @@ Zet code die moet worden uitgevoerd wanneer de muis wordt ingedrukt hier
 
 Voor elke regel in het tekstbestand
 
-Doorloop alle expeditie dictionaries in de expeditie lijst
+Doorloop alle expeditie dictionaries in de expeditielijst
 
 Controleer of het expeditienummer gelijk is aan 3
 
