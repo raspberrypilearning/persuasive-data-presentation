@@ -17,7 +17,7 @@ def teken_vulkaan(kleur, x, y):
 
 
 def preload():
-    wereldkaart
+    global kaart
     kaart = load_image('mercator.jpeg')
 
 
@@ -27,17 +27,17 @@ def setup():
         kaart, # De afbeelding om te tekenen
         0, # De x van de linkerbovenhoek
         0, # De y van de linkerbovenhoek
-        breedte, # De breedte van de afbeelding
-        hoogte # De hoogte van de afbeelding
+        width, # De breedte van de afbeelding
+        height # De hoogte van de afbeelding
     )
-    load_data ('volcano-data.csv')
+    load_data('volcano-data.csv')
     draw_data()
 
 
 def load_data(file_name):
     # Maak voor elke waarneming een dictionary op basis van de gegevens in het csv-bestand
 
-    wereldwijde vulkaan_uitbarstingen
+    global vulkaan_uitbarstingen
 
     vulkaan_uitbarstingen = []
 
@@ -67,7 +67,7 @@ def draw_data():
         regio_y = region_coords['y']
         kleur = Color(255, 100, blauw_waarde) # Selecteer een willekeurige kleur
         kleuren[kleur.hex] = uitbarsting
-        draw_vulkaan(kleur, regio_x, regio_y)
+        teken_vulkaan(kleur, regio_x, regio_y)
         blauw_waarde += 1
 
 
