@@ -51,7 +51,7 @@ Le code ci-dessous récupère la couleur hexadécimale du pixel sur lequel a ét
 language: python filename: main.py line_numbers: false line_number_start: 1
 line_highlights:
 ---
-pixel_colour = Color(get(mouse_x, mouse_y)).hex
+couleur_pixel = Color(get(mouse_x, mouse_y)).hex
 
 --- /code ---
 
