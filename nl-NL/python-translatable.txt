@@ -44,7 +44,7 @@ expeditie
 
 expedities
 
-expeditie nummer
+expeditienummer
 
 lanceringsdatum van de missie
 
