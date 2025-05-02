@@ -2,7 +2,7 @@
 
 Voldoet je project aan de **projectbeschrijving**? Denk na over je project en doorloop de onderstaande checklist en vink af wat van toepassing is op je project.
 
-Maakt je gegevensweergave gebruik van:
+Maakt je datavisualisatie gebruik van:
 
 --- task ---
 
@@ -28,11 +28,11 @@ De gebruiker toestaan om verschillende opties **in te voeren** voor wat ze wille
 
 --- /task ---
 
-Je gegevensvisualisatie project kan ook:
+Je datavisualisatie project kan ook:
 
 --- task ---
 
-Gebruik maken van **unieke** vormen om de gegevenspunten op een kaart te tonen
+Gebruik maken van **unieke** vormen om de datapunten op een kaart te tonen
 
 --- /task ---
 
@@ -70,11 +70,11 @@ Welke coole nieuwe dingen heb je geleerd?
 
 Fouten zijn de "voorportalen van ontdekking" (James Joyce, Ulysses).
 
-Welke fouten heb je gemaakt en hoe hebben ze je geholpen om je gegevensvisualisatieproject te maken?
+Welke fouten heb je gemaakt en hoe hebben ze je geholpen om je datavisualisatieproject te maken?
 
 --- /task ---
 
-### Nu weet je hoe je jouw eigen gegevens visualisatie kunt maken!
+### Nu weet je hoe je jouw eigen datavisualisatie kunt maken!
 
 Neem even de tijd om dit te vieren.
 

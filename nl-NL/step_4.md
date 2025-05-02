@@ -6,9 +6,9 @@ Nu is het tijd om wat gebruikersinteractie toe te voegen aan jouw datavisualisat
 
 --- task ---
 
-Bekijk het [**ISS expeditieproject**](https://editor.raspberrypi.org/nl-NL/projects/data-iss-example){:target="_blank"} project. Er wordt aan de gebruiker gevraagd een ISS-expeditie te kiezen om te verkennen. De gebruiker voert een nummer in en vervolgens wordt dit nummer gebruikt om:
+Bekijk het [**ISS expeditie**](https://editor.raspberrypi.org/nl-NL/projects/data-iss-example){:target="_blank"}-project. Er wordt aan de gebruiker gevraagd een ISS-expeditie te kiezen om te verkennen. De gebruiker voert een nummer in en vervolgens wordt dit nummer gebruikt om:
 + Relevante gegevens van die expeditie te op te zoeken
-+ Teken vlaggen op het ISS op basis van de gegevens
++ Vlaggen te tekenen op het ISS op basis van de gegevens
 + De data die op deze expeditie van toepassing is te tonen als output aan de gebruiker
 
 Zou je project iets dergelijks kunnen doen?
@@ -17,7 +17,7 @@ Zou je project iets dergelijks kunnen doen?
 
 --- task ---
 
-Bekijk het [**UFO tracker**](https://editor.raspberrypi.org/nl-NL/projects/data-ufo-example){:target="_blank"} project. Met dit project kan de gebruiker op de verschillende vormen klikken die op de kaart worden weergegeven. Wanneer de gebruiker op een object klikt, wordt er een bericht weergegeven met het **type** van de UFO die op die locatie is gespot.
+Bekijk het [**UFO tracker**](https://editor.raspberrypi.org/nl-NL/projects/data-ufo-example){:target="_blank"}-project. Met dit project kan de gebruiker op de verschillende vormen klikken die op de kaart worden weergegeven. Wanneer de gebruiker op een object klikt, wordt er een bericht weergegeven met het **type** van de UFO die op die locatie is gespot.
 
 Kun je dit idee gebruiken om gebruikersinteractie aan jouw project toe te voegen?
 
@@ -25,9 +25,9 @@ Kun je dit idee gebruiken om gebruikersinteractie aan jouw project toe te voegen
 
 --- task ---
 
-Verken het [**Kleine (toy) honden analyse**](https://editor.raspberrypi.org/nl-NL/projects/data-dogs-example){:target="_blank"} project. Hierbij wordt de gebruiker gevraagd te kiezen welk type gegevens in een grafiek wordt weergegeven.
+Verken het [**Kleine (toy) honden analyse**](https://editor.raspberrypi.org/nl-NL/projects/data-dogs-example){:target="_blank"}-project. Hierbij wordt de gebruiker gevraagd te kiezen welk type gegevens in een grafiek wordt weergegeven.
 
-Kunt je je gebruikers opties geven over het type gegevens dat zij willen zien?
+Kun je je gebruikers opties geven over het type gegevens dat zij willen zien?
 
 Denk aan je eigen project en de data die je wilt dat je gebruikers kunnen verkennen. Laat je inspireren door de voorbeeldprojecten en bedenk hoe jouw gebruiker met het project zou kunnen omgaan.
 
@@ -169,7 +169,7 @@ def main():
 title: Een while-lus gebruiken om vragen te herhalen
 ---
 
-Je kunt een **while lus** gebruiken om een stukje code uit te voeren **terwijl** een **voorwaarde** gelijk is aan **Waar**. In het onderstaande voorbeeld blijft de lus lopen zolang de gebruiker **geen** `c` of `f` kiest. Dit is misschien handig om te gebruiken in je eigen project.
+Je kunt een **while lus** gebruiken om een stukje code uit te voeren **terwijl** een **voorwaarde** gelijk is aan **Waar**. In het onderstaande voorbeeld blijft de lus lopen zolang de gebruiker **geen** `1` of `2` kiest. Dit is misschien handig om te gebruiken in je eigen project.
 
 --- code ---
 ---
@@ -225,7 +225,7 @@ Controleer of je vraag en `input()` functie zijn geplaatst in het juiste deel va
 title: Er gebeurt niets als de gebruiker een getal invoert
 ---
 
-De functie `input()` is ontworpen om alles wat een gebruiker typt aan te nemen en het te retourneren als **string**. Dit betekent dat je in je **condities** ook string waarden moet gebruiken. Je zou een conditie kunnen hebben die er als volgt uitziet:
+De functie `input()` is ontworpen om alles wat een gebruiker typt aan te nemen en het te retourneren als **string**. Dit betekent dat je in je **condities**ook string waarden moet gebruiken. Je zou een conditie kunnen hebben die er als volgt uitziet:
 
 ```
 if keuze == 1:
@@ -280,7 +280,7 @@ def teken_gegevens():
 
 --- /code ---
 
-**Merk op dat** de kleur oorspronkelijk is ingesteld op `rood_waarde = 255`; dit is de hoogste hoeveelheid rood die je kunt gebruiken. Nadat elk gegevenspunt wordt getekend, wordt de waarde van `rood_waarde` verminderd met `1`. Dit zorgt ervoor dat elk datapunt een andere kleur heeft.
+**Merk op dat** de kleur oorspronkelijk is ingesteld op `rood_waarde = 255`; dit is de hoogste hoeveelheid rood die je kunt gebruiken. Nadat elk gegevenspunt wordt getekend, wordt de waarde van `rood_waarde` verminderd met `2`. Dit zorgt ervoor dat elk datapunt een andere kleur heeft.
 
 --- /collapse ---
 

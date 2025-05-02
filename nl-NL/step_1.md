@@ -2,7 +2,7 @@
 
 Maak een datavisualisatie voor een onderwerp waar je gepassioneerd over bent.
 
-Jouw visualisatie moet voldoen aan de **project opdracht**.
+Jouw visualisatie moet voldoen aan de **projectopdracht**.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 Een <span style="color: #0faeb0">datavisualisatie</span> is een interessante manier om gegevens weer te geven. Het kan de vorm hebben van een grafiek, diagram, kaart of tekening. Datavisualisaties worden vrij regelmatig gebruikt in nieuwsartikelen als een toegankelijke manier om lezers de relevante gegevens met betrekking tot het artikel te laten zien. Er kan bijvoorbeeld een kaart zijn die verkeershotspots in jouw omgeving of het lokale weer voor bepaalde locaties weergeeft. Visualisaties worden ook gebruikt door sportanalisten, productpromotoren en mensen in vele andere rollen.
@@ -11,13 +11,13 @@ Een <span style="color: #0faeb0">datavisualisatie</span> is een interessante man
 Je gaat:
 + Gegevens laden uit een **tekst/CSV-bestand**
 + **Lijsten** en/of **woordenboeken** gebruiken om de gegevens op te slaan
-+ De gegevens **visualiseren** via een **diagram** of **tekening**
++ De gegevens **visualiseren ** via een **diagram** of **tekening**
 
 ### Afspelen ▶️
 
 --- task ---
 
-**Expedities van ISS-bemanningen:** [Kijk binnenin](https://editor.raspberrypi.org/nl-NL/projects/data-iss-example){:target="_blank"}
+**Expedities van ISS-bemanningen:** [Bekijk van binnen](https://editor.raspberrypi.org/nl-NL/projects/data-iss-example){:target="_blank"}
 
 <iframe src="https://editor.raspberrypi.org/nl-NL/embed/viewer/data-iss-example" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
@@ -26,18 +26,18 @@ Je gaat:
 
 <div style="border-top: 15px solid #f3524f; background-color: whitesmoke; margin-bottom: 20px; padding: 10px;">
 
-### PROJECT OPDRACHT: overtuigende gegevenspresentatie
+### PROJECTOPDRACHT: overtuigende gegevenspresentatie
 <hr style="border-top: 2px solid black;"> 
 
-Jouw gegevens visualisatie moet bevatten:
+Jouw datavisualisatie moet bevatten:
 + Laden van gegevens van een **tekstbestand/CSV** 
 + Gebruik **lijsten** en/of **dictionaries** om de gegevens op te slaan
 + **Visualisering** door een **grafiek** of **tekening**
-+ Mogelijkheid voor gebruiker om verschillende opties **in te geven**om te bepalen wat ze willen zien
++ Mogelijkheid voor gebruiker om verschillende opties **in te geven** om te bepalen wat ze willen zien
 
-Je gegevens visualisatie kan bevatten:
+Je datavisualisatie kan bevatten:
 + Gebruik **unieke** vormen om de gegevens weer te geven op een kaart
-+ **Analyse** van de gegevens met behulp van wiskundige formules voordat het wordt weerggeven in een grafiek of plaatje
++ **Analyse** van de gegevens met behulp van wiskundige formules voordat het wordt weergegeven in een grafiek of plaatje
 
 </div>
 
@@ -59,7 +59,7 @@ Je gegevens visualisatie kan bevatten:
 <iframe src="https://editor.raspberrypi.org/nl-NL/embed/viewer/data-dogs-example" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
 
-**Vulkaan uitbarstingen:** [Bekijk van binnen](https://editor.raspberrypi.org/nl-NL/projects/data-volcano-example){:target="_blank"}
+**Vulkaanuitbarstingen:** [Bekijk van binnen](https://editor.raspberrypi.org/nl-NL/projects/data-volcano-example){:target="_blank"}
 
 <iframe src="https://editor.raspberrypi.org/nl-NL/embed/viewer/data-volcano-example" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
